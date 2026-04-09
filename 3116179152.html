@@ -48,18 +48,16 @@ body{background:#030508;color:#a09b8c;font-family:'Inter',sans-serif;min-height:
 .particle.orb{background:radial-gradient(circle,rgba(200,155,60,0.15),rgba(100,80,40,0.05),transparent);filter:blur(4px)}
 @keyframes float{0%{transform:translateY(100vh) scale(0);opacity:0}10%{opacity:1}85%{opacity:0.7}100%{transform:translateY(-10vh) scale(1);opacity:0}}
 
-/* ═══ HERO — Cinematic Fullscreen ═══ */
+/* ═══ HERO ═══ */
 .hero{position:relative;height:78vh;min-height:420px;overflow:hidden;z-index:2}
 .hero-slides{position:absolute;inset:0}
 .hero-slide{position:absolute;inset:0;opacity:0;transition:opacity 2s ease;background-size:cover;background-position:center}
 .hero-slide.active{opacity:1}
-.hero-slide:nth-child(1){background-image:url('https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zeri_29.jpg')}
-.hero-slide:nth-child(2){background-image:url('https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Darius_14.jpg')}
-.hero-slide:nth-child(3){background-image:url('https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Hecarim_14.jpg')}
+.hero-slide:nth-child(1){background-image:url('https://ddragon.leagueoflegends.com/cdn/img/champion/splash/MasterYi_11.jpg')}
+.hero-slide:nth-child(2){background-image:url('https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Anivia_3.jpg')}
+.hero-slide:nth-child(3){background-image:url('https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Caitlyn_10.jpg')}
 .hero-slide::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(3,5,8,0.4) 0%,rgba(3,5,8,0.15) 30%,rgba(3,5,8,0.4) 60%,rgba(3,5,8,0.85) 100%)}
 .hero-vignette{position:absolute;inset:0;box-shadow:inset 0 0 200px rgba(0,0,0,0.8);pointer-events:none;z-index:2}
-
-/* Hero Content — Centered */
 .hero-content{position:absolute;inset:0;z-index:3;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 30px}
 .hero-brand{font-family:'Cinzel',serif;font-size:0.75rem;color:#c89b3c;letter-spacing:6px;text-transform:uppercase;opacity:0.6;margin-bottom:20px}
 .hero-title{font-family:'Cinzel',serif;font-size:clamp(2.2rem,5vw,4rem);color:#f0e6d2;font-weight:900;text-shadow:0 4px 30px rgba(0,0,0,0.8);letter-spacing:4px;line-height:1.2}
@@ -94,8 +92,6 @@ body{background:#030508;color:#a09b8c;font-family:'Inter',sans-serif;min-height:
 .section-head .ornament .line{flex:1;max-width:120px;height:1px;background:linear-gradient(90deg,transparent,rgba(200,155,60,0.4),transparent)}
 .section-head .ornament .diamond{width:8px;height:8px;background:#c89b3c;transform:rotate(45deg)}
 .section-head .count{color:#3a3833;font-size:0.8rem;margin-top:8px;letter-spacing:2px}
-
-/* Search Bar */
 .search-wrap{max-width:500px;margin:0 auto 10px;position:relative;height:48px}
 .search-input{width:100%;height:48px;padding:0 42px 0 46px;background:rgba(10,20,40,0.6);border:1px solid rgba(200,155,60,0.12);border-radius:10px;color:#f0e6d2;font-family:'Inter',sans-serif;font-size:0.9rem;outline:none;transition:border-color 0.3s,box-shadow 0.3s;backdrop-filter:blur(10px);letter-spacing:0.5px}
 .search-input::placeholder{color:#3a3833;letter-spacing:1px}
@@ -110,8 +106,6 @@ body{background:#030508;color:#a09b8c;font-family:'Inter',sans-serif;min-height:
 .skin-card.hidden{display:none}
 .no-results{text-align:center;padding:60px 20px;color:#2a2620;font-family:'Cinzel',serif;font-size:1rem;letter-spacing:2px;display:none}
 .no-results.show{display:block}
-
-/* Skin Grid */
 .skin-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
 .skin-card{position:relative;border-radius:12px;overflow:hidden;cursor:pointer;background:#080d18;border:1px solid rgba(255,255,255,0.03);transition:all 0.4s cubic-bezier(0.4,0,0.2,1)}
 .skin-card:hover{transform:translateY(-6px) scale(1.02);box-shadow:0 16px 50px var(--skin-glow,rgba(0,0,0,0.5));border-color:var(--rarity-color)}
@@ -125,8 +119,6 @@ body{background:#030508;color:#a09b8c;font-family:'Inter',sans-serif;min-height:
 .skin-overlay{position:absolute;bottom:0;left:0;right:0;padding:14px 16px 12px;background:linear-gradient(transparent,rgba(3,5,8,0.97));display:flex;justify-content:space-between;align-items:flex-end}
 .skin-name{color:#f0e6d2;font-size:0.85rem;font-weight:600;text-shadow:0 2px 6px rgba(0,0,0,0.9);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:1}
 .rarity-tag{font-size:0.55rem;font-weight:700;color:var(--rc);text-transform:uppercase;letter-spacing:1.5px;padding:3px 10px;border:1px solid var(--rc);border-radius:3px;background:rgba(3,5,8,0.7);margin-left:8px;white-space:nowrap;text-shadow:0 0 10px var(--rc)}
-
-/* Champion Grid */
 .champ-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(75px,1fr));gap:10px}
 .champ-card{text-align:center;transition:transform 0.3s}
 .champ-card:hover{transform:scale(1.12)}
@@ -134,14 +126,10 @@ body{background:#030508;color:#a09b8c;font-family:'Inter',sans-serif;min-height:
 .champ-card img.shown{opacity:1}
 .champ-card:hover img{border-color:#c89b3c;box-shadow:0 0 20px rgba(200,155,60,0.3)}
 .champ-name{font-size:0.6rem;color:#3a3833;margin-top:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-
-/* Footer */
 .footer{text-align:center;padding:60px 20px;position:relative;z-index:2;margin-top:80px}
 .footer::before{content:'';display:block;width:80px;height:1px;background:linear-gradient(90deg,transparent,rgba(200,155,60,0.4),transparent);margin:0 auto 30px}
 .footer .brand{font-family:'Cinzel',serif;color:#c89b3c;font-size:1.3rem;font-weight:700;letter-spacing:6px}
 .footer .tagline{color:#1a1916;font-size:0.7rem;letter-spacing:4px;text-transform:uppercase;margin-top:10px}
-
-/* Lightbox */
 .lightbox{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.97);z-index:1000;justify-content:center;align-items:center;cursor:pointer;backdrop-filter:blur(12px)}
 .lightbox.active{display:flex}
 .lightbox img{max-width:92%;max-height:85vh;border-radius:10px;box-shadow:0 0 80px rgba(200,155,60,0.1);animation:lbIn 0.3s ease}
@@ -149,20 +137,14 @@ body{background:#030508;color:#a09b8c;font-family:'Inter',sans-serif;min-height:
 .lb-name{position:fixed;bottom:30px;left:50%;transform:translateX(-50%);color:#f0e6d2;font-family:'Cinzel',serif;font-size:1rem;background:rgba(5,8,15,0.85);backdrop-filter:blur(12px);padding:12px 30px;border-radius:8px;border:1px solid rgba(200,155,60,0.15);letter-spacing:2px}
 .lb-close{position:fixed;top:20px;right:30px;color:#3a3833;font-size:2.2rem;cursor:pointer;z-index:1001;transition:color 0.3s}
 .lb-close:hover{color:#c89b3c}
-
-/* Music Button */
 .music-btn{position:fixed;bottom:20px;right:20px;z-index:100;width:44px;height:44px;border-radius:50%;border:1px solid rgba(200,155,60,0.2);background:rgba(5,8,15,0.85);backdrop-filter:blur(12px);cursor:pointer;display:flex;align-items:center;justify-content:center;color:#c89b3c;font-size:1.2rem;transition:all 0.3s}
 .music-btn:hover{border-color:#c89b3c;box-shadow:0 0 20px rgba(200,155,60,0.15)}
 .music-btn.playing{animation:pulse 2s ease-in-out infinite}
 @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(200,155,60,0.15)}50%{box-shadow:0 0 0 10px rgba(200,155,60,0)}}
-
-/* Back to Eldorado Button */
 .eldorado-btn{position:fixed;top:20px;left:20px;z-index:100;display:flex;align-items:center;gap:8px;padding:10px 20px;background:rgba(5,8,15,0.85);backdrop-filter:blur(12px);border:1px solid rgba(200,155,60,0.25);border-radius:8px;color:#c89b3c;font-family:'Cinzel',serif;font-size:0.8rem;font-weight:700;letter-spacing:2px;text-decoration:none;transition:all 0.3s;text-transform:uppercase}
 .eldorado-btn:hover{background:rgba(200,155,60,0.15);border-color:#c89b3c;box-shadow:0 0 20px rgba(200,155,60,0.15);color:#f0e6d2}
 .eldorado-btn svg{width:16px;height:16px;fill:currentColor;transition:transform 0.3s}
 .eldorado-btn:hover svg{transform:translateX(-3px)}
-
-/* Fade-in */
 .fade-in{opacity:0;transform:translateY(20px);transition:opacity 0.6s ease,transform 0.6s ease}
 .fade-in.visible{opacity:1;transform:translateY(0)}
 
@@ -205,7 +187,7 @@ body{background:#030508;color:#a09b8c;font-family:'Inter',sans-serif;min-height:
 </head>
 <body>
 
-<!-- ═══ INTRO SCREEN ═══ -->
+<!-- INTRO SCREEN -->
 <div class="intro" id="intro">
 <div class="intro-particles" id="introParticles"></div>
 <div class="intro-inner">
@@ -218,17 +200,15 @@ body{background:#030508;color:#a09b8c;font-family:'Inter',sans-serif;min-height:
 </div>
 </div>
 
-<!-- Animated Background -->
 <div class="bg-anim"></div>
 <div class="particles" id="particles"></div>
 
-<!-- Back to Eldorado -->
-<a href="https://www.eldorado.gg/league-of-legends-accounts-for-sale/oa/24119f2d-2161-47d5-7be2-08de90ac3e24" class="eldorado-btn" target="_blank" rel="noopener">
+<a href="#" class="eldorado-btn" target="_blank" rel="noopener">
 <svg viewBox="0 0 24 24"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
 Buy on Eldorado
 </a>
 
-<!-- ═══ HERO — Cinematic Fullscreen with Slideshow ═══ -->
+<!-- HERO -->
 <div class="hero">
 <div class="hero-slides">
 <div class="hero-slide active"></div>
@@ -245,7 +225,7 @@ Buy on Eldorado
 <div class="hero-scroll"><span>Scroll</span><div class="arrow"></div></div>
 </div>
 
-<!-- ═══ Stats Section ═══ -->
+<!-- Stats -->
 <div class="stats-section">
 <div class="stats-title">Account Overview</div>
 <div class="stats-grid">
@@ -255,9 +235,9 @@ Buy on Eldorado
 <div class="stat-card"><div class="val">78</div><div class="lbl">Champions</div></div>
 <div class="stat-card"><div class="val">300</div><div class="lbl">Blue Essence</div></div>
 <div class="stat-card"><div class="val">100</div><div class="lbl">Riot Points</div></div>
-<div class="stat-card"><div class="val">$367</div><div class="lbl">Content Value</div></div>
+<div class="stat-card"><div class="val">$362</div><div class="lbl">Content Value</div></div>
 </div>
-<div class="rarity-bar"><span class="rs" style="--rc:#b34dff">🟣 1 Mythic</span><span style="color:#1a1916">·</span><span class="rs" style="--rc:#4d8bff">🔷 10 Epic</span></div>
+<div class="rarity-bar"><span class="rs" style="--rc:#ff4444">🔴 2 Legendary</span><span style="color:#1a1916">·</span><span class="rs" style="--rc:#4d8bff">🔷 6 Epic</span></div>
 </div>
 
 <div class="container">
@@ -277,48 +257,48 @@ Buy on Eldorado
 <div class="no-results" id="noResults">No skins found</div>
 <div class="skin-grid">
 <div class="skin-card fade-in" data-glow="rgba(77,139,255,0.3)" style="--rarity-color:#4d8bff">
-<div class="skin-img-wrap"><img data-src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Darius_14.jpg" alt="Dreadnova Darius" decoding="async"></div>
-<div class="skin-overlay"><span class="skin-name">Dreadnova Darius</span><span class="rarity-tag" style="--rc:#4d8bff">Epic</span></div>
+<div class="skin-img-wrap"><img data-src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/MasterYi_11.jpg" alt="Eternal Sword Yi" decoding="async"></div>
+<div class="skin-overlay"><span class="skin-name">Eternal Sword Yi</span><span class="rarity-tag" style="--rc:#4d8bff">Epic</span></div>
 </div>
 <div class="skin-card fade-in" data-glow="rgba(77,139,255,0.3)" style="--rarity-color:#4d8bff">
-<div class="skin-img-wrap"><img data-src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Hecarim_14.jpg" alt="Cosmic Charger Hecarim" decoding="async"></div>
-<div class="skin-overlay"><span class="skin-name">Cosmic Charger Hecarim</span><span class="rarity-tag" style="--rc:#4d8bff">Epic</span></div>
-</div>
-<div class="skin-card fade-in" data-glow="rgba(77,139,255,0.3)" style="--rarity-color:#4d8bff">
-<div class="skin-img-wrap"><img data-src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/JarvanIV_21.jpg" alt="Lunar Beast Jarvan IV" decoding="async"></div>
-<div class="skin-overlay"><span class="skin-name">Lunar Beast Jarvan IV</span><span class="rarity-tag" style="--rc:#4d8bff">Epic</span></div>
-</div>
-<div class="skin-card fade-in" data-glow="rgba(77,139,255,0.3)" style="--rarity-color:#4d8bff">
-<div class="skin-img-wrap"><img data-src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zoe_18.jpg" alt="Arcanist Zoe" decoding="async"></div>
-<div class="skin-overlay"><span class="skin-name">Arcanist Zoe</span><span class="rarity-tag" style="--rc:#4d8bff">Epic</span></div>
-</div>
-<div class="skin-card fade-in" data-glow="rgba(77,139,255,0.3)" style="--rarity-color:#4d8bff">
-<div class="skin-img-wrap"><img data-src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_7.jpg" alt="Blood Moon Aatrox" decoding="async"></div>
-<div class="skin-overlay"><span class="skin-name">Blood Moon Aatrox</span><span class="rarity-tag" style="--rc:#4d8bff">Epic</span></div>
-</div>
-<div class="skin-card fade-in" data-glow="rgba(77,139,255,0.3)" style="--rarity-color:#4d8bff">
-<div class="skin-img-wrap"><img data-src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ahri_66.jpg" alt="Arcana Ahri" decoding="async"></div>
-<div class="skin-overlay"><span class="skin-name">Arcana Ahri</span><span class="rarity-tag" style="--rc:#4d8bff">Epic</span></div>
-</div>
-<div class="skin-card fade-in" data-glow="rgba(77,139,255,0.3)" style="--rarity-color:#4d8bff">
-<div class="skin-img-wrap"><img data-src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/MasterYi_5.jpg" alt="Headhunter Master Yi" decoding="async"></div>
-<div class="skin-overlay"><span class="skin-name">Headhunter Master Yi</span><span class="rarity-tag" style="--rc:#4d8bff">Epic</span></div>
-</div>
-<div class="skin-card fade-in" data-glow="rgba(77,139,255,0.3)" style="--rarity-color:#4d8bff">
-<div class="skin-img-wrap"><img data-src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Janna_7.jpg" alt="Star Guardian Janna" decoding="async"></div>
-<div class="skin-overlay"><span class="skin-name">Star Guardian Janna</span><span class="rarity-tag" style="--rc:#4d8bff">Epic</span></div>
-</div>
-<div class="skin-card fade-in" data-glow="rgba(77,139,255,0.3)" style="--rarity-color:#4d8bff">
-<div class="skin-img-wrap"><img data-src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Warwick_35.jpg" alt="Old God Warwick" decoding="async"></div>
-<div class="skin-overlay"><span class="skin-name">Old God Warwick</span><span class="rarity-tag" style="--rc:#4d8bff">Epic</span></div>
+<div class="skin-img-wrap"><img data-src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Anivia_3.jpg" alt="Noxus Hunter Anivia" decoding="async"></div>
+<div class="skin-overlay"><span class="skin-name">Noxus Hunter Anivia</span><span class="rarity-tag" style="--rc:#4d8bff">Epic</span></div>
 </div>
 <div class="skin-card fade-in" data-glow="rgba(77,139,255,0.3)" style="--rarity-color:#4d8bff">
 <div class="skin-img-wrap"><img data-src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Caitlyn_10.jpg" alt="Lunar Wraith Caitlyn" decoding="async"></div>
 <div class="skin-overlay"><span class="skin-name">Lunar Wraith Caitlyn</span><span class="rarity-tag" style="--rc:#4d8bff">Epic</span></div>
 </div>
-<div class="skin-card fade-in" data-glow="rgba(179,77,255,0.5)" style="--rarity-color:#b34dff">
-<div class="skin-img-wrap"><img data-src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zeri_29.jpg" alt="Prestige Fright Night Zeri" decoding="async"></div>
-<div class="skin-overlay"><span class="skin-name">Prestige Fright Night Zeri</span><span class="rarity-tag" style="--rc:#b34dff">Mythic</span></div>
+<div class="skin-card fade-in" data-glow="rgba(77,139,255,0.3)" style="--rarity-color:#4d8bff">
+<div class="skin-img-wrap"><img data-src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Caitlyn_22.jpg" alt="Battle Academia Caitlyn" decoding="async"></div>
+<div class="skin-overlay"><span class="skin-name">Battle Academia Caitlyn</span><span class="rarity-tag" style="--rc:#4d8bff">Epic</span></div>
+</div>
+<div class="skin-card fade-in" data-glow="rgba(77,139,255,0.3)" style="--rarity-color:#4d8bff">
+<div class="skin-img-wrap"><img data-src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Katarina_10.jpg" alt="Death Sworn Katarina" decoding="async"></div>
+<div class="skin-overlay"><span class="skin-name">Death Sworn Katarina</span><span class="rarity-tag" style="--rc:#4d8bff">Epic</span></div>
+</div>
+<div class="skin-card fade-in" data-glow="rgba(77,139,255,0.3)" style="--rarity-color:#4d8bff">
+<div class="skin-img-wrap"><img data-src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Varus_34.jpg" alt="High Noon Varus" decoding="async"></div>
+<div class="skin-overlay"><span class="skin-name">High Noon Varus</span><span class="rarity-tag" style="--rc:#4d8bff">Epic</span></div>
+</div>
+<div class="skin-card fade-in" data-glow="rgba(77,139,255,0.3)" style="--rarity-color:#4d8bff">
+<div class="skin-img-wrap"><img data-src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Viktor_24.jpg" alt="Arcane Savior Viktor" decoding="async"></div>
+<div class="skin-overlay"><span class="skin-name">Arcane Savior Viktor</span><span class="rarity-tag" style="--rc:#4d8bff">Epic</span></div>
+</div>
+<div class="skin-card fade-in" data-glow="rgba(77,139,255,0.3)" style="--rarity-color:#4d8bff">
+<div class="skin-img-wrap"><img data-src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Draven_68.jpg" alt="Victorious Draven" decoding="async"></div>
+<div class="skin-overlay"><span class="skin-name">Victorious Draven</span><span class="rarity-tag" style="--rc:#4d8bff">Epic</span></div>
+</div>
+<div class="skin-card fade-in" data-glow="rgba(77,139,255,0.3)" style="--rarity-color:#4d8bff">
+<div class="skin-img-wrap"><img data-src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Velkoz_11.jpg" alt="Blackfrost Vel'Koz" decoding="async"></div>
+<div class="skin-overlay"><span class="skin-name">Blackfrost Vel'Koz</span><span class="rarity-tag" style="--rc:#4d8bff">Epic</span></div>
+</div>
+<div class="skin-card fade-in" data-glow="rgba(77,139,255,0.3)" style="--rarity-color:#4d8bff">
+<div class="skin-img-wrap"><img data-src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Samira_10.jpg" alt="Space Groove Samira" decoding="async"></div>
+<div class="skin-overlay"><span class="skin-name">Space Groove Samira</span><span class="rarity-tag" style="--rc:#4d8bff">Epic</span></div>
+</div>
+<div class="skin-card fade-in" data-glow="rgba(77,139,255,0.3)" style="--rarity-color:#4d8bff">
+<div class="skin-img-wrap"><img data-src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Thresh_1.jpg" alt="Deep Terror Thresh" decoding="async"></div>
+<div class="skin-overlay"><span class="skin-name">Deep Terror Thresh</span><span class="rarity-tag" style="--rc:#4d8bff">Epic</span></div>
 </div>
 </div>
 
@@ -331,316 +311,316 @@ Buy on Eldorado
 </div>
 <div class="champ-grid">
 <div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Ekko.png" alt="Ekko" decoding="async">
-<div class="champ-name">Ekko</div>
-</div>
-<div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Akshan.png" alt="Akshan" decoding="async">
-<div class="champ-name">Akshan</div>
-</div>
-<div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Vi.png" alt="Vi" decoding="async">
-<div class="champ-name">Vi</div>
-</div>
-<div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Vex.png" alt="Vex" decoding="async">
-<div class="champ-name">Vex</div>
-</div>
-<div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Karma.png" alt="Karma" decoding="async">
-<div class="champ-name">Karma</div>
-</div>
-<div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Rumble.png" alt="Rumble" decoding="async">
-<div class="champ-name">Rumble</div>
-</div>
-<div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Jinx.png" alt="Jinx" decoding="async">
-<div class="champ-name">Jinx</div>
-</div>
-<div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Evelynn.png" alt="Evelynn" decoding="async">
-<div class="champ-name">Evelynn</div>
-</div>
-<div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Graves.png" alt="Graves" decoding="async">
-<div class="champ-name">Graves</div>
-</div>
-<div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Nilah.png" alt="Nilah" decoding="async">
-<div class="champ-name">Nilah</div>
-</div>
-<div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Akali.png" alt="Akali" decoding="async">
-<div class="champ-name">Akali</div>
-</div>
-<div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Belveth.png" alt="Bel'Veth" decoding="async">
-<div class="champ-name">Bel'Veth</div>
-</div>
-<div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Samira.png" alt="Samira" decoding="async">
-<div class="champ-name">Samira</div>
-</div>
-<div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Syndra.png" alt="Syndra" decoding="async">
-<div class="champ-name">Syndra</div>
-</div>
-<div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/TahmKench.png" alt="Tahm Kench" decoding="async">
-<div class="champ-name">Tahm Kench</div>
-</div>
-<div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/MissFortune.png" alt="Miss Fortune" decoding="async">
-<div class="champ-name">Miss Fortune</div>
-</div>
-<div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Ryze.png" alt="Ryze" decoding="async">
-<div class="champ-name">Ryze</div>
-</div>
-<div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Ornn.png" alt="Ornn" decoding="async">
-<div class="champ-name">Ornn</div>
-</div>
-<div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Sion.png" alt="Sion" decoding="async">
-<div class="champ-name">Sion</div>
-</div>
-<div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Camille.png" alt="Camille" decoding="async">
-<div class="champ-name">Camille</div>
-</div>
-<div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Thresh.png" alt="Thresh" decoding="async">
-<div class="champ-name">Thresh</div>
-</div>
-<div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Veigar.png" alt="Veigar" decoding="async">
-<div class="champ-name">Veigar</div>
-</div>
-<div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Zed.png" alt="Zed" decoding="async">
-<div class="champ-name">Zed</div>
-</div>
-<div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Smolder.png" alt="Smolder" decoding="async">
-<div class="champ-name">Smolder</div>
-</div>
-<div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Kassadin.png" alt="Kassadin" decoding="async">
-<div class="champ-name">Kassadin</div>
-</div>
-<div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Mel.png" alt="Mel" decoding="async">
-<div class="champ-name">Mel</div>
-</div>
-<div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Zyra.png" alt="Zyra" decoding="async">
-<div class="champ-name">Zyra</div>
-</div>
-<div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Yasuo.png" alt="Yasuo" decoding="async">
-<div class="champ-name">Yasuo</div>
-</div>
-<div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Skarner.png" alt="Skarner" decoding="async">
-<div class="champ-name">Skarner</div>
-</div>
-<div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Kindred.png" alt="Kindred" decoding="async">
-<div class="champ-name">Kindred</div>
-</div>
-<div class="champ-card fade-in">
 <img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Azir.png" alt="Azir" decoding="async">
 <div class="champ-name">Azir</div>
-</div>
-<div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Seraphine.png" alt="Seraphine" decoding="async">
-<div class="champ-name">Seraphine</div>
-</div>
-<div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Renekton.png" alt="Renekton" decoding="async">
-<div class="champ-name">Renekton</div>
-</div>
-<div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Sylas.png" alt="Sylas" decoding="async">
-<div class="champ-name">Sylas</div>
-</div>
-<div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Nasus.png" alt="Nasus" decoding="async">
-<div class="champ-name">Nasus</div>
-</div>
-<div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Galio.png" alt="Galio" decoding="async">
-<div class="champ-name">Galio</div>
-</div>
-<div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Gangplank.png" alt="Gangplank" decoding="async">
-<div class="champ-name">Gangplank</div>
-</div>
-<div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Gnar.png" alt="Gnar" decoding="async">
-<div class="champ-name">Gnar</div>
-</div>
-<div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/RekSai.png" alt="Rek'Sai" decoding="async">
-<div class="champ-name">Rek'Sai</div>
-</div>
-<div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Milio.png" alt="Milio" decoding="async">
-<div class="champ-name">Milio</div>
-</div>
-<div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Tristana.png" alt="Tristana" decoding="async">
-<div class="champ-name">Tristana</div>
-</div>
-<div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Neeko.png" alt="Neeko" decoding="async">
-<div class="champ-name">Neeko</div>
-</div>
-<div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Pyke.png" alt="Pyke" decoding="async">
-<div class="champ-name">Pyke</div>
-</div>
-<div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Xerath.png" alt="Xerath" decoding="async">
-<div class="champ-name">Xerath</div>
-</div>
-<div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Hwei.png" alt="Hwei" decoding="async">
-<div class="champ-name">Hwei</div>
-</div>
-<div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Sivir.png" alt="Sivir" decoding="async">
-<div class="champ-name">Sivir</div>
-</div>
-<div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Quinn.png" alt="Quinn" decoding="async">
-<div class="champ-name">Quinn</div>
-</div>
-<div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Jax.png" alt="Jax" decoding="async">
-<div class="champ-name">Jax</div>
-</div>
-<div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Malzahar.png" alt="Malzahar" decoding="async">
-<div class="champ-name">Malzahar</div>
-</div>
-<div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Amumu.png" alt="Amumu" decoding="async">
-<div class="champ-name">Amumu</div>
-</div>
-<div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Brand.png" alt="Brand" decoding="async">
-<div class="champ-name">Brand</div>
-</div>
-<div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Kled.png" alt="Kled" decoding="async">
-<div class="champ-name">Kled</div>
-</div>
-<div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Zoe.png" alt="Zoe" decoding="async">
-<div class="champ-name">Zoe</div>
-</div>
-<div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Katarina.png" alt="Katarina" decoding="async">
-<div class="champ-name">Katarina</div>
-</div>
-<div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Jayce.png" alt="Jayce" decoding="async">
-<div class="champ-name">Jayce</div>
-</div>
-<div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/MonkeyKing.png" alt="Wukong" decoding="async">
-<div class="champ-name">Wukong</div>
-</div>
-<div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Leona.png" alt="Leona" decoding="async">
-<div class="champ-name">Leona</div>
-</div>
-<div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Gwen.png" alt="Gwen" decoding="async">
-<div class="champ-name">Gwen</div>
-</div>
-<div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/XinZhao.png" alt="Xin Zhao" decoding="async">
-<div class="champ-name">Xin Zhao</div>
-</div>
-<div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Qiyana.png" alt="Qiyana" decoding="async">
-<div class="champ-name">Qiyana</div>
-</div>
-<div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Volibear.png" alt="Volibear" decoding="async">
-<div class="champ-name">Volibear</div>
-</div>
-<div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Braum.png" alt="Braum" decoding="async">
-<div class="champ-name">Braum</div>
-</div>
-<div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Rell.png" alt="Rell" decoding="async">
-<div class="champ-name">Rell</div>
 </div>
 <div class="champ-card fade-in">
 <img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Xayah.png" alt="Xayah" decoding="async">
 <div class="champ-name">Xayah</div>
 </div>
 <div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Malphite.png" alt="Malphite" decoding="async">
-<div class="champ-name">Malphite</div>
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Darius.png" alt="Darius" decoding="async">
+<div class="champ-name">Darius</div>
 </div>
 <div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Mordekaiser.png" alt="Mordekaiser" decoding="async">
-<div class="champ-name">Mordekaiser</div>
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Gangplank.png" alt="Gangplank" decoding="async">
+<div class="champ-name">Gangplank</div>
 </div>
 <div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Kennen.png" alt="Kennen" decoding="async">
-<div class="champ-name">Kennen</div>
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/DrMundo.png" alt="Dr. Mundo" decoding="async">
+<div class="champ-name">Dr. Mundo</div>
 </div>
 <div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Maokai.png" alt="Maokai" decoding="async">
-<div class="champ-name">Maokai</div>
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Lux.png" alt="Lux" decoding="async">
+<div class="champ-name">Lux</div>
 </div>
 <div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/JarvanIV.png" alt="Jarvan IV" decoding="async">
-<div class="champ-name">Jarvan IV</div>
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Braum.png" alt="Braum" decoding="async">
+<div class="champ-name">Braum</div>
+</div>
+<div class="champ-card fade-in">
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/RekSai.png" alt="Rek'Sai" decoding="async">
+<div class="champ-name">Rek'Sai</div>
+</div>
+<div class="champ-card fade-in">
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Lucian.png" alt="Lucian" decoding="async">
+<div class="champ-name">Lucian</div>
+</div>
+<div class="champ-card fade-in">
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Hecarim.png" alt="Hecarim" decoding="async">
+<div class="champ-name">Hecarim</div>
+</div>
+<div class="champ-card fade-in">
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Sylas.png" alt="Sylas" decoding="async">
+<div class="champ-name">Sylas</div>
+</div>
+<div class="champ-card fade-in">
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Briar.png" alt="Briar" decoding="async">
+<div class="champ-name">Briar</div>
+</div>
+<div class="champ-card fade-in">
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Irelia.png" alt="Irelia" decoding="async">
+<div class="champ-name">Irelia</div>
+</div>
+<div class="champ-card fade-in">
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Karma.png" alt="Karma" decoding="async">
+<div class="champ-name">Karma</div>
+</div>
+<div class="champ-card fade-in">
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/AurelionSol.png" alt="Aurelion Sol" decoding="async">
+<div class="champ-name">Aurelion Sol</div>
 </div>
 <div class="champ-card fade-in">
 <img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Rammus.png" alt="Rammus" decoding="async">
 <div class="champ-name">Rammus</div>
 </div>
 <div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Kayle.png" alt="Kayle" decoding="async">
-<div class="champ-name">Kayle</div>
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Camille.png" alt="Camille" decoding="async">
+<div class="champ-name">Camille</div>
 </div>
 <div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Naafiri.png" alt="Naafiri" decoding="async">
-<div class="champ-name">Naafiri</div>
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Amumu.png" alt="Amumu" decoding="async">
+<div class="champ-name">Amumu</div>
 </div>
 <div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Cassiopeia.png" alt="Cassiopeia" decoding="async">
-<div class="champ-name">Cassiopeia</div>
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Chogath.png" alt="Cho'Gath" decoding="async">
+<div class="champ-name">Cho'Gath</div>
+</div>
+<div class="champ-card fade-in">
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Hwei.png" alt="Hwei" decoding="async">
+<div class="champ-name">Hwei</div>
+</div>
+<div class="champ-card fade-in">
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Jhin.png" alt="Jhin" decoding="async">
+<div class="champ-name">Jhin</div>
+</div>
+<div class="champ-card fade-in">
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Akali.png" alt="Akali" decoding="async">
+<div class="champ-name">Akali</div>
+</div>
+<div class="champ-card fade-in">
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Milio.png" alt="Milio" decoding="async">
+<div class="champ-name">Milio</div>
+</div>
+<div class="champ-card fade-in">
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Talon.png" alt="Talon" decoding="async">
+<div class="champ-name">Talon</div>
+</div>
+<div class="champ-card fade-in">
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Ambessa.png" alt="Ambessa" decoding="async">
+<div class="champ-name">Ambessa</div>
+</div>
+<div class="champ-card fade-in">
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/KogMaw.png" alt="Kog'Maw" decoding="async">
+<div class="champ-name">Kog'Maw</div>
+</div>
+<div class="champ-card fade-in">
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Katarina.png" alt="Katarina" decoding="async">
+<div class="champ-name">Katarina</div>
+</div>
+<div class="champ-card fade-in">
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Fiddlesticks.png" alt="Fiddlesticks" decoding="async">
+<div class="champ-name">Fiddlesticks</div>
+</div>
+<div class="champ-card fade-in">
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Poppy.png" alt="Poppy" decoding="async">
+<div class="champ-name">Poppy</div>
+</div>
+<div class="champ-card fade-in">
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Singed.png" alt="Singed" decoding="async">
+<div class="champ-name">Singed</div>
+</div>
+<div class="champ-card fade-in">
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Warwick.png" alt="Warwick" decoding="async">
+<div class="champ-name">Warwick</div>
 </div>
 <div class="champ-card fade-in">
 <img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Zaahen.png" alt="Zaahen" decoding="async">
 <div class="champ-name">Zaahen</div>
 </div>
 <div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Swain.png" alt="Swain" decoding="async">
-<div class="champ-name">Swain</div>
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Zeri.png" alt="Zeri" decoding="async">
+<div class="champ-name">Zeri</div>
 </div>
 <div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Heimerdinger.png" alt="Heimerdinger" decoding="async">
-<div class="champ-name">Heimerdinger</div>
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Leona.png" alt="Leona" decoding="async">
+<div class="champ-name">Leona</div>
 </div>
 <div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Zilean.png" alt="Zilean" decoding="async">
-<div class="champ-name">Zilean</div>
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Sejuani.png" alt="Sejuani" decoding="async">
+<div class="champ-name">Sejuani</div>
 </div>
 <div class="champ-card fade-in">
-<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Trundle.png" alt="Trundle" decoding="async">
-<div class="champ-name">Trundle</div>
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/KSante.png" alt="K'Sante" decoding="async">
+<div class="champ-name">K'Sante</div>
+</div>
+<div class="champ-card fade-in">
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Orianna.png" alt="Orianna" decoding="async">
+<div class="champ-name">Orianna</div>
+</div>
+<div class="champ-card fade-in">
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Gwen.png" alt="Gwen" decoding="async">
+<div class="champ-name">Gwen</div>
+</div>
+<div class="champ-card fade-in">
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Jax.png" alt="Jax" decoding="async">
+<div class="champ-name">Jax</div>
+</div>
+<div class="champ-card fade-in">
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Neeko.png" alt="Neeko" decoding="async">
+<div class="champ-name">Neeko</div>
+</div>
+<div class="champ-card fade-in">
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Kayn.png" alt="Kayn" decoding="async">
+<div class="champ-name">Kayn</div>
+</div>
+<div class="champ-card fade-in">
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Ornn.png" alt="Ornn" decoding="async">
+<div class="champ-name">Ornn</div>
+</div>
+<div class="champ-card fade-in">
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Kalista.png" alt="Kalista" decoding="async">
+<div class="champ-name">Kalista</div>
+</div>
+<div class="champ-card fade-in">
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Jayce.png" alt="Jayce" decoding="async">
+<div class="champ-name">Jayce</div>
+</div>
+<div class="champ-card fade-in">
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Khazix.png" alt="Kha'Zix" decoding="async">
+<div class="champ-name">Kha'Zix</div>
+</div>
+<div class="champ-card fade-in">
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Renekton.png" alt="Renekton" decoding="async">
+<div class="champ-name">Renekton</div>
+</div>
+<div class="champ-card fade-in">
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Belveth.png" alt="Bel'Veth" decoding="async">
+<div class="champ-name">Bel'Veth</div>
+</div>
+<div class="champ-card fade-in">
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Riven.png" alt="Riven" decoding="async">
+<div class="champ-name">Riven</div>
+</div>
+<div class="champ-card fade-in">
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Garen.png" alt="Garen" decoding="async">
+<div class="champ-name">Garen</div>
+</div>
+<div class="champ-card fade-in">
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Qiyana.png" alt="Qiyana" decoding="async">
+<div class="champ-name">Qiyana</div>
+</div>
+<div class="champ-card fade-in">
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Morgana.png" alt="Morgana" decoding="async">
+<div class="champ-name">Morgana</div>
+</div>
+<div class="champ-card fade-in">
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Nocturne.png" alt="Nocturne" decoding="async">
+<div class="champ-name">Nocturne</div>
+</div>
+<div class="champ-card fade-in">
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Rakan.png" alt="Rakan" decoding="async">
+<div class="champ-name">Rakan</div>
+</div>
+<div class="champ-card fade-in">
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Aurora.png" alt="Aurora" decoding="async">
+<div class="champ-name">Aurora</div>
+</div>
+<div class="champ-card fade-in">
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Illaoi.png" alt="Illaoi" decoding="async">
+<div class="champ-name">Illaoi</div>
+</div>
+<div class="champ-card fade-in">
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Shen.png" alt="Shen" decoding="async">
+<div class="champ-name">Shen</div>
+</div>
+<div class="champ-card fade-in">
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Graves.png" alt="Graves" decoding="async">
+<div class="champ-name">Graves</div>
+</div>
+<div class="champ-card fade-in">
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Velkoz.png" alt="Vel'Koz" decoding="async">
+<div class="champ-name">Vel'Koz</div>
+</div>
+<div class="champ-card fade-in">
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Rengar.png" alt="Rengar" decoding="async">
+<div class="champ-name">Rengar</div>
+</div>
+<div class="champ-card fade-in">
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Seraphine.png" alt="Seraphine" decoding="async">
+<div class="champ-name">Seraphine</div>
+</div>
+<div class="champ-card fade-in">
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Mordekaiser.png" alt="Mordekaiser" decoding="async">
+<div class="champ-name">Mordekaiser</div>
+</div>
+<div class="champ-card fade-in">
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Nilah.png" alt="Nilah" decoding="async">
+<div class="champ-name">Nilah</div>
+</div>
+<div class="champ-card fade-in">
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Shyvana.png" alt="Shyvana" decoding="async">
+<div class="champ-name">Shyvana</div>
+</div>
+<div class="champ-card fade-in">
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Lulu.png" alt="Lulu" decoding="async">
+<div class="champ-name">Lulu</div>
+</div>
+<div class="champ-card fade-in">
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Olaf.png" alt="Olaf" decoding="async">
+<div class="champ-name">Olaf</div>
+</div>
+<div class="champ-card fade-in">
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Nasus.png" alt="Nasus" decoding="async">
+<div class="champ-name">Nasus</div>
+</div>
+<div class="champ-card fade-in">
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/MissFortune.png" alt="Miss Fortune" decoding="async">
+<div class="champ-name">Miss Fortune</div>
+</div>
+<div class="champ-card fade-in">
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Gragas.png" alt="Gragas" decoding="async">
+<div class="champ-name">Gragas</div>
+</div>
+<div class="champ-card fade-in">
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Ekko.png" alt="Ekko" decoding="async">
+<div class="champ-name">Ekko</div>
+</div>
+<div class="champ-card fade-in">
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Cassiopeia.png" alt="Cassiopeia" decoding="async">
+<div class="champ-name">Cassiopeia</div>
+</div>
+<div class="champ-card fade-in">
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Aphelios.png" alt="Aphelios" decoding="async">
+<div class="champ-name">Aphelios</div>
+</div>
+<div class="champ-card fade-in">
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Maokai.png" alt="Maokai" decoding="async">
+<div class="champ-name">Maokai</div>
+</div>
+<div class="champ-card fade-in">
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Vi.png" alt="Vi" decoding="async">
+<div class="champ-name">Vi</div>
+</div>
+<div class="champ-card fade-in">
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/TahmKench.png" alt="Tahm Kench" decoding="async">
+<div class="champ-name">Tahm Kench</div>
+</div>
+<div class="champ-card fade-in">
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Senna.png" alt="Senna" decoding="async">
+<div class="champ-name">Senna</div>
+</div>
+<div class="champ-card fade-in">
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Tristana.png" alt="Tristana" decoding="async">
+<div class="champ-name">Tristana</div>
+</div>
+<div class="champ-card fade-in">
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Nidalee.png" alt="Nidalee" decoding="async">
+<div class="champ-name">Nidalee</div>
+</div>
+<div class="champ-card fade-in">
+<img data-src="https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion/Twitch.png" alt="Twitch" decoding="async">
+<div class="champ-name">Twitch</div>
 </div>
 </div>
 
@@ -664,7 +644,7 @@ Buy on Eldorado
 <button class="music-btn" id="musicBtn" title="Toggle Music">♫</button>
 
 <script>
-/* ═══ INTRO — click Enter → music starts instantly, then fade out 1.5s ═══ */
+/* INTRO */
 (function(){
 const ip=document.getElementById('introParticles');
 for(let i=0;i<20;i++){
@@ -678,14 +658,10 @@ ip.appendChild(d);
 }
 const intro=document.getElementById('intro');
 setTimeout(()=>intro.classList.add('step1'),300);
-
 let dismissed=false;
 function dismiss(){
 if(dismissed)return;dismissed=true;
-// 1. Start music IMMEDIATELY (user gesture context)
 if(window._startMusic)window._startMusic();
-// 2. Fade out inner content (0.5s)
-// 3. Then fade out black bg (0.8s after 0.7s delay) = total ~1.5s
 intro.classList.add('done');
 setTimeout(()=>intro.remove(),2000);
 }
@@ -694,10 +670,9 @@ intro.addEventListener('click',dismiss);
 intro.addEventListener('touchstart',dismiss,{passive:true});
 })();
 
-/* ═══ Background Particles ═══ */
+/* Background Particles */
 (function(){
 const p=document.getElementById('particles');
-// Small bright sparks
 for(let i=0;i<55;i++){
 const d=document.createElement('div');
 d.className='particle';
@@ -708,7 +683,6 @@ const s=2+Math.random()*4;
 d.style.width=d.style.height=s+'px';
 p.appendChild(d);
 }
-// Large slow orbs
 for(let i=0;i<8;i++){
 const d=document.createElement('div');
 d.className='particle orb';
@@ -721,7 +695,7 @@ p.appendChild(d);
 }
 })();
 
-/* ═══ Hero Slideshow ═══ */
+/* Hero Slideshow */
 (function(){
 const slides=document.querySelectorAll('.hero-slide');
 if(slides.length<2)return;
@@ -733,7 +707,7 @@ slides[idx].classList.add('active');
 },6000);
 })();
 
-/* ═══ Lightbox ═══ */
+/* Lightbox */
 document.querySelectorAll('.skin-card').forEach(c=>{
 c.addEventListener('click',()=>{
 const img=c.querySelector('img');
@@ -750,7 +724,7 @@ if(e.target===e.currentTarget)e.currentTarget.classList.remove('active');
 });
 document.addEventListener('keydown',e=>{if(e.key==='Escape')document.getElementById('lb').classList.remove('active')});
 
-/* ═══ Smart Lazy Loading — images only load when near viewport ═══ */
+/* Smart Lazy Loading */
 (function(){
 let queue=[];let loading=0;const MAX_CONCURRENT=6;
 function loadNext(){
@@ -775,19 +749,19 @@ if(img.dataset.src){queue.push(img);loadNext()}
 document.querySelectorAll('.skin-card,.champ-card').forEach(el=>imgObs.observe(el));
 })();
 
-/* ═══ Fade-in on Scroll ═══ */
+/* Fade-in on Scroll */
 const obs=new IntersectionObserver(entries=>{
 entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}});
 },{threshold:0.08,rootMargin:'0px 0px -40px 0px'});
 document.querySelectorAll('.fade-in').forEach(el=>obs.observe(el));
 
-/* ═══ Hover Glow ═══ */
+/* Hover Glow */
 document.querySelectorAll('.skin-card').forEach(c=>{
 const glow=c.dataset.glow;
 if(glow)c.style.setProperty('--skin-glow',glow);
 });
 
-/* ═══ Skin Search ═══ */
+/* Skin Search */
 (function(){
 var input=document.getElementById('skinSearch');
 var clearBtn=document.getElementById('searchClear');
@@ -795,7 +769,6 @@ var countEl=document.getElementById('searchCount');
 var noResults=document.getElementById('noResults');
 var cards=document.querySelectorAll('.skin-card');
 var total=cards.length;
-
 input.addEventListener('input',function(){
 var q=input.value.toLowerCase().trim();
 clearBtn.classList.toggle('show',q.length>0);
@@ -815,7 +788,6 @@ countEl.textContent=matched+' of '+total+' skins match';
 countEl.classList.add('show');
 noResults.classList.toggle('show',matched===0);
 });
-
 clearBtn.addEventListener('click',function(){
 input.value='';
 input.dispatchEvent(new Event('input'));
@@ -823,12 +795,11 @@ input.focus();
 });
 })();
 
-/* ═══ Music — LoL tracks, starts on intro click ═══ */
+/* Music */
 (function(){
 var MUSIC='https://nexttgamer.github.io/lol-gallery/music/track.mp3';
 var btn=document.getElementById('musicBtn');
 var audio=null,started=false,userMuted=false,fadeTimer=null;
-
 function fadeVolume(target,duration){
 if(!audio)return;
 if(fadeTimer)clearInterval(fadeTimer);
@@ -843,7 +814,6 @@ audio.volume=Math.min(1,Math.max(0,current+step*i));
 if(i>=steps){clearInterval(fadeTimer);fadeTimer=null;audio.volume=Math.min(1,Math.max(0,target))}
 },50);
 }
-
 function startMusic(){
 if(started||audio)return;
 audio=new Audio(MUSIC);
@@ -855,11 +825,7 @@ btn.classList.add('playing');
 fadeVolume(0.4,3000);
 }).catch(function(){audio=null});
 }
-
-// Expose for intro
 window._startMusic=startMusic;
-
-// Toggle button
 btn.addEventListener('click',function(e){
 e.stopPropagation();
 if(!started){startMusic();return}
