@@ -1,0 +1,2582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<title>LV.1 · 0 AGENTS · 1 SKINS — NEXTTGAMER VALORANT</title>
+<meta name="description" content="Premium Valorant account — UNRATED, LA, 0 agents, 1 weapon skins.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><polygon points='50,5 95,80 78,80 50,30 22,80 5,80' fill='%23FF4655'/></svg>">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&family=Tourney:wght@800;900&display=swap');
+
+/* ════════════════════════════════════════════════════════════════════
+   RESET + GLOBAL
+═════════════════════════════════════════════════════════════════════ */
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:#0F1923;
+  color:#ECE8E1;
+  font-family:'Inter',sans-serif;
+  min-height:100vh;
+  overflow-x:hidden;
+  position:relative;
+  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 28 28'><circle cx='14' cy='14' r='1.5' fill='%23FF4655'/><line x1='14' y1='4' x2='14' y2='10' stroke='%23FF4655' stroke-width='1.5'/><line x1='14' y1='18' x2='14' y2='24' stroke='%23FF4655' stroke-width='1.5'/><line x1='4' y1='14' x2='10' y2='14' stroke='%23FF4655' stroke-width='1.5'/><line x1='18' y1='14' x2='24' y2='14' stroke='%23FF4655' stroke-width='1.5'/></svg>") 14 14,auto;
+}
+a,button,.skin-card,.agent-card,.chip,.cta,.tab,.music-fab,.lb-close,.loot-card,.wallet-card{
+  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='34' height='34' viewBox='0 0 34 34'><circle cx='17' cy='17' r='2.5' fill='%23FF4655'/><circle cx='17' cy='17' r='13' fill='none' stroke='%23FF4655' stroke-width='2'/><line x1='17' y1='1' x2='17' y2='8' stroke='%23FF4655' stroke-width='2'/><line x1='17' y1='26' x2='17' y2='33' stroke='%23FF4655' stroke-width='2'/><line x1='1' y1='17' x2='8' y2='17' stroke='%23FF4655' stroke-width='2'/><line x1='26' y1='17' x2='33' y2='17' stroke='%23FF4655' stroke-width='2'/></svg>") 17 17,pointer;
+}
+
+::-webkit-scrollbar{width:8px}
+::-webkit-scrollbar-track{background:#0F1923}
+::-webkit-scrollbar-thumb{background:#FF4655}
+::-webkit-scrollbar-thumb:hover{background:#ECE8E1}
+::selection{background:#FF4655;color:#0F1923}
+
+:root{
+  --val-red:#FF4655;
+  --val-red-bright:#FF5864;
+  --val-red-dim:#BD3944;
+  --val-red-deep:#7A1F28;
+  --val-navy:#0F1923;
+  --val-navy-2:#1F2733;
+  --val-navy-3:#2A3441;
+  --val-cream:#ECE8E1;
+  --val-white:#FFFFFF;
+  --val-teal:#5BA897;
+  --val-gold:#FFB940;
+  --val-purple:#B34DFF;
+  --val-blue:#41A3FF;
+  --val-grey:#768079;
+  --t-select:#888888;
+  --t-deluxe:#5BA897;
+  --t-premium:#D4A857;
+  --t-ultra:#B34DFF;
+  --t-exclusive:#FF4655;
+  --t-knife:#FFB940;
+  --role-duelist:#FF4655;
+  --role-sentinel:#5BA897;
+  --role-initiator:#41A3FF;
+  --role-controller:#B34DFF;
+  --role-default:#768079;
+}
+
+/* ════════════════════════════════════════════════════════════════════
+   BACKGROUND LAYERS — tactical navy + faint hex grid + CRT scanlines +
+   floating ember particles. All static-positioned, pointer-events off.
+═════════════════════════════════════════════════════════════════════ */
+.bg-layer{position:fixed;inset:0;z-index:0;pointer-events:none;
+  background:
+    radial-gradient(ellipse 40% 40% at 12% 18%,rgba(255,70,85,0.20) 0%,transparent 65%),
+    radial-gradient(ellipse 50% 50% at 88% 82%,rgba(91,168,151,0.10) 0%,transparent 65%),
+    radial-gradient(ellipse 80% 60% at 50% 50%,rgba(15,25,35,0) 0%,#0A1219 90%),
+    linear-gradient(180deg,#0F1923 0%,#0A1219 100%);
+  animation:bg-pan 22s ease-in-out infinite alternate}
+@keyframes bg-pan{from{background-position:0% 50%}to{background-position:100% 50%}}
+
+.bg-grid{position:fixed;inset:0;z-index:1;pointer-events:none;
+  background-image:
+    linear-gradient(rgba(255,70,85,0.05) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,70,85,0.05) 1px,transparent 1px);
+  background-size:54px 54px;
+  mask-image:radial-gradient(ellipse 90% 90% at 50% 50%,#000 0%,transparent 90%);
+  animation:grid-pulse 6s ease-in-out infinite}
+@keyframes grid-pulse{0%,100%{opacity:0.8}50%{opacity:1}}
+
+/* CRT scanlines */
+.bg-scanlines{position:fixed;inset:0;z-index:2;pointer-events:none;opacity:0.5;
+  background-image:repeating-linear-gradient(180deg,transparent 0,transparent 2px,rgba(255,255,255,0.014) 2px,rgba(255,255,255,0.014) 3px);
+  mix-blend-mode:overlay}
+
+/* Animated noise grain */
+.bg-grain{position:fixed;inset:-50%;z-index:3;pointer-events:none;opacity:0.07;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  animation:grain-shift 0.8s steps(8) infinite}
+@keyframes grain-shift{
+  0%{transform:translate(0,0)}
+  10%{transform:translate(-5%,-3%)}
+  20%{transform:translate(-9%,2%)}
+  30%{transform:translate(4%,-7%)}
+  40%{transform:translate(-3%,8%)}
+  50%{transform:translate(-7%,4%)}
+  60%{transform:translate(6%,-2%)}
+  70%{transform:translate(-1%,5%)}
+  80%{transform:translate(3%,-6%)}
+  90%{transform:translate(-5%,1%)}
+  100%{transform:translate(0,0)}
+}
+
+/* Embers — small red sparks floating up from bottom */
+.embers{position:fixed;inset:0;z-index:4;pointer-events:none;overflow:hidden}
+.ember{position:absolute;width:3px;height:3px;background:var(--val-red);border-radius:50%;
+  box-shadow:0 0 8px var(--val-red),0 0 16px rgba(255,70,85,0.6);
+  bottom:-10px;opacity:0;animation:ember-rise var(--dur,9s) linear infinite;animation-delay:var(--delay,0s)}
+.ember.gold{background:var(--val-gold);box-shadow:0 0 8px var(--val-gold),0 0 16px rgba(255,185,64,0.5)}
+.ember.cream{background:var(--val-cream);box-shadow:0 0 6px var(--val-cream)}
+@keyframes ember-rise{
+  0%{transform:translateY(0) translateX(0) scale(0.6);opacity:0}
+  10%{opacity:1}
+  90%{opacity:0.6}
+  100%{transform:translateY(-110vh) translateX(var(--drift,15px)) scale(1.1);opacity:0}
+}
+
+.bg-vignette{position:fixed;inset:0;z-index:5;pointer-events:none;
+  box-shadow:inset 0 0 200px 80px rgba(0,0,0,0.75)}
+
+/* ════════════════════════════════════════════════════════════════════
+   PERSISTENT HUD — top status bar + bottom REC dot + scroll round-timer
+═════════════════════════════════════════════════════════════════════ */
+.hud-top{position:fixed;top:0;left:0;right:0;height:32px;z-index:8000;
+  background:linear-gradient(180deg,rgba(15,25,35,0.95) 0%,rgba(15,25,35,0.85) 80%,transparent 100%);
+  border-bottom:1px solid rgba(255,70,85,0.18);
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 20px;font-family:'JetBrains Mono',monospace;font-size:0.66rem;letter-spacing:2.2px;
+  text-transform:uppercase;color:var(--val-cream);
+  transform:translateY(-100%);transition:transform 0.6s cubic-bezier(0.16,1,0.3,1)}
+.hud-top.live{transform:translateY(0)}
+.hud-top .hud-left,.hud-top .hud-right{display:flex;align-items:center;gap:18px}
+.hud-top .hud-dot{width:8px;height:8px;background:var(--val-red);border-radius:50%;
+  box-shadow:0 0 8px var(--val-red);animation:hud-pulse 1.6s ease-in-out infinite}
+@keyframes hud-pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:0.4;transform:scale(0.7)}}
+.hud-top .hud-mode{color:var(--val-red);font-weight:700}
+.hud-top .hud-id{color:var(--val-grey)}
+.hud-top .hud-serial{color:var(--val-cream);font-weight:600}
+.hud-top .hud-time{color:var(--val-cream);min-width:80px;text-align:right}
+
+/* Scroll-progress round timer — red line at bottom of HUD bar */
+.hud-timer{position:fixed;top:31px;left:0;right:0;height:2px;z-index:8001;
+  background:rgba(255,70,85,0.10);transform:translateY(-100%);transition:transform 0.6s 0.1s cubic-bezier(0.16,1,0.3,1)}
+.hud-timer.live{transform:translateY(0)}
+.hud-timer::before{content:'';display:block;height:100%;width:var(--p,0%);
+  background:linear-gradient(90deg,var(--val-red) 0%,var(--val-red-bright) 50%,#FFD700 100%);
+  box-shadow:0 0 10px var(--val-red);transition:width 0.1s linear}
+
+/* Bottom-left REC dot */
+.hud-rec{position:fixed;bottom:18px;left:18px;z-index:8000;display:flex;align-items:center;gap:10px;
+  font-family:'JetBrains Mono',monospace;font-size:0.68rem;letter-spacing:3px;text-transform:uppercase;
+  color:var(--val-cream);opacity:0;transform:translateY(20px);transition:all 0.6s 0.4s cubic-bezier(0.16,1,0.3,1)}
+.hud-rec.live{opacity:1;transform:translateY(0)}
+.hud-rec .rec-dot{width:9px;height:9px;background:var(--val-red);border-radius:50%;
+  box-shadow:0 0 10px var(--val-red);animation:rec-blink 1.2s ease-in-out infinite}
+@keyframes rec-blink{0%,100%{opacity:1}50%{opacity:0.15}}
+.hud-rec .rec-label{color:var(--val-red);font-weight:700}
+.hud-rec .rec-serial{color:var(--val-grey)}
+
+/* ════════════════════════════════════════════════════════════════════
+   INTRO / AGENT SELECT — cinematic full-screen "Press To Engage"
+═════════════════════════════════════════════════════════════════════ */
+.intro{position:fixed;inset:0;z-index:99999;background:#000;
+  display:flex;align-items:center;justify-content:center;overflow:hidden;
+  transition:opacity 0.9s cubic-bezier(0.4,0,0.2,1),visibility 1s ease}
+.intro.fade{opacity:0!important;visibility:hidden;pointer-events:none}
+body.intro-open{overflow:hidden}
+
+/* ─── Backdrop: deep navy with red bloom + animated mesh ─── */
+.intro-bg{position:absolute;inset:0;
+  background:
+    radial-gradient(circle at 30% 30%,rgba(255,70,85,0.28) 0%,transparent 45%),
+    radial-gradient(circle at 75% 70%,rgba(255,70,85,0.18) 0%,transparent 50%),
+    radial-gradient(ellipse 80% 60% at 50% 50%,rgba(15,25,35,0) 0%,#0A1219 90%),
+    linear-gradient(135deg,#000 0%,#0F1923 100%);
+  animation:intro-bg-shift 8s ease-in-out infinite alternate}
+@keyframes intro-bg-shift{from{background-position:0% 0%}to{background-position:100% 100%}}
+
+/* Faint agent silhouettes scrolling slowly across the background */
+.intro-silhouettes{position:absolute;inset:0;z-index:1;pointer-events:none;overflow:hidden;opacity:0.18}
+.silh{position:absolute;top:0;bottom:0;width:140px;
+  background:radial-gradient(ellipse 90% 70% at 50% 35%,rgba(255,70,85,0.55) 0%,transparent 70%);
+  filter:blur(22px);
+  animation:silh-drift 22s linear infinite}
+@keyframes silh-drift{
+  from{transform:translateX(-200px)}
+  to{transform:translateX(110vw)}
+}
+
+/* ─── Slabs slamming in from sides (kept, more dramatic) ─── */
+.intro-slab{position:absolute;top:0;bottom:0;width:50%;z-index:2;
+  background:linear-gradient(135deg,var(--val-red-deep) 0%,var(--val-red-dim) 60%,var(--val-red) 100%);
+  opacity:0.85}
+.intro-slab.left{left:0;clip-path:polygon(0 0,100% 0,calc(100% - 80px) 100%,0 100%);
+  transform:translateX(-100%);animation:slab-slam-l 0.8s cubic-bezier(0.22,1.4,0.36,1) 0.2s forwards}
+.intro-slab.right{right:0;clip-path:polygon(80px 0,100% 0,100% 100%,0 100%);
+  transform:translateX(100%);animation:slab-slam-r 0.8s cubic-bezier(0.22,1.4,0.36,1) 0.2s forwards}
+@keyframes slab-slam-l{
+  0%{transform:translateX(-100%)}
+  60%{transform:translateX(-50%)}
+  100%{transform:translateX(-62%)}
+}
+@keyframes slab-slam-r{
+  0%{transform:translateX(100%)}
+  60%{transform:translateX(50%)}
+  100%{transform:translateX(62%)}
+}
+
+/* Center wedge band */
+.intro-wedge{position:absolute;left:0;right:0;top:50%;height:32vh;margin-top:-16vh;z-index:3;
+  background:linear-gradient(90deg,transparent 0%,rgba(255,70,85,0.35) 25%,rgba(255,70,85,0.7) 50%,rgba(255,70,85,0.35) 75%,transparent 100%);
+  clip-path:polygon(0 50%,100% 0,100% 100%,0 50%);
+  transform:scaleX(0);transform-origin:center;
+  animation:wedge-in 1.0s cubic-bezier(0.16,1,0.3,1) 0.4s forwards,
+            wedge-breathe 4s ease-in-out 1.6s infinite}
+@keyframes wedge-in{
+  0%{transform:scaleX(0);filter:brightness(2.5)}
+  60%{transform:scaleX(1.05);filter:brightness(1.5)}
+  100%{transform:scaleX(1);filter:brightness(1)}
+}
+@keyframes wedge-breathe{0%,100%{filter:brightness(1)}50%{filter:brightness(1.18)}}
+
+/* ─── 4 corner brackets — bigger, animated, drop-shadow ─── */
+.intro-corner{position:absolute;width:110px;height:110px;border:3px solid var(--val-red);opacity:0;z-index:4;
+  filter:drop-shadow(0 0 12px var(--val-red))}
+.intro-corner.tl{top:60px;left:60px;border-right:none;border-bottom:none;
+  animation:corner-in 0.55s cubic-bezier(0.16,1,0.3,1) 0.55s forwards,corner-breathe 4s ease-in-out 2s infinite}
+.intro-corner.tr{top:60px;right:60px;border-left:none;border-bottom:none;
+  animation:corner-in 0.55s cubic-bezier(0.16,1,0.3,1) 0.65s forwards,corner-breathe 4s ease-in-out 2.5s infinite}
+.intro-corner.bl{bottom:60px;left:60px;border-right:none;border-top:none;
+  animation:corner-in 0.55s cubic-bezier(0.16,1,0.3,1) 0.75s forwards,corner-breathe 4s ease-in-out 3s infinite}
+.intro-corner.br{bottom:60px;right:60px;border-left:none;border-top:none;
+  animation:corner-in 0.55s cubic-bezier(0.16,1,0.3,1) 0.85s forwards,corner-breathe 4s ease-in-out 3.5s infinite}
+@keyframes corner-in{
+  0%{opacity:0;transform:scale(0.3) rotate(-30deg)}
+  70%{opacity:1;transform:scale(1.2) rotate(0)}
+  100%{opacity:1;transform:scale(1)}
+}
+@keyframes corner-breathe{0%,100%{opacity:1}50%{opacity:0.5}}
+
+/* ─── Top-left: fake "LOADING ASSETS..." progress bar ─── */
+.intro-loading{position:absolute;top:48px;left:120px;z-index:6;display:flex;flex-direction:column;gap:8px;
+  font-family:'JetBrains Mono',monospace;color:var(--val-cream);
+  opacity:0;animation:fade-in 0.6s ease-out 0.9s forwards}
+.intro-loading .il-label{font-size:0.72rem;letter-spacing:3px;text-transform:uppercase;color:var(--val-red);font-weight:600;display:flex;align-items:center;gap:10px}
+.intro-loading .il-label::before{content:'';width:9px;height:9px;background:var(--val-red);box-shadow:0 0 6px var(--val-red);animation:blink 1.1s ease-in-out infinite}
+.intro-loading .il-bar{width:280px;height:4px;background:rgba(255,70,85,0.18);overflow:hidden}
+.intro-loading .il-fill{height:100%;width:0;background:linear-gradient(90deg,var(--val-red) 0%,var(--val-gold) 100%);
+  box-shadow:0 0 10px var(--val-red);
+  animation:il-fill 4.2s cubic-bezier(0.22,1,0.36,1) 1.0s forwards}
+@keyframes il-fill{from{width:0}to{width:99%}}
+
+/* ─── Top-right: operator-ready status + audio EQ bars ─── */
+.intro-status{position:absolute;top:48px;right:120px;z-index:6;display:flex;flex-direction:column;gap:10px;align-items:flex-end;
+  font-family:'JetBrains Mono',monospace;color:var(--val-cream);
+  opacity:0;animation:fade-in 0.6s ease-out 1.0s forwards}
+.intro-status .is-label{font-size:0.72rem;letter-spacing:3px;text-transform:uppercase;color:var(--val-red);font-weight:600;display:flex;align-items:center;gap:10px}
+.intro-status .is-label::after{content:'';width:9px;height:9px;background:var(--val-red);box-shadow:0 0 6px var(--val-red);animation:blink 1.1s ease-in-out infinite 0.5s}
+.intro-eq{display:flex;gap:3px;align-items:flex-end;height:28px}
+.intro-eq span{display:block;width:4px;background:linear-gradient(180deg,var(--val-red) 0%,var(--val-gold) 100%);
+  box-shadow:0 0 6px rgba(255,70,85,0.5);
+  animation:eq-bar 0.8s ease-in-out infinite alternate}
+.intro-eq span:nth-child(1){animation-delay:0s;height:60%}
+.intro-eq span:nth-child(2){animation-delay:0.1s;height:90%}
+.intro-eq span:nth-child(3){animation-delay:0.2s;height:40%}
+.intro-eq span:nth-child(4){animation-delay:0.3s;height:75%}
+.intro-eq span:nth-child(5){animation-delay:0.4s;height:55%}
+.intro-eq span:nth-child(6){animation-delay:0.15s;height:85%}
+.intro-eq span:nth-child(7){animation-delay:0.25s;height:30%}
+.intro-eq span:nth-child(8){animation-delay:0.35s;height:70%}
+@keyframes eq-bar{from{transform:scaleY(0.4)}to{transform:scaleY(1)}}
+
+/* ─── Side: vertical scrolling text strips ─── */
+.intro-strip{position:absolute;top:0;bottom:0;width:24px;z-index:5;overflow:hidden;
+  font-family:'JetBrains Mono',monospace;font-size:0.62rem;letter-spacing:4px;
+  color:rgba(255,70,85,0.5);writing-mode:vertical-rl;white-space:nowrap;
+  text-transform:uppercase}
+.intro-strip.left{left:24px}
+.intro-strip.right{right:24px;writing-mode:vertical-lr}
+.intro-strip span{display:block;animation:strip-scroll 18s linear infinite}
+@keyframes strip-scroll{from{transform:translateY(-50%)}to{transform:translateY(50%)}}
+
+/* ─── Giant ghost V mark behind title ─── */
+.intro-bigv{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:5;
+  width:min(70vmin,720px);height:min(70vmin,720px);pointer-events:none;
+  opacity:0;animation:bigv-in 1.4s cubic-bezier(0.16,1,0.3,1) 0.8s forwards}
+.intro-bigv svg{width:100%;height:100%;display:block;filter:drop-shadow(0 0 40px rgba(255,70,85,0.4))}
+@keyframes bigv-in{
+  from{opacity:0;transform:translate(-50%,-50%) scale(0.6) rotate(-8deg)}
+  to{opacity:0.16;transform:translate(-50%,-50%) scale(1) rotate(0)}
+}
+
+/* ─── Main content block ─── */
+.intro-content{position:relative;z-index:10;text-align:center;
+  opacity:0;animation:content-in 0.7s ease-out 1.4s forwards}
+@keyframes content-in{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+
+.intro-tag{font-family:'JetBrains Mono',monospace;font-size:0.82rem;letter-spacing:7px;text-transform:uppercase;
+  color:var(--val-red);margin-bottom:20px;font-weight:600}
+.intro-tag::before{content:'';display:inline-block;width:12px;height:12px;background:var(--val-red);margin-right:16px;vertical-align:middle;box-shadow:0 0 10px var(--val-red);animation:blink 1.2s ease-in-out infinite}
+.intro-tag::after{content:'';display:inline-block;width:12px;height:12px;background:var(--val-red);margin-left:16px;vertical-align:middle;box-shadow:0 0 10px var(--val-red);animation:blink 1.2s ease-in-out infinite 0.6s}
+
+.intro-title{font-family:'Anton',sans-serif;font-size:clamp(4.5rem,14vw,11rem);line-height:0.82;
+  color:var(--val-cream);text-transform:uppercase;letter-spacing:-3px;position:relative;
+  filter:drop-shadow(0 8px 32px rgba(0,0,0,0.6))}
+.intro-title .word{display:inline-block;position:relative;
+  opacity:0;transform:translateY(20px) skewX(-4deg);
+  animation:word-in 0.55s cubic-bezier(0.16,1,0.3,1) forwards}
+.intro-title .word.w1{animation-delay:1.5s}
+.intro-title .word.w2{animation-delay:1.65s;color:var(--val-red);
+  text-shadow:0 0 32px rgba(255,70,85,0.5)}
+.intro-title .word.w2::after{content:'';position:absolute;left:-8px;right:-8px;bottom:8px;height:6px;background:var(--val-red);
+  transform:scaleX(0);transform-origin:left;animation:underline-in 0.6s ease-out 2.1s forwards;filter:drop-shadow(0 0 8px var(--val-red))}
+@keyframes word-in{
+  0%{opacity:0;transform:translateY(20px) skewX(-4deg);filter:blur(10px)}
+  60%{opacity:1;filter:blur(0)}
+  100%{opacity:1;transform:translateY(0) skewX(0);filter:blur(0)}
+}
+@keyframes underline-in{to{transform:scaleX(1)}}
+
+/* Periodic glitch — repeats every ~5s after first reveal */
+.intro-title.glitch::before,.intro-title.glitch::after{content:attr(data-text);position:absolute;left:0;top:0;
+  width:100%;height:100%;mix-blend-mode:screen;pointer-events:none}
+.intro-title.glitch::before{color:#00f0ff;transform:translate(-3px,0);animation:glitch-l 0.5s steps(8) 2.3s infinite}
+.intro-title.glitch::after{color:var(--val-red);transform:translate(3px,0);animation:glitch-r 0.5s steps(8) 2.3s infinite}
+@keyframes glitch-l{
+  0%,82%,100%{clip-path:inset(100% 0 0 0);transform:translate(0,0)}
+  84%{clip-path:inset(50% 0 30% 0);transform:translate(3px,0)}
+  88%{clip-path:inset(20% 0 60% 0);transform:translate(-2px,0)}
+  92%{clip-path:inset(70% 0 5% 0);transform:translate(2px,0)}
+  96%{clip-path:inset(10% 0 75% 0);transform:translate(-3px,0)}
+}
+@keyframes glitch-r{
+  0%,82%,100%{clip-path:inset(0 0 100% 0);transform:translate(0,0)}
+  84%{clip-path:inset(30% 0 50% 0);transform:translate(-3px,0)}
+  88%{clip-path:inset(60% 0 20% 0);transform:translate(2px,0)}
+  92%{clip-path:inset(5% 0 70% 0);transform:translate(-2px,0)}
+  96%{clip-path:inset(75% 0 10% 0);transform:translate(3px,0)}
+}
+
+.intro-sub{font-family:'Oswald',sans-serif;font-size:1.2rem;letter-spacing:12px;text-transform:uppercase;
+  color:var(--val-cream);margin-top:34px;opacity:0;animation:fade-in 0.6s ease-out 2.4s forwards;
+  display:flex;align-items:center;justify-content:center;gap:18px}
+.intro-sub::before,.intro-sub::after{content:'';width:36px;height:1px;background:var(--val-red);
+  box-shadow:0 0 6px var(--val-red)}
+@keyframes fade-in{to{opacity:1}}
+
+/* ─── ENTER = AIM TRAINER TARGET ─── */
+.intro-cta{margin-top:54px;opacity:0;animation:fade-in 0.6s ease-out 2.8s forwards;
+  position:relative;display:flex;flex-direction:column;align-items:center;gap:18px}
+
+/* TUTORIAL CALLOUT — single-line directive, impossible to miss */
+.shot-tutorial{display:inline-flex;align-items:center;gap:16px;
+  background:linear-gradient(135deg,rgba(255,70,85,0.95) 0%,rgba(189,57,68,0.95) 100%);
+  padding:14px 32px;border:2px solid var(--val-cream);
+  font-family:'Anton',sans-serif;font-size:1.5rem;letter-spacing:6px;text-transform:uppercase;
+  color:var(--val-cream);font-weight:400;
+  clip-path:polygon(0 0,calc(100% - 16px) 0,100% 50%,calc(100% - 16px) 100%,0 100%,16px 50%);
+  filter:drop-shadow(0 8px 28px rgba(255,70,85,0.6));
+  animation:tutorial-pulse 1.6s ease-in-out infinite;
+  text-shadow:0 2px 8px rgba(0,0,0,0.6)}
+.shot-tutorial .st-mouse{display:inline-block;width:30px;height:30px;
+  background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' fill='none'><rect x='6' y='4' width='20' height='26' rx='10' stroke='%23FFFFFF' stroke-width='2.5'/><line x1='16' y1='4' x2='16' y2='15' stroke='%23FFFFFF' stroke-width='2.5'/><rect x='14' y='6' width='4' height='8' rx='2' fill='%23FFFFFF'/></svg>") center/contain no-repeat;
+  animation:mouse-tap 0.9s ease-in-out infinite}
+.shot-tutorial .st-arrow{display:inline-block;font-size:1.7rem;color:var(--val-cream);
+  animation:arrow-down 1s ease-in-out infinite;filter:drop-shadow(0 0 8px rgba(255,255,255,0.6))}
+@keyframes tutorial-pulse{
+  0%,100%{transform:scale(1);box-shadow:0 0 0 0 rgba(255,255,255,0.5)}
+  50%{transform:scale(1.04);box-shadow:0 0 0 14px rgba(255,255,255,0)}
+}
+@keyframes mouse-tap{
+  0%,70%,100%{transform:scale(1) translateY(0)}
+  40%{transform:scale(0.88) translateY(2px)}
+}
+@keyframes arrow-down{
+  0%,100%{transform:translateY(0);opacity:1}
+  50%{transform:translateY(10px);opacity:0.6}
+}
+.shot-tutorial.fade{animation:none;opacity:0;transform:scale(0.85);transition:all 0.4s ease}
+
+/* Target area — wraps the button, hosts shot FX */
+.target-area{position:relative;width:260px;height:260px;display:flex;align-items:center;justify-content:center;
+  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'><circle cx='24' cy='24' r='3' fill='%23FF4655'/><circle cx='24' cy='24' r='18' fill='none' stroke='%23FF4655' stroke-width='2'/><line x1='24' y1='2' x2='24' y2='12' stroke='%23FF4655' stroke-width='2'/><line x1='24' y1='36' x2='24' y2='46' stroke='%23FF4655' stroke-width='2'/><line x1='2' y1='24' x2='12' y2='24' stroke='%23FF4655' stroke-width='2'/><line x1='36' y1='24' x2='46' y2='24' stroke='%23FF4655' stroke-width='2'/></svg>") 24 24,crosshair}
+
+/* Button itself — invisible bg, target rendered via children */
+.target{width:220px;height:220px;background:transparent;border:none;position:relative;outline:none;
+  display:flex;align-items:center;justify-content:center;padding:0;
+  transition:transform 0.25s cubic-bezier(0.16,1,0.3,1)}
+.target.hit{transform:scale(0.92)}
+
+/* Concentric rings — rotating + scale pulse */
+.target-ring{position:absolute;border:2px solid var(--val-red);border-radius:50%;
+  filter:drop-shadow(0 0 12px rgba(255,70,85,0.6));pointer-events:none;
+  transition:opacity 0.2s,border-color 0.2s}
+.target-ring.r1{inset:0;opacity:0.4;animation:ring-spin 22s linear infinite,ring-breathe 3s ease-in-out infinite}
+.target-ring.r2{inset:30px;opacity:0.6;border-style:dashed;animation:ring-spin 14s linear infinite reverse}
+.target-ring.r3{inset:60px;opacity:0.8;animation:ring-spin 9s linear infinite,ring-breathe 2.4s ease-in-out infinite 0.4s}
+@keyframes ring-spin{from{transform:rotate(0)}to{transform:rotate(360deg)}}
+@keyframes ring-breathe{0%,100%{transform:rotate(var(--rot,0)) scale(1)}50%{transform:rotate(var(--rot,0)) scale(1.04)}}
+
+/* 4 corner brackets — snap inward when locked */
+.target-bracket{position:absolute;width:40px;height:40px;border:3px solid var(--val-red);
+  filter:drop-shadow(0 0 8px rgba(255,70,85,0.6));pointer-events:none;
+  transition:all 0.35s cubic-bezier(0.16,1,0.3,1)}
+.target-bracket.tl{top:-8px;left:-8px;border-right:none;border-bottom:none}
+.target-bracket.tr{top:-8px;right:-8px;border-left:none;border-bottom:none}
+.target-bracket.bl{bottom:-8px;left:-8px;border-right:none;border-top:none}
+.target-bracket.br{bottom:-8px;right:-8px;border-left:none;border-top:none}
+
+/* LOCKED state — brackets snap inward, center swells */
+.target.locked .target-bracket.tl{top:62px;left:62px}
+.target.locked .target-bracket.tr{top:62px;right:62px}
+.target.locked .target-bracket.bl{bottom:62px;left:62px}
+.target.locked .target-bracket.br{bottom:62px;right:62px}
+.target.locked .target-ring.r1{opacity:0.7;border-color:var(--val-red-bright)}
+.target.locked .target-ring.r2{opacity:0.9}
+.target.locked .target-ring.r3{opacity:1;border-color:var(--val-cream)}
+.target.locked .target-center{transform:scale(1.6);background:var(--val-cream);box-shadow:0 0 18px var(--val-cream),0 0 32px var(--val-red)}
+
+/* Center dot */
+.target-center{width:12px;height:12px;background:var(--val-red);border-radius:50%;
+  box-shadow:0 0 14px var(--val-red);transition:transform 0.2s,background 0.2s,box-shadow 0.2s;
+  animation:center-pulse 1.2s ease-in-out infinite;position:relative;z-index:2}
+@keyframes center-pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.4)}}
+
+/* WELCOME label below — two-line with "Fire to enter" subtitle */
+.target-label{position:absolute;bottom:-66px;left:50%;transform:translateX(-50%);
+  display:flex;flex-direction:column;align-items:center;gap:6px;
+  transition:all 0.25s ease;white-space:nowrap}
+.target-label strong{font-family:'Anton',sans-serif;font-size:1.9rem;letter-spacing:10px;
+  color:var(--val-red);text-shadow:0 0 14px rgba(255,70,85,0.6);font-weight:400;
+  text-transform:uppercase;line-height:1}
+.target-label small{font-family:'JetBrains Mono',monospace;font-size:0.74rem;
+  letter-spacing:5px;color:var(--val-cream);text-transform:uppercase;
+  opacity:0.9}
+.target.locked .target-label strong{color:var(--val-cream);text-shadow:0 0 22px var(--val-red),0 0 44px var(--val-red);letter-spacing:12px}
+.target.locked .target-label small{color:var(--val-red)}
+
+/* "TARGET LOCKED" indicator floats above */
+.lock-indicator{position:absolute;top:-52px;left:50%;transform:translate(-50%,-12px);
+  font-family:'JetBrains Mono',monospace;font-size:0.74rem;letter-spacing:4px;color:var(--val-red);
+  background:rgba(0,0,0,0.85);padding:7px 16px;border:1px solid var(--val-red);font-weight:700;
+  opacity:0;transition:all 0.25s cubic-bezier(0.16,1,0.3,1);pointer-events:none;text-transform:uppercase;
+  clip-path:polygon(0 0,calc(100% - 9px) 0,100% 50%,calc(100% - 9px) 100%,0 100%,9px 50%);
+  white-space:nowrap;box-shadow:0 0 16px rgba(255,70,85,0.4)}
+.lock-indicator.show{opacity:1;transform:translate(-50%,0)}
+.lock-indicator::before{content:'■';margin-right:10px;display:inline-block;animation:blink 0.5s ease-in-out infinite;color:var(--val-red)}
+
+/* Distance reticle — small text below target showing locked range */
+.target-dist{position:absolute;top:50%;right:-72px;transform:translateY(-50%);
+  font-family:'JetBrains Mono',monospace;font-size:0.62rem;letter-spacing:2px;color:var(--val-grey);
+  white-space:nowrap;opacity:0.7;text-transform:uppercase}
+.target.locked + .target-dist{color:var(--val-cream)}
+
+/* ─── HIT FX — generated on click ─── */
+.target-fx{position:absolute;inset:0;pointer-events:none}
+@keyframes muzzle-flash{
+  0%{opacity:0;transform:scale(0)}
+  10%{opacity:1;transform:scale(1)}
+  100%{opacity:0;transform:scale(3.4)}
+}
+.muzzle-flash{position:absolute;left:50%;top:50%;width:160px;height:160px;margin:-80px 0 0 -80px;
+  background:radial-gradient(circle,rgba(255,255,255,1) 0%,rgba(255,70,85,0.7) 35%,transparent 70%);
+  border-radius:50%;animation:muzzle-flash 0.5s ease-out forwards;mix-blend-mode:screen}
+
+@keyframes impact-ring{
+  0%{transform:scale(0);opacity:1;border-width:10px}
+  100%{transform:scale(10);opacity:0;border-width:1px}
+}
+.impact-ring{position:absolute;left:50%;top:50%;width:24px;height:24px;margin:-12px 0 0 -12px;
+  border:8px solid var(--val-red);border-radius:50%;animation:impact-ring 0.85s cubic-bezier(0.16,1,0.3,1) forwards;
+  filter:drop-shadow(0 0 12px var(--val-red))}
+.impact-ring.r2{animation-delay:0.12s;border-color:var(--val-gold)}
+.impact-ring.r3{animation-delay:0.24s;border-color:var(--val-cream);border-width:5px}
+
+@keyframes shard-fly{
+  0%{opacity:0;transform:translate(0,0) rotate(var(--rot)) scale(0)}
+  20%{opacity:1;transform:translate(0,0) rotate(var(--rot)) scale(1)}
+  100%{opacity:0;transform:translate(var(--dx),var(--dy)) rotate(calc(var(--rot) + 120deg)) scale(0.4)}
+}
+.target-shard{position:absolute;left:50%;top:50%;width:30px;height:3px;background:var(--val-red);
+  margin:-1.5px 0 0 -15px;box-shadow:0 0 8px var(--val-red);
+  animation:shard-fly 0.85s cubic-bezier(0.16,1,0.3,1) forwards}
+.target-shard.gold{background:var(--val-gold);box-shadow:0 0 8px var(--val-gold)}
+.target-shard.cream{background:var(--val-cream);box-shadow:0 0 8px var(--val-cream)}
+
+/* +100 score popup floats up */
+@keyframes score-pop{
+  0%{opacity:0;transform:translate(-50%,-50%) scale(0.4)}
+  18%{opacity:1;transform:translate(-50%,-180%) scale(1.3)}
+  100%{opacity:0;transform:translate(-50%,-260%) scale(1)}
+}
+.score-pop{position:absolute;left:50%;top:50%;
+  font-family:'Tourney','Anton',sans-serif;font-size:4rem;font-weight:900;color:var(--val-gold);
+  text-shadow:0 0 22px var(--val-gold),0 0 44px var(--val-red);letter-spacing:2px;
+  animation:score-pop 1.4s cubic-bezier(0.22,1.6,0.36,1) forwards}
+
+/* TARGET ELIMINATED text */
+@keyframes eliminated{
+  0%{opacity:0;transform:translate(-50%,-50%) scale(0.3) rotate(-4deg)}
+  18%{opacity:1;transform:translate(-50%,-50%) scale(1.15) rotate(0)}
+  88%{opacity:1;transform:translate(-50%,-50%) scale(1)}
+  100%{opacity:0;transform:translate(-50%,-50%) scale(1.1)}
+}
+.eliminated{position:fixed;left:50%;top:50%;z-index:100001;
+  font-family:'Anton',sans-serif;font-size:clamp(2.5rem,7vw,5.5rem);letter-spacing:8px;color:var(--val-cream);
+  text-shadow:0 0 30px var(--val-red),0 0 60px var(--val-red);pointer-events:none;
+  animation:eliminated 1.2s cubic-bezier(0.22,1.6,0.36,1) forwards;text-transform:uppercase}
+
+/* Red screen flash on hit */
+.hit-flash{position:fixed;inset:0;z-index:100000;background:var(--val-red);opacity:0;pointer-events:none;
+  animation:hit-flash 0.4s ease-out forwards}
+@keyframes hit-flash{
+  0%{opacity:0}
+  20%{opacity:0.55}
+  100%{opacity:0}
+}
+
+/* ─── BULLET TRAIL — fired from cursor click point to target center ─── */
+.bullet-trail{position:fixed;height:4px;z-index:100000;pointer-events:none;
+  background:linear-gradient(90deg,transparent 0%,rgba(255,185,64,0.5) 30%,rgba(255,255,255,0.95) 75%,#FFFFFF 100%);
+  box-shadow:0 0 14px rgba(255,185,64,0.85),0 0 28px rgba(255,70,85,0.45);
+  transform-origin:0 50%;filter:blur(0.6px);
+  animation:trail-fade 0.55s ease-out 0.32s forwards}
+@keyframes trail-fade{from{opacity:1}to{opacity:0}}
+
+.bullet-head{position:fixed;width:30px;height:7px;z-index:100001;pointer-events:none;
+  background:linear-gradient(90deg,rgba(255,70,85,0.4) 0%,#FFB940 40%,#FFFFFF 100%);
+  box-shadow:0 0 18px #FFFFFF,0 0 36px #FFB940,-12px 0 28px #FF4655;
+  filter:blur(0.5px);border-radius:2px}
+
+/* Bullet hole sticker that persists on the target after impact */
+.bullet-hole{position:absolute;left:50%;top:50%;width:22px;height:22px;margin:-11px 0 0 -11px;
+  background:radial-gradient(circle,#000 0%,#000 40%,#1a0408 65%,transparent 100%);
+  border-radius:50%;box-shadow:0 0 14px rgba(0,0,0,0.8),inset 0 0 8px rgba(255,70,85,0.6);
+  z-index:5;pointer-events:none;opacity:0;
+  animation:hole-burn 0.25s ease-out 0.05s forwards}
+.bullet-hole::after{content:'';position:absolute;inset:-8px;border-radius:50%;
+  background:radial-gradient(circle,rgba(255,255,255,0.4) 0%,transparent 60%);
+  filter:blur(2px)}
+@keyframes hole-burn{
+  0%{opacity:0;transform:scale(0.3)}
+  100%{opacity:1;transform:scale(1)}
+}
+
+/* ════════════════════════════════════════════════════════════════════
+   TRANSITION VARIANTS — scoped by body[data-transition="breach|hole|scope"]
+════════════════════════════════════════════════════════════════════ */
+
+/* ─── VARIANT A: BREACH — CLEAN ─── */
+/* Goal: slabs slide out cleanly, wedge/corners just fade, leaving the page bg
+   (navy + grid + scanlines) exposed. Then the page does a calm fade-in. No
+   camera shake, no multi-stage hero assemble for this variant. */
+body[data-transition="breach"] .intro.breach{
+  animation:intro-breach-clear 0.7s ease-out forwards!important;transition:none}
+body[data-transition="breach"] .intro.breach .intro-slab.left{
+  animation:slab-out-l 0.55s cubic-bezier(0.55,0,0.4,1) forwards!important}
+body[data-transition="breach"] .intro.breach .intro-slab.right{
+  animation:slab-out-r 0.55s cubic-bezier(0.55,0,0.4,1) forwards!important}
+body[data-transition="breach"] .intro.breach .intro-wedge,
+body[data-transition="breach"] .intro.breach .intro-corner,
+body[data-transition="breach"] .intro.breach .intro-silhouettes,
+body[data-transition="breach"] .intro.breach .intro-strip,
+body[data-transition="breach"] .intro.breach .intro-loading,
+body[data-transition="breach"] .intro.breach .intro-status,
+body[data-transition="breach"] .intro.breach .intro-bigv,
+body[data-transition="breach"] .intro.breach .intro-content{
+  animation:fade-out-soft 0.35s ease-out forwards!important}
+@keyframes slab-out-l{
+  0%{transform:translateX(-62%)}
+  100%{transform:translateX(-130%)}
+}
+@keyframes slab-out-r{
+  0%{transform:translateX(62%)}
+  100%{transform:translateX(130%)}
+}
+@keyframes fade-out-soft{to{opacity:0}}
+@keyframes intro-breach-clear{
+  0%{background:#000}
+  100%{background:transparent}
+}
+/* Clean page fade for breach */
+body[data-transition="breach"] .page.live{animation:page-fade-in 0.9s cubic-bezier(0.16,1,0.3,1) forwards}
+@keyframes page-fade-in{
+  from{opacity:0;transform:translateY(8px)}
+  to{opacity:1;transform:translateY(0)}
+}
+
+/* HERO ASSEMBLE — used only by non-breach variants for added drama */
+body[data-transition="hole"] .page.live .hero-title,
+body[data-transition="hole"] .page.live .hero-rank,
+body[data-transition="hole"] .page.live .hero-chips,
+body[data-transition="hole"] .page.live .hero-cta-row,
+body[data-transition="scope"] .page.live .hero-title,
+body[data-transition="scope"] .page.live .hero-rank,
+body[data-transition="scope"] .page.live .hero-chips,
+body[data-transition="scope"] .page.live .hero-cta-row{animation:assemble-up 0.7s cubic-bezier(0.16,1,0.3,1) backwards}
+body[data-transition="hole"] .page.live .hero-title,
+body[data-transition="scope"] .page.live .hero-title{animation-delay:0.05s}
+body[data-transition="hole"] .page.live .hero-rank,
+body[data-transition="scope"] .page.live .hero-rank{animation-delay:0.18s}
+body[data-transition="hole"] .page.live .hero-chips,
+body[data-transition="scope"] .page.live .hero-chips{animation-delay:0.30s}
+body[data-transition="hole"] .page.live .hero-cta-row,
+body[data-transition="scope"] .page.live .hero-cta-row{animation-delay:0.42s}
+@keyframes assemble-up{
+  from{opacity:0;transform:translateY(24px) scale(0.97);filter:blur(8px)}
+  to{opacity:1;transform:translateY(0) scale(1);filter:blur(0)}
+}
+body[data-transition="hole"] .page.live .hero-agent-wrap,
+body[data-transition="scope"] .page.live .hero-agent-wrap{animation:agent-blur-in 0.9s cubic-bezier(0.16,1,0.3,1) backwards}
+body[data-transition="hole"] .page.live .hero-agent-img,
+body[data-transition="scope"] .page.live .hero-agent-img{animation:agent-img-in 1.1s cubic-bezier(0.16,1,0.3,1) backwards}
+@keyframes agent-blur-in{
+  from{opacity:0;transform:scale(0.92);filter:brightness(0.55)}
+  to{opacity:1;transform:scale(1);filter:brightness(1)}
+}
+@keyframes agent-img-in{
+  from{filter:saturate(1.1) contrast(1.06) blur(10px) brightness(0.7)}
+  to{filter:saturate(1.1) contrast(1.06) blur(0) brightness(1)}
+}
+
+/* ─── VARIANT B: BULLET HOLE ZOOM → BLACK → STAGGERED REVEAL ─── */
+body[data-transition="hole"] .intro.zoom{
+  animation:intro-fade-mid 1.15s ease-out forwards!important;
+  transition:none}
+@keyframes intro-fade-mid{
+  0%{opacity:1}
+  72%{opacity:1}
+  100%{opacity:0}
+}
+/* Body-level fixed hole placed at the exact impact point (target center).
+   Red rim glow makes the growth read against the dark intro background.
+   `will-change` hints the GPU to keep this on its own compositor layer for
+   smooth scale + opacity throughout. */
+.zoom-hole{position:fixed;width:36px;height:36px;margin:-18px 0 0 -18px;z-index:100002;pointer-events:none;
+  background:radial-gradient(circle,#000 0%,#000 38%,#3a0810 52%,#FF4655 60%,#7A1F28 72%,transparent 100%);
+  border-radius:50%;
+  box-shadow:0 0 18px rgba(0,0,0,0.9),0 0 36px rgba(255,70,85,0.7),inset 0 0 14px rgba(255,70,85,0.8);
+  opacity:1;transform:scale(1) translateZ(0);transform-origin:center;
+  will-change:transform, opacity;
+  backface-visibility:hidden}
+/* Single curve, no intermediate keyframe stops — eliminates the per-segment
+   easing resets that caused visible stutter. Linear timing here pairs with
+   exponential keyframe spacing (scale grows by ~1.6x per 20% of duration)
+   to feel naturally smooth. */
+.zoom-hole.fire{animation:zoom-grow 1.6s cubic-bezier(0.45,0.05,0.3,1) forwards}
+@keyframes zoom-grow{
+  0%{transform:scale(1) translateZ(0);opacity:1}
+  87%{transform:scale(95) translateZ(0);opacity:1}
+  100%{transform:scale(125) translateZ(0);opacity:0}
+}
+
+/* BLACK CURTAIN — fades in LATE so the hole is clearly visible growing
+   for ~1.1s before the screen settles into solid black. */
+.black-curtain{position:fixed;inset:0;z-index:100003;background:#000;opacity:0;pointer-events:none;
+  transition:opacity 0.45s ease-in 1.1s}
+.black-curtain.cover{opacity:1}
+.black-curtain.done{opacity:0;transition:opacity 0.9s ease-out}
+
+/* PAGE STAGGER (hole variant only) — sections start hidden and fade in
+   one by one once .stagger-in is added to body (after curtain fades out). */
+body[data-transition="hole"] .page .hero,
+body[data-transition="hole"] .page .section,
+body[data-transition="hole"] .page .final-cta,
+body[data-transition="hole"] .page .footer{opacity:0;transform:translateY(22px)}
+body[data-transition="hole"].stagger-in .page .hero{animation:section-stagger 0.7s cubic-bezier(0.16,1,0.3,1) 0.05s forwards}
+body[data-transition="hole"].stagger-in .page #inventory{animation:section-stagger 0.8s cubic-bezier(0.16,1,0.3,1) 0.30s forwards}
+body[data-transition="hole"].stagger-in .page #agents-section{animation:section-stagger 0.7s cubic-bezier(0.16,1,0.3,1) 0.65s forwards}
+body[data-transition="hole"].stagger-in .page #skins-section{animation:section-stagger 0.7s cubic-bezier(0.16,1,0.3,1) 0.90s forwards}
+body[data-transition="hole"].stagger-in .page .final-cta{animation:section-stagger 0.7s cubic-bezier(0.16,1,0.3,1) 1.15s forwards}
+body[data-transition="hole"].stagger-in .page .footer{animation:section-stagger 0.6s cubic-bezier(0.16,1,0.3,1) 1.35s forwards}
+@keyframes section-stagger{
+  from{opacity:0;transform:translateY(22px);filter:blur(4px)}
+  to{opacity:1;transform:translateY(0);filter:blur(0)}
+}
+
+/* Inventory mosaic items also stagger when their section reveals */
+body[data-transition="hole"] .page #inventory .hero-stat,
+body[data-transition="hole"] .page #inventory .stat-cluster .stat-card,
+body[data-transition="hole"] .page #inventory .stat-row .stat-card,
+body[data-transition="hole"] .page #inventory .wallet-card{opacity:0;transform:translateY(14px)}
+body[data-transition="hole"].stagger-in .page #inventory .hero-stat{animation:section-stagger 0.7s ease 0.50s forwards}
+body[data-transition="hole"].stagger-in .page #inventory .stat-cluster .stat-card:nth-child(1){animation:section-stagger 0.6s ease 0.65s forwards}
+body[data-transition="hole"].stagger-in .page #inventory .stat-cluster .stat-card:nth-child(2){animation:section-stagger 0.6s ease 0.75s forwards}
+body[data-transition="hole"].stagger-in .page #inventory .stat-cluster .stat-card:nth-child(3){animation:section-stagger 0.6s ease 0.85s forwards}
+body[data-transition="hole"].stagger-in .page #inventory .stat-row .stat-card:nth-child(1){animation:section-stagger 0.6s ease 0.95s forwards}
+body[data-transition="hole"].stagger-in .page #inventory .stat-row .stat-card:nth-child(2){animation:section-stagger 0.6s ease 1.00s forwards}
+body[data-transition="hole"].stagger-in .page #inventory .stat-row .stat-card:nth-child(3){animation:section-stagger 0.6s ease 1.05s forwards}
+body[data-transition="hole"].stagger-in .page #inventory .stat-row .stat-card:nth-child(4){animation:section-stagger 0.6s ease 1.10s forwards}
+body[data-transition="hole"].stagger-in .page #inventory .stat-row .stat-card:nth-child(5){animation:section-stagger 0.6s ease 1.15s forwards}
+body[data-transition="hole"].stagger-in .page #inventory .wallet-card:nth-child(1){animation:section-stagger 0.6s ease 1.25s forwards}
+body[data-transition="hole"].stagger-in .page #inventory .wallet-card:nth-child(2){animation:section-stagger 0.6s ease 1.35s forwards}
+
+/* ─── VARIANT C: SCOPE-OUT ─── */
+body[data-transition="scope"] .intro.scope{
+  animation:scope-shrink 0.75s cubic-bezier(0.7,0,0.84,0) forwards!important;
+  transform-origin:24px 24px!important;transition:none}
+@keyframes scope-shrink{
+  0%{transform:scale(1);opacity:1;filter:blur(0)}
+  85%{transform:scale(0.06);opacity:1;filter:blur(1px)}
+  100%{transform:scale(0.04);opacity:0;filter:blur(2px)}
+}
+body[data-transition="scope"] .page{
+  -webkit-mask:radial-gradient(circle 0vmax at 50% 50%,#000 100%,transparent 100%);
+  mask:radial-gradient(circle 0vmax at 50% 50%,#000 100%,transparent 100%)}
+body[data-transition="scope"] .page.live{
+  -webkit-mask:radial-gradient(circle 150vmax at 50% 50%,#000 100%,transparent 100%);
+  mask:radial-gradient(circle 150vmax at 50% 50%,#000 100%,transparent 100%);
+  transition:-webkit-mask 0.9s cubic-bezier(0.22,1,0.36,1) 0.1s,mask 0.9s cubic-bezier(0.22,1,0.36,1) 0.1s}
+body[data-transition="scope"] .page.live::before{
+  content:'';position:fixed;inset:0;z-index:9999;pointer-events:none;
+  background:radial-gradient(circle 60vmax at 50% 50%,transparent 50%,rgba(91,168,151,0.35) 70%,rgba(15,25,35,0.95) 100%);
+  animation:scope-tint 0.9s ease-out 0.1s forwards;opacity:1;mix-blend-mode:multiply}
+@keyframes scope-tint{
+  0%{opacity:1}
+  100%{opacity:0}
+}
+
+/* HEADSHOT! popup — lands ~180ms after impact, before TARGET ELIMINATED */
+.headshot{position:fixed;left:50%;top:38%;z-index:100002;
+  display:flex;flex-direction:column;align-items:center;gap:8px;pointer-events:none;
+  transform:translate(-50%,-50%);
+  animation:headshot 1.1s cubic-bezier(0.22,1.6,0.36,1) forwards}
+.headshot .hs-text{font-family:'Tourney','Anton',sans-serif;font-size:clamp(3rem,9vw,7rem);font-weight:900;
+  color:#FFB940;letter-spacing:8px;text-transform:uppercase;line-height:0.9;
+  text-shadow:
+    0 0 24px var(--val-red),
+    0 0 56px var(--val-red),
+    0 6px 0 #5c1620,
+    0 8px 0 #3c0e16,
+    0 10px 24px rgba(0,0,0,0.7)}
+.headshot .hs-sub{font-family:'Oswald',sans-serif;font-size:1.05rem;letter-spacing:7px;color:#FFFFFF;
+  text-transform:uppercase;text-shadow:0 0 12px var(--val-red);font-weight:700}
+.headshot .hs-sub::before,.headshot .hs-sub::after{content:'+';margin:0 12px;color:var(--val-red)}
+@keyframes headshot{
+  0%{opacity:0;transform:translate(-50%,-50%) scale(0.25) rotate(-6deg)}
+  18%{opacity:1;transform:translate(-50%,-50%) scale(1.35) rotate(3deg)}
+  32%{transform:translate(-50%,-50%) scale(1) rotate(0)}
+  84%{opacity:1;transform:translate(-50%,-50%) scale(1)}
+  100%{opacity:0;transform:translate(-50%,-50%) scale(1.15)}
+}
+
+.intro-foot{position:absolute;bottom:48px;left:50%;transform:translateX(-50%);
+  font-family:'JetBrains Mono',monospace;font-size:0.7rem;letter-spacing:3px;text-transform:uppercase;
+  color:var(--val-grey);opacity:0;animation:fade-in 0.6s ease-out 3.4s forwards;text-align:center;line-height:1.7}
+.intro-foot .serial{color:var(--val-red)}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0.15}}
+
+/* Responsive tweaks for intro */
+@media (max-width:980px){
+  .intro-loading{top:24px;left:24px}
+  .intro-loading .il-bar{width:200px}
+  .intro-status{top:24px;right:24px}
+  .intro-strip{display:none}
+  .intro-corner{width:60px;height:60px;top:24px!important;left:24px!important}
+  .intro-corner.tr{left:auto!important;right:24px!important}
+  .intro-corner.bl{top:auto!important;bottom:24px!important}
+  .intro-corner.br{top:auto!important;left:auto!important;bottom:24px!important;right:24px!important}
+}
+
+/* ════════════════════════════════════════════════════════════════════
+   MAIN PAGE — fade + slight Y on intro exit
+═════════════════════════════════════════════════════════════════════ */
+.page{position:relative;z-index:10;opacity:0;transform:translateY(20px);
+  transition:opacity 1s ease,transform 1s ease}
+.page.live{opacity:1;transform:translateY(0)}
+
+/* ════════════════════════════════════════════════════════════════════
+   HERO — agent splash + tactical chips + cinematic CTA
+═════════════════════════════════════════════════════════════════════ */
+.hero{position:relative;min-height:100vh;display:flex;flex-direction:column;justify-content:center;
+  padding:120px 6vw 80px;overflow:hidden}
+.hero-stripe{position:absolute;left:0;top:0;bottom:0;width:6px;
+  background:linear-gradient(180deg,var(--val-red) 0%,transparent 100%);
+  box-shadow:0 0 16px rgba(255,70,85,0.4)}
+
+.hero-frame-tl,.hero-frame-tr,.hero-frame-bl,.hero-frame-br{position:absolute;width:90px;height:90px;
+  border:2px solid var(--val-red);opacity:0.8;
+  filter:drop-shadow(0 0 6px rgba(255,70,85,0.3))}
+.hero-frame-tl{top:80px;left:6vw;border-right:none;border-bottom:none}
+.hero-frame-tr{top:80px;right:6vw;border-left:none;border-bottom:none}
+.hero-frame-bl{bottom:80px;left:6vw;border-right:none;border-top:none}
+.hero-frame-br{bottom:80px;right:6vw;border-left:none;border-top:none}
+
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,0.95fr);gap:48px;align-items:center;max-width:1500px;margin:0 auto;width:100%}
+@media (max-width:980px){.hero-grid{grid-template-columns:1fr;gap:32px}}
+
+.hero-left{position:relative;z-index:2}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:14px;font-family:'JetBrains Mono',monospace;
+  font-size:0.8rem;letter-spacing:4px;text-transform:uppercase;color:var(--val-red);margin-bottom:24px;
+  font-weight:600}
+.hero-eyebrow::before{content:'';width:48px;height:2px;background:var(--val-red);box-shadow:0 0 8px var(--val-red)}
+
+.hero-title{font-family:'Anton',sans-serif;font-size:clamp(3rem,7.5vw,6.5rem);line-height:0.9;
+  text-transform:uppercase;color:var(--val-cream);letter-spacing:-2px;margin-bottom:24px;position:relative}
+.hero-title .val-red{color:var(--val-red);position:relative}
+.hero-title .val-red::after{content:'';position:absolute;left:-4px;right:-4px;bottom:8px;height:5px;background:var(--val-red);
+  opacity:0;animation:title-underline 0.6s ease-out 1.4s forwards;filter:drop-shadow(0 0 4px var(--val-red))}
+@keyframes title-underline{from{opacity:0;transform:scaleX(0)}to{opacity:1;transform:scaleX(1)}}
+
+.hero-rank{font-family:'Bebas Neue',sans-serif;font-size:1.7rem;letter-spacing:6px;
+  color:var(--val-cream);margin-bottom:30px;text-transform:uppercase;opacity:0.95}
+.hero-rank .div{color:var(--val-red);font-weight:600;font-size:1.1em}
+.hero-rank .sep{color:var(--val-red);margin:0 8px}
+
+.hero-chips{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:36px}
+.chip{display:flex;align-items:center;gap:10px;
+  padding:11px 20px;background:rgba(15,25,35,0.85);border:1px solid var(--val-navy-3);
+  font-family:'Oswald',sans-serif;font-size:0.85rem;letter-spacing:2.5px;text-transform:uppercase;
+  color:var(--val-cream);position:relative;font-weight:600;
+  clip-path:polygon(0 0,calc(100% - 10px) 0,100% 50%,calc(100% - 10px) 100%,0 100%,0 50%);
+  transition:transform 0.2s,filter 0.2s,border-color 0.2s}
+.chip:hover{transform:translateY(-2px);border-color:var(--val-red);filter:brightness(1.1)}
+.chip .chip-dot{width:8px;height:8px;background:var(--val-red);box-shadow:0 0 8px var(--val-red)}
+.chip .chip-num{color:var(--val-red);font-weight:700}
+
+.hero-cta-row{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.cta{display:inline-flex;align-items:center;gap:14px;
+  font-family:'Oswald',sans-serif;font-size:1.02rem;letter-spacing:4px;font-weight:700;
+  text-transform:uppercase;text-decoration:none;padding:17px 38px;position:relative;overflow:hidden;
+  transition:transform 0.2s,filter 0.2s,background 0.2s}
+.cta-primary{background:var(--val-red);color:var(--val-cream);
+  clip-path:polygon(0 0,calc(100% - 14px) 0,100% 50%,calc(100% - 14px) 100%,0 100%,14px 50%);
+  box-shadow:0 0 24px rgba(255,70,85,0.32)}
+.cta-primary:hover{filter:brightness(1.12);transform:translateY(-2px);box-shadow:0 0 32px rgba(255,70,85,0.55)}
+.cta-primary:active{transform:translateY(1px)}
+.cta-primary::before{content:'';position:absolute;top:0;left:-100%;height:100%;width:60%;
+  background:linear-gradient(110deg,transparent 0%,rgba(255,255,255,0.5) 50%,transparent 100%);
+  animation:shine-sweep 4s ease-in-out infinite 4s}
+.cta-primary .arrow{font-size:1.1rem;transition:transform 0.3s}
+.cta-primary:hover .arrow{transform:translateX(4px)}
+.cta-secondary{background:transparent;color:var(--val-cream);border:2px solid var(--val-cream)}
+.cta-secondary:hover{background:var(--val-cream);color:var(--val-navy);transform:translateY(-2px)}
+
+.hero-right{position:relative;display:flex;align-items:center;justify-content:center;min-height:560px}
+.hero-agent-wrap{position:relative;width:100%;max-width:540px;aspect-ratio:9/12;
+  background:linear-gradient(180deg,rgba(255,70,85,0.25) 0%,rgba(15,25,35,0.95) 55%,#0A1219 100%);
+  clip-path:polygon(0 0,100% 0,100% calc(100% - 44px),calc(100% - 44px) 100%,0 100%);
+  overflow:hidden;display:flex;align-items:flex-end;justify-content:center;
+  transform-style:preserve-3d;perspective:1000px;
+  transition:transform 0.3s ease}
+.hero-agent-wrap::before{content:'';position:absolute;left:0;right:0;top:0;height:6px;background:var(--val-red);
+  box-shadow:0 0 12px var(--val-red);z-index:3}
+.hero-agent-wrap::after{content:'';position:absolute;left:0;top:0;bottom:0;width:6px;
+  background:linear-gradient(180deg,var(--val-red) 0%,transparent 80%);z-index:3}
+
+.hero-agent-img{width:100%;height:100%;object-fit:cover;object-position:center top;
+  filter:saturate(1.1) contrast(1.06);transition:transform 0.5s cubic-bezier(0.16,1,0.3,1)}
+
+/* Holographic scan-line that sweeps across the agent every few seconds */
+.hero-scan{position:absolute;left:0;right:0;top:-10%;height:30%;z-index:2;pointer-events:none;
+  background:linear-gradient(180deg,transparent 0%,rgba(0,240,255,0.25) 50%,transparent 100%);
+  mix-blend-mode:screen;
+  animation:scan-sweep 5s ease-in-out infinite 2s}
+@keyframes scan-sweep{
+  0%,80%{transform:translateY(-30%);opacity:0}
+  85%{opacity:0.9}
+  100%{transform:translateY(400%);opacity:0}
+}
+
+.hero-overlay-grid{position:absolute;inset:0;pointer-events:none;
+  background-image:linear-gradient(rgba(255,255,255,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.04) 1px,transparent 1px);
+  background-size:36px 36px;mix-blend-mode:overlay}
+
+.hero-badge{position:absolute;top:24px;right:24px;display:flex;flex-direction:column;gap:6px;align-items:flex-end;z-index:5;
+  font-family:'JetBrains Mono',monospace;font-size:0.74rem;letter-spacing:2.5px;text-transform:uppercase;color:var(--val-cream)}
+.hero-badge .num{font-size:1.05rem;color:var(--val-red);font-weight:700;
+  filter:drop-shadow(0 0 4px rgba(255,70,85,0.5))}
+
+/* Side-text on hero agent: vertical "AGENT FILE · SERIAL #..." */
+.hero-side{position:absolute;left:-44px;top:50%;transform:translateY(-50%) rotate(-90deg);
+  font-family:'JetBrains Mono',monospace;font-size:0.68rem;letter-spacing:6px;text-transform:uppercase;
+  color:var(--val-grey);white-space:nowrap;z-index:4}
+.hero-side .accent{color:var(--val-red)}
+
+/* ════════════════════════════════════════════════════════════════════
+   SECTION TITLE — angular bracket + slanted red accent
+═════════════════════════════════════════════════════════════════════ */
+.section{padding:90px 6vw;max-width:1500px;margin:0 auto;width:100%;position:relative;z-index:5}
+.section-head{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:36px;gap:24px;flex-wrap:wrap;
+  border-bottom:1px solid rgba(255,70,85,0.15);padding-bottom:20px;position:relative}
+.section-head::after{content:'';position:absolute;left:0;bottom:-1px;width:80px;height:2px;background:var(--val-red);
+  box-shadow:0 0 8px rgba(255,70,85,0.6)}
+.section-title{font-family:'Anton',sans-serif;font-size:clamp(1.9rem,3.8vw,3.2rem);
+  text-transform:uppercase;color:var(--val-cream);letter-spacing:-0.5px;line-height:1;
+  display:flex;align-items:center;gap:18px}
+.section-title::before{content:'';display:inline-block;width:8px;height:38px;background:var(--val-red);
+  transform:skewX(-14deg);box-shadow:0 0 10px rgba(255,70,85,0.5)}
+.section-title .count{color:var(--val-red);font-size:0.62em;margin-left:10px;font-family:'JetBrains Mono',monospace;letter-spacing:2px}
+.section-sub{font-family:'JetBrains Mono',monospace;font-size:0.75rem;letter-spacing:3px;text-transform:uppercase;color:var(--val-grey);
+  display:flex;align-items:center;gap:10px}
+.section-sub::before{content:'';width:8px;height:8px;background:var(--val-red);border-radius:50%;
+  box-shadow:0 0 6px var(--val-red);animation:rec-blink 1.4s ease-in-out infinite}
+
+/* ════════════════════════════════════════════════════════════════════
+   LOOT GRID — tactical readout cards w/ count-up
+═════════════════════════════════════════════════════════════════════ */
+.loot-grid{display:grid;grid-template-columns:repeat(8,1fr);gap:14px;margin-bottom:48px}
+@media (max-width:1100px){.loot-grid{grid-template-columns:repeat(4,1fr)}}
+@media (max-width:560px){.loot-grid{grid-template-columns:repeat(2,1fr)}}
+.loot-card{background:linear-gradient(180deg,var(--val-navy-2) 0%,#15202B 100%);
+  padding:22px 16px 18px;position:relative;border-left:3px solid var(--c,var(--val-red));
+  text-align:left;overflow:hidden;
+  clip-path:polygon(0 0,100% 0,100% calc(100% - 10px),calc(100% - 10px) 100%,0 100%);
+  transition:transform 0.25s ease,filter 0.25s ease,box-shadow 0.3s ease}
+.loot-card:hover{transform:translateY(-3px);box-shadow:0 6px 28px rgba(255,70,85,0.18);filter:brightness(1.08)}
+.loot-card::before{content:'';position:absolute;left:0;right:0;top:0;height:1px;background:var(--c,var(--val-red));opacity:0.7}
+.loot-card::after{content:'';position:absolute;right:-20px;bottom:-20px;width:80px;height:80px;border-radius:50%;
+  background:radial-gradient(circle,var(--c,var(--val-red)) 0%,transparent 70%);opacity:0.08;
+  transition:opacity 0.3s ease}
+.loot-card:hover::after{opacity:0.18}
+.loot-card .icon{font-size:1.15rem;display:block;margin-bottom:8px;opacity:0.85;color:var(--c,var(--val-cream));
+  filter:drop-shadow(0 0 4px var(--c,transparent))}
+.loot-card .val{font-family:'Anton',sans-serif;font-size:2rem;color:var(--val-cream);line-height:1;letter-spacing:0.5px;
+  font-variant-numeric:tabular-nums}
+.loot-card .val.long{font-size:1.4rem}
+.loot-card .lbl{font-family:'JetBrains Mono',monospace;font-size:0.68rem;letter-spacing:2px;text-transform:uppercase;
+  color:var(--val-grey);margin-top:8px}
+
+/* ════════════════════════════════════════════════════════════════════
+   WALLET — premium readouts
+═════════════════════════════════════════════════════════════════════ */
+.wallet{display:grid;grid-template-columns:1fr;gap:16px;margin-bottom:48px}
+.wallet-card{background:linear-gradient(135deg,var(--val-navy-2) 0%,#15202B 100%);
+  padding:26px 30px;display:flex;align-items:center;gap:26px;position:relative;overflow:hidden;
+  border:1px solid rgba(255,70,85,0.22);transition:transform 0.25s ease,box-shadow 0.3s ease}
+.wallet-card:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(255,70,85,0.18)}
+.wallet-card::before{content:'';position:absolute;right:-40px;top:-40px;width:160px;height:160px;
+  border:2px dashed rgba(255,70,85,0.22);border-radius:50%;
+  animation:dash-spin 18s linear infinite}
+.wallet-card::after{content:'';position:absolute;right:30px;top:30px;width:90px;height:90px;
+  border:1px solid rgba(255,70,85,0.18);border-radius:50%}
+@keyframes dash-spin{from{transform:rotate(0)}to{transform:rotate(360deg)}}
+.wallet-card .w-icon{font-size:2.4rem;line-height:1;color:var(--val-red);
+  filter:drop-shadow(0 0 8px rgba(255,70,85,0.45));position:relative;z-index:1}
+.wallet-card .w-info{flex:1;position:relative;z-index:1}
+.wallet-card .w-num{font-family:'Anton',sans-serif;font-size:2.8rem;color:var(--val-cream);line-height:1;font-variant-numeric:tabular-nums}
+.wallet-card .w-lbl{font-family:'Oswald',sans-serif;font-size:0.82rem;letter-spacing:5px;text-transform:uppercase;
+  color:var(--val-red);margin-top:8px;font-weight:600}
+.wallet-card .w-bar{position:absolute;left:0;bottom:0;right:0;height:3px;background:var(--val-red);
+  transform:scaleX(0);transform-origin:left;transition:transform 0.6s cubic-bezier(0.16,1,0.3,1)}
+.wallet-card.in .w-bar{transform:scaleX(1)}
+
+/* ════════════════════════════════════════════════════════════════════
+   INVENTORY MOSAIC — asymmetric layout with hero "ARSENAL VALUE" card
+   + 3 premium-signal stat cluster + 5 secondary stat row
+════════════════════════════════════════════════════════════════════ */
+.section#inventory{position:relative}
+.section#inventory::before{content:'';position:absolute;inset:0;pointer-events:none;z-index:0;
+  background:radial-gradient(circle 420px at var(--mx,50%) var(--my,50%),rgba(255,70,85,0.10) 0%,transparent 60%);
+  transition:background 0.1s linear}
+.section#inventory > *{position:relative;z-index:1}
+
+.inventory-mosaic{display:grid;grid-template-columns:1.6fr 1fr;gap:18px;margin-bottom:24px}
+@media (max-width:980px){.inventory-mosaic{grid-template-columns:1fr}}
+
+/* Hero ARSENAL VALUE card */
+.hero-stat{position:relative;background:linear-gradient(135deg,#1F2733 0%,#15202B 60%,#0F1923 100%);
+  padding:32px 36px;overflow:hidden;min-height:340px;
+  border:1px solid rgba(255,70,85,0.25);
+  clip-path:polygon(0 0,100% 0,100% calc(100% - 22px),calc(100% - 22px) 100%,0 100%);
+  display:flex;flex-direction:column;justify-content:space-between;gap:18px;
+  transform-style:preserve-3d;will-change:transform;
+  transition:transform 0.25s ease,box-shadow 0.3s ease}
+.hero-stat:hover{box-shadow:0 12px 40px rgba(255,70,85,0.22)}
+.hero-stat::before{content:'';position:absolute;left:0;right:0;top:0;height:4px;
+  background:linear-gradient(90deg,var(--val-red) 0%,var(--val-gold) 100%);box-shadow:0 0 14px rgba(255,70,85,0.6);z-index:1}
+.hero-stat::after{content:'';position:absolute;right:-80px;top:-60px;width:340px;height:340px;
+  border:2px dashed rgba(255,70,85,0.32);border-radius:50%;
+  animation:dash-spin 22s linear infinite;pointer-events:none}
+.hero-stat .hs-bloom{position:absolute;right:-40px;top:50%;transform:translateY(-50%);width:280px;height:280px;
+  background:radial-gradient(circle,rgba(255,70,85,0.20) 0%,rgba(91,168,151,0.08) 45%,transparent 70%);
+  pointer-events:none;animation:hs-bloom 7s ease-in-out infinite alternate;border-radius:50%}
+@keyframes hs-bloom{from{transform:translateY(-50%) scale(1)}to{transform:translateY(-50%) scale(1.18)}}
+
+.hero-stat .hs-label{font-family:'JetBrains Mono',monospace;font-size:0.78rem;letter-spacing:5px;
+  text-transform:uppercase;color:var(--val-red);font-weight:600;display:flex;align-items:center;gap:12px;position:relative;z-index:2}
+.hero-stat .hs-label::before{content:'';width:9px;height:9px;background:var(--val-red);box-shadow:0 0 8px var(--val-red);
+  animation:blink 1.2s ease-in-out infinite}
+.hero-stat .hs-label .hs-tag{margin-left:auto;color:var(--val-cream);opacity:0.7;letter-spacing:3px}
+
+.hero-stat .hs-value{font-family:'Anton',sans-serif;font-size:clamp(3rem,6.5vw,5.2rem);line-height:0.9;
+  color:var(--val-cream);letter-spacing:-2px;font-variant-numeric:tabular-nums;position:relative;z-index:2;
+  text-shadow:0 4px 24px rgba(0,0,0,0.5)}
+.hero-stat .hs-value .hs-currency{color:var(--val-red);font-size:0.6em;vertical-align:top;margin-right:8px;
+  filter:drop-shadow(0 0 8px rgba(255,70,85,0.5))}
+
+.hero-stat .hs-progress{position:relative;z-index:2}
+.hero-stat .hs-progress-bar{height:6px;background:rgba(255,70,85,0.16);overflow:hidden;position:relative}
+.hero-stat .hs-progress-fill{height:100%;width:0;background:linear-gradient(90deg,var(--val-red) 0%,var(--val-gold) 80%,var(--val-cream) 100%);
+  box-shadow:0 0 14px rgba(255,70,85,0.7);transition:width 1.2s cubic-bezier(0.16,1,0.3,1) 0.4s}
+.hero-stat.in .hs-progress-fill{width:var(--p,0%)}
+.hero-stat .hs-progress-foot{display:flex;justify-content:space-between;align-items:center;margin-top:10px;
+  font-family:'JetBrains Mono',monospace;font-size:0.7rem;letter-spacing:3px;text-transform:uppercase;color:var(--val-grey)}
+.hero-stat .hs-progress-foot .hs-tier{color:var(--val-red);font-weight:700}
+
+.hero-stat .hs-badges{display:flex;flex-wrap:wrap;gap:8px;position:relative;z-index:2}
+.hs-badge{display:inline-flex;align-items:center;gap:8px;padding:7px 14px;
+  background:rgba(15,25,35,0.88);border:1px solid var(--bc,var(--val-red));
+  font-family:'Oswald',sans-serif;font-size:0.74rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;
+  color:var(--val-cream);
+  clip-path:polygon(6px 0,100% 0,calc(100% - 6px) 100%,0 100%)}
+.hs-badge::before{content:'';width:7px;height:7px;background:var(--bc,var(--val-red));box-shadow:0 0 6px var(--bc,var(--val-red));
+  border-radius:50%}
+
+/* Right cluster — 3 vertical stat cards */
+.stat-cluster{display:grid;grid-template-rows:1fr 1fr 1fr;gap:14px}
+.stat-card{position:relative;background:linear-gradient(180deg,var(--val-navy-2) 0%,#15202B 100%);
+  padding:18px 22px;border-left:3px solid var(--c,var(--val-red));overflow:hidden;
+  clip-path:polygon(0 0,100% 0,100% calc(100% - 10px),calc(100% - 10px) 100%,0 100%);
+  transition:transform 0.25s cubic-bezier(0.16,1,0.3,1),filter 0.25s ease,box-shadow 0.3s ease;
+  display:flex;align-items:center;justify-content:space-between;gap:14px;
+  transform-style:preserve-3d;will-change:transform}
+.stat-card:hover{filter:brightness(1.1);box-shadow:0 6px 24px rgba(255,70,85,0.18)}
+.stat-card::before{content:'';position:absolute;left:0;right:0;top:0;height:1px;background:var(--c,var(--val-red));opacity:0.7}
+.stat-card::after{content:'';position:absolute;right:-30px;bottom:-30px;width:120px;height:120px;border-radius:50%;
+  background:radial-gradient(circle,var(--c,var(--val-red)) 0%,transparent 70%);opacity:0.10}
+.stat-card .stat-info{display:flex;flex-direction:column;gap:4px;position:relative;z-index:1}
+.stat-card .stat-lbl{font-family:'JetBrains Mono',monospace;font-size:0.7rem;letter-spacing:3px;text-transform:uppercase;color:var(--val-grey);font-weight:600}
+.stat-card .stat-val{font-family:'Anton',sans-serif;font-size:2.4rem;color:var(--val-cream);line-height:1;font-variant-numeric:tabular-nums;
+  text-shadow:0 0 14px rgba(0,0,0,0.4)}
+.stat-card .stat-icon{font-size:1.8rem;line-height:1;color:var(--c,var(--val-red));opacity:0.85;position:relative;z-index:1;
+  filter:drop-shadow(0 0 8px var(--c,transparent))}
+
+/* Bottom row — 5 small cards */
+.stat-row{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-bottom:48px}
+@media (max-width:760px){.stat-row{grid-template-columns:repeat(2,1fr)}}
+.stat-row .stat-card{padding:14px 16px;min-height:84px}
+.stat-row .stat-card .stat-val{font-size:1.7rem}
+.stat-row .stat-card .stat-icon{font-size:1.3rem}
+
+/* ════════════════════════════════════════════════════════════════════
+   RARITY PILLS — tier breakdown bar
+════════════════════════════════════════════════════════════════════ */
+.rarity-row{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:24px}
+.rarity-pill{display:inline-flex;align-items:center;gap:11px;
+  padding:10px 20px;background:rgba(15,25,35,0.85);border:1px solid var(--rc,var(--val-red));
+  font-family:'Oswald',sans-serif;font-size:0.82rem;letter-spacing:2.5px;text-transform:uppercase;
+  color:var(--val-cream);position:relative;font-weight:600;
+  clip-path:polygon(8px 0,100% 0,calc(100% - 8px) 100%,0 100%);
+  transition:transform 0.2s ease,box-shadow 0.3s ease}
+.rarity-pill:hover{transform:translateY(-2px);box-shadow:0 4px 16px var(--rc,transparent)}
+.rarity-pill .dot{width:8px;height:8px;background:var(--rc);box-shadow:0 0 8px var(--rc)}
+.rarity-pill .num{color:var(--rc);font-weight:700;margin-left:4px;font-variant-numeric:tabular-nums}
+
+/* ════════════════════════════════════════════════════════════════════
+   AGENT GRID — agent-select feel with role tinting + lock-in stamp
+═════════════════════════════════════════════════════════════════════ */
+.agent-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:16px}
+.agent-card{position:relative;aspect-ratio:9/12;background:#0A1219;
+  overflow:hidden;transition:transform 0.3s cubic-bezier(0.16,1,0.3,1);
+  clip-path:polygon(0 0,100% 0,100% calc(100% - 16px),calc(100% - 16px) 100%,0 100%);
+  --role-c:var(--role-default)}
+.agent-card.r-duelist{--role-c:var(--role-duelist)}
+.agent-card.r-sentinel{--role-c:var(--role-sentinel)}
+.agent-card.r-initiator{--role-c:var(--role-initiator)}
+.agent-card.r-controller{--role-c:var(--role-controller)}
+.agent-card::before{content:'';position:absolute;left:0;right:0;top:0;height:4px;background:var(--role-c);z-index:3;
+  transform:scaleX(0);transform-origin:left;transition:transform 0.4s ease;
+  box-shadow:0 0 8px var(--role-c)}
+.agent-card:hover{transform:translateY(-6px) scale(1.02)}
+.agent-card:hover::before{transform:scaleX(1)}
+.agent-card::after{content:'';position:absolute;inset:0;z-index:2;pointer-events:none;
+  background:linear-gradient(180deg,transparent 30%,rgba(0,0,0,0.5) 70%,rgba(0,0,0,0.85) 100%);
+  transition:background 0.3s ease}
+.agent-card:hover::after{background:linear-gradient(180deg,rgba(0,0,0,0.05) 0%,transparent 30%,rgba(0,0,0,0.5) 60%,rgba(0,0,0,0.92) 100%)}
+.agent-card img{width:100%;height:100%;object-fit:cover;display:block;
+  background:linear-gradient(180deg,#2A3441 0%,#15202B 100%);
+  transition:transform 0.5s cubic-bezier(0.16,1,0.3,1),filter 0.3s ease;filter:saturate(0.9) brightness(0.9)}
+.agent-card:hover img{transform:scale(1.08);filter:saturate(1.15) brightness(1.05)}
+.agent-card .agent-info{position:absolute;left:0;right:0;bottom:0;padding:20px 14px 16px;z-index:4;
+  transition:transform 0.3s ease}
+.agent-card:hover .agent-info{transform:translateY(-4px)}
+.agent-card .agent-name{font-family:'Oswald',sans-serif;font-size:0.92rem;font-weight:700;
+  text-transform:uppercase;letter-spacing:2px;color:var(--val-cream);
+  text-shadow:0 2px 8px rgba(0,0,0,0.8)}
+.agent-card .agent-tag{font-family:'JetBrains Mono',monospace;font-size:0.65rem;letter-spacing:2.5px;
+  text-transform:uppercase;color:var(--role-c);margin-top:4px;font-weight:600}
+/* Role-glow ring on hover */
+.agent-card .agent-glow{position:absolute;inset:0;z-index:1;pointer-events:none;
+  background:radial-gradient(circle at 50% 80%,var(--role-c) 0%,transparent 60%);
+  opacity:0;mix-blend-mode:screen;transition:opacity 0.4s ease}
+.agent-card:hover .agent-glow{opacity:0.45}
+/* LOCKED IN stamp on hover */
+.agent-card .lock-stamp{position:absolute;top:14px;right:-30px;z-index:5;
+  font-family:'Anton',sans-serif;font-size:0.72rem;letter-spacing:3px;
+  text-transform:uppercase;color:var(--val-cream);background:var(--role-c);
+  padding:4px 14px;transform:rotate(8deg);opacity:0;transition:all 0.35s cubic-bezier(0.16,1,0.3,1)}
+.agent-card:hover .lock-stamp{opacity:1;right:-14px}
+
+/* ════════════════════════════════════════════════════════════════════
+   SKIN GRID — tactical cards w/ 3D tilt + tier glow
+═════════════════════════════════════════════════════════════════════ */
+.skin-toolbar{display:flex;gap:14px;align-items:center;margin-bottom:28px;flex-wrap:wrap}
+.search-wrap{flex:1;min-width:220px;max-width:360px;position:relative}
+.search-wrap input{width:100%;background:rgba(15,25,35,0.9);border:1px solid var(--val-navy-3);
+  color:var(--val-cream);font-family:'Oswald',sans-serif;font-size:0.88rem;letter-spacing:2px;
+  padding:13px 18px 13px 42px;text-transform:uppercase;outline:none;transition:border 0.2s,box-shadow 0.3s;
+  clip-path:polygon(0 0,calc(100% - 10px) 0,100% 50%,calc(100% - 10px) 100%,0 100%)}
+.search-wrap input:focus{border-color:var(--val-red);box-shadow:0 0 16px rgba(255,70,85,0.25)}
+.search-wrap input::placeholder{color:var(--val-grey)}
+.search-wrap::before{content:'⌕';position:absolute;left:15px;top:50%;transform:translateY(-50%);
+  color:var(--val-red);font-size:1.1rem;pointer-events:none;z-index:1}
+
+.tabs{display:flex;gap:0;background:rgba(15,25,35,0.9);padding:4px;
+  clip-path:polygon(0 0,calc(100% - 10px) 0,100% 50%,calc(100% - 10px) 100%,0 100%,10px 50%)}
+.tab{font-family:'Oswald',sans-serif;font-size:0.78rem;letter-spacing:3px;font-weight:600;
+  text-transform:uppercase;color:var(--val-grey);background:transparent;border:none;
+  padding:11px 22px;transition:color 0.2s,background 0.2s;position:relative}
+.tab.active{color:var(--val-cream);background:var(--val-red)}
+.tab:not(.active):hover{color:var(--val-cream)}
+
+.skin-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px}
+.skin-card{background:linear-gradient(180deg,var(--val-navy-2) 0%,#15202B 100%);
+  padding:16px;position:relative;transition:transform 0.3s cubic-bezier(0.16,1,0.3,1),filter 0.25s;
+  border-bottom:3px solid var(--tier-c,var(--t-select));overflow:hidden;
+  transform-style:preserve-3d;perspective:600px}
+.skin-card.knife{border-bottom-color:var(--t-knife);
+  box-shadow:0 0 0 1px rgba(255,185,64,0.4),0 0 20px rgba(255,185,64,0.16);
+  animation:knife-pulse 3s ease-in-out infinite}
+.skin-card.exclusive{box-shadow:0 0 0 1px rgba(255,70,85,0.3)}
+@keyframes knife-pulse{
+  0%,100%{box-shadow:0 0 0 1px rgba(255,185,64,0.4),0 0 20px rgba(255,185,64,0.16)}
+  50%{box-shadow:0 0 0 1px rgba(255,185,64,0.6),0 0 32px rgba(255,185,64,0.32)}
+}
+.skin-card::before{content:'';position:absolute;right:0;top:0;width:34px;height:34px;
+  background:var(--tier-c,var(--t-select));
+  clip-path:polygon(100% 0,0 0,100% 100%);opacity:0.6;transition:opacity 0.3s}
+.skin-card:hover::before{opacity:0.95}
+.skin-card::after{content:'';position:absolute;inset:0;pointer-events:none;opacity:0;
+  background:radial-gradient(ellipse at 50% 100%,var(--tier-c,var(--t-select)) 0%,transparent 65%);
+  mix-blend-mode:screen;transition:opacity 0.3s}
+.skin-card:hover::after{opacity:0.5}
+.skin-card:hover{transform:translateY(-4px) scale(1.02);filter:brightness(1.1)}
+.skin-card .skin-img-wrap{height:120px;display:flex;align-items:center;justify-content:center;margin-bottom:12px;overflow:hidden;position:relative}
+.skin-card img{max-width:100%;max-height:100%;object-fit:contain;display:block;
+  filter:drop-shadow(0 4px 8px rgba(0,0,0,0.5));transition:transform 0.4s cubic-bezier(0.16,1,0.3,1)}
+.skin-card:hover img{transform:scale(1.12) translateY(-3px)}
+.skin-card .skin-name{font-family:'Oswald',sans-serif;font-size:0.88rem;font-weight:700;
+  text-transform:uppercase;letter-spacing:1.5px;color:var(--val-cream);
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-bottom:6px;
+  position:relative;z-index:1}
+.skin-card .skin-tier{font-family:'JetBrains Mono',monospace;font-size:0.65rem;letter-spacing:2.5px;
+  text-transform:uppercase;color:var(--tier-c,var(--t-select));font-weight:600;
+  display:flex;align-items:center;gap:6px;position:relative;z-index:1}
+.skin-card .skin-tier::before{content:'■';font-size:0.55rem}
+
+/* ════════════════════════════════════════════════════════════════════
+   AUX SECTIONS — count-only summary cards
+═════════════════════════════════════════════════════════════════════ */
+/* aux blocks reuse .loot-card styling — see GEN:AUX_SECTIONS */
+
+/* ════════════════════════════════════════════════════════════════════
+   FINAL CTA BAND — big spike-bomb energy
+═════════════════════════════════════════════════════════════════════ */
+.final-cta{padding:140px 6vw 120px;text-align:center;position:relative;overflow:hidden}
+.final-cta::before{content:'';position:absolute;left:0;right:0;top:50%;height:280px;margin-top:-140px;
+  background:
+    radial-gradient(ellipse 60% 100% at 50% 50%,rgba(255,70,85,0.18) 0%,transparent 70%),
+    linear-gradient(90deg,transparent 0%,rgba(255,70,85,0.08) 50%,transparent 100%)}
+.final-cta::after{content:'';position:absolute;left:50%;top:50%;width:600px;height:600px;margin:-300px 0 0 -300px;
+  border:1px dashed rgba(255,70,85,0.15);border-radius:50%;animation:dash-spin 40s linear infinite}
+.final-cta-tag{font-family:'JetBrains Mono',monospace;font-size:0.8rem;letter-spacing:7px;
+  text-transform:uppercase;color:var(--val-red);margin-bottom:22px;position:relative;z-index:2;font-weight:600}
+.final-cta-tag::before,.final-cta-tag::after{content:'■';margin:0 14px;font-size:0.65rem;animation:blink 1.4s infinite}
+.final-cta-title{font-family:'Anton',sans-serif;font-size:clamp(2.5rem,6.5vw,5.5rem);line-height:0.95;
+  text-transform:uppercase;color:var(--val-cream);margin-bottom:42px;letter-spacing:-1.5px;position:relative;z-index:2}
+.final-cta-title .accent{color:var(--val-red);position:relative}
+.final-cta-title .accent::after{content:'';position:absolute;left:-4px;right:-4px;bottom:8px;height:5px;background:var(--val-red);
+  filter:drop-shadow(0 0 6px var(--val-red))}
+.final-cta .cta{position:relative;z-index:2;font-size:1.1rem;padding:20px 48px}
+
+/* ════════════════════════════════════════════════════════════════════
+   FOOTER
+═════════════════════════════════════════════════════════════════════ */
+.footer{padding:48px 6vw;border-top:1px solid var(--val-navy-3);text-align:center;position:relative;z-index:5}
+.footer-mark{font-family:'Anton',sans-serif;font-size:1.5rem;letter-spacing:7px;color:var(--val-cream)}
+.footer-mark .red{color:var(--val-red)}
+.footer-disclaimer{font-family:'JetBrains Mono',monospace;font-size:0.66rem;letter-spacing:2px;
+  text-transform:uppercase;color:var(--val-grey);margin-top:14px;line-height:1.6}
+
+/* ════════════════════════════════════════════════════════════════════
+   MUSIC FAB — red angular button, pulses when playing
+═════════════════════════════════════════════════════════════════════ */
+.music-fab{position:fixed;bottom:24px;right:24px;z-index:9000;
+  width:54px;height:54px;background:var(--val-navy-2);border:2px solid var(--val-red);
+  display:flex;align-items:center;justify-content:center;
+  color:var(--val-red);font-size:1.15rem;font-weight:700;
+  transition:transform 0.2s,filter 0.2s,box-shadow 0.3s;
+  clip-path:polygon(15% 0,100% 0,85% 100%,0 100%);
+  filter:drop-shadow(0 4px 12px rgba(255,70,85,0.3))}
+.music-fab:hover{transform:scale(1.08);filter:brightness(1.2) drop-shadow(0 6px 16px rgba(255,70,85,0.5))}
+.music-fab.playing{
+  background:var(--val-red);color:var(--val-cream);
+  box-shadow:0 0 0 0 rgba(255,70,85,0.7);animation:music-pulse 1.8s ease-in-out infinite}
+@keyframes music-pulse{
+  0%,100%{box-shadow:0 0 0 0 rgba(255,70,85,0.6)}
+  50%{box-shadow:0 0 0 18px rgba(255,70,85,0)}
+}
+.music-label{position:fixed;bottom:96px;right:24px;z-index:9000;
+  font-family:'JetBrains Mono',monospace;font-size:0.66rem;letter-spacing:3px;text-transform:uppercase;
+  color:var(--val-cream);background:rgba(15,25,35,0.95);padding:6px 12px;border:1px solid var(--val-red);
+  opacity:0;transform:translateY(8px);transition:all 0.3s ease;pointer-events:none;
+  clip-path:polygon(0 0,calc(100% - 8px) 0,100% 50%,calc(100% - 8px) 100%,0 100%)}
+.music-fab:hover ~ .music-label,.music-label.show{opacity:1;transform:translateY(0)}
+
+/* Hidden YouTube iframe used as audio fallback when MP3 is missing */
+.yt-host{position:fixed;left:-9999px;top:-9999px;width:1px;height:1px;opacity:0;pointer-events:none}
+
+/* ════════════════════════════════════════════════════════════════════
+   LIGHTBOX — cinematic full-screen view
+═════════════════════════════════════════════════════════════════════ */
+.lb{position:fixed;inset:0;z-index:99998;background:rgba(10,18,25,0.96);
+  display:none;align-items:center;justify-content:center;padding:40px;
+  opacity:0;transition:opacity 0.35s ease}
+.lb.open{display:flex;opacity:1}
+.lb-frame{position:relative;max-width:92vw;max-height:90vh}
+.lb-frame img{max-width:88vw;max-height:80vh;object-fit:contain;
+  filter:drop-shadow(0 24px 48px rgba(0,0,0,0.7))}
+.lb-meta{position:absolute;left:0;right:0;bottom:-60px;text-align:center;
+  font-family:'Anton',sans-serif;font-size:1.6rem;letter-spacing:3px;text-transform:uppercase;color:var(--val-cream)}
+.lb-meta .lb-tier{font-family:'JetBrains Mono',monospace;font-size:0.75rem;letter-spacing:4px;color:var(--val-red);margin-top:6px;display:block;font-weight:600}
+.lb-close{position:absolute;top:24px;right:28px;width:52px;height:52px;
+  background:var(--val-red);border:none;color:var(--val-cream);
+  font-family:'Anton',sans-serif;font-size:1.7rem;
+  clip-path:polygon(15% 0,100% 0,85% 100%,0 100%);box-shadow:0 8px 24px rgba(255,70,85,0.4)}
+.lb-corner{position:absolute;width:50px;height:50px;border:2px solid var(--val-red);opacity:0.7}
+.lb-corner.tl{top:20px;left:20px;border-right:none;border-bottom:none}
+.lb-corner.tr{top:20px;right:20px;border-left:none;border-bottom:none}
+.lb-corner.bl{bottom:20px;left:20px;border-right:none;border-top:none}
+.lb-corner.br{bottom:20px;right:20px;border-left:none;border-top:none}
+
+/* ════════════════════════════════════════════════════════════════════
+   TOAST — transmission popup (easter egg)
+═════════════════════════════════════════════════════════════════════ */
+.toast{position:fixed;top:48px;right:24px;z-index:9500;
+  background:rgba(15,25,35,0.96);border:1px solid var(--val-red);
+  padding:14px 22px;display:flex;align-items:center;gap:14px;
+  font-family:'JetBrains Mono',monospace;font-size:0.74rem;letter-spacing:2.5px;text-transform:uppercase;color:var(--val-cream);
+  clip-path:polygon(0 0,calc(100% - 12px) 0,100% 50%,calc(100% - 12px) 100%,0 100%);
+  transform:translateX(120%);transition:transform 0.5s cubic-bezier(0.16,1,0.3,1);
+  box-shadow:0 8px 32px rgba(255,70,85,0.25)}
+.toast.show{transform:translateX(0)}
+.toast .toast-dot{width:9px;height:9px;background:var(--val-red);border-radius:50%;box-shadow:0 0 8px var(--val-red);
+  animation:rec-blink 1s ease-in-out infinite}
+.toast .toast-lbl{color:var(--val-red);font-weight:700}
+
+/* ACE banner — triggered by typing "GG" or "ACE" */
+.ace-banner{position:fixed;inset:0;z-index:99000;display:none;align-items:center;justify-content:center;pointer-events:none;
+  background:radial-gradient(ellipse at center,rgba(255,70,85,0.45) 0%,transparent 60%)}
+.ace-banner.show{display:flex;animation:ace-flash 2.2s ease-out forwards}
+.ace-banner-text{font-family:'Tourney','Anton',sans-serif;font-size:clamp(6rem,18vw,16rem);
+  font-weight:900;color:var(--val-cream);letter-spacing:-3px;text-transform:uppercase;
+  text-shadow:0 0 30px var(--val-red),0 0 80px var(--val-red);
+  transform:scale(0.4);animation:ace-pop 0.55s cubic-bezier(0.22,1.6,0.36,1) forwards}
+@keyframes ace-pop{from{transform:scale(0.4) rotate(-6deg);opacity:0}to{transform:scale(1) rotate(0);opacity:1}}
+@keyframes ace-flash{0%{opacity:0}10%,80%{opacity:1}100%{opacity:0}}
+
+/* ════════════════════════════════════════════════════════════════════
+   REVEAL ANIMATION (intersection-observed)
+═════════════════════════════════════════════════════════════════════ */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity 0.8s ease,transform 0.8s ease}
+.reveal.in{opacity:1;transform:translateY(0)}
+/* stagger reveal for grid children */
+.stagger.in > *{animation:item-in 0.6s cubic-bezier(0.16,1,0.3,1) backwards}
+@keyframes item-in{from{opacity:0;transform:translateY(20px) scale(0.96)}to{opacity:1;transform:translateY(0) scale(1)}}
+
+/* ════════════════════════════════════════════════════════════════════
+   RESPONSIVE
+═════════════════════════════════════════════════════════════════════ */
+@media (max-width:980px){
+  .hero{padding:120px 5vw 60px}
+  .section{padding:60px 5vw}
+  .hero-frame-tl,.hero-frame-tr,.hero-frame-bl,.hero-frame-br{display:none}
+  .hero-side{display:none}
+  .hud-top .hud-id{display:none}
+}
+@media (max-width:560px){
+  .agent-grid{grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:10px}
+  .skin-grid{grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px}
+  .loot-card .val{font-size:1.5rem}
+  .music-fab{bottom:16px;right:16px;width:48px;height:48px}
+  .hud-rec{bottom:14px;left:14px;font-size:0.62rem}
+  .intro-corner{width:54px;height:54px;top:24px;left:24px}
+  .intro-corner.tr{top:24px;right:24px;left:auto}
+  .intro-corner.bl{bottom:24px;left:24px;top:auto}
+  .intro-corner.br{bottom:24px;right:24px;top:auto;left:auto}
+}
+</style>
+</head>
+<body class="intro-open">
+
+<!-- Persistent background -->
+<div class="bg-layer"></div>
+<div class="bg-grid"></div>
+<div class="bg-scanlines"></div>
+<div class="bg-grain"></div>
+<div class="embers" id="embers"></div>
+<div class="bg-vignette"></div>
+
+<!-- ═════ HUD ═════ -->
+<div class="hud-top" id="hudTop">
+  <div class="hud-left">
+    <span class="hud-dot"></span>
+    <span class="hud-mode">MATCH · LIVE</span>
+    <span class="hud-id">NEXTT GAMER // VAL OPS</span>
+  </div>
+  <div class="hud-right">
+    <span class="hud-serial" id="hudSerial">SERIAL ████████</span>
+    <span class="hud-time" id="hudTime">00:00:00</span>
+  </div>
+</div>
+<div class="hud-timer" id="hudTimer" style="--p:0%"></div>
+<div class="hud-rec" id="hudRec">
+  <span class="rec-dot"></span>
+  <span class="rec-label">REC</span>
+  <span class="rec-serial">// CLASSIFIED</span>
+</div>
+
+<!-- ═════ INTRO / AGENT SELECT ═════ -->
+<div class="intro" id="intro">
+  <div class="intro-bg"></div>
+  <!-- Faint agent silhouettes drifting across the backdrop -->
+  <div class="intro-silhouettes">
+    <div class="silh" style="left:5%;animation-delay:-2s"></div>
+    <div class="silh" style="left:32%;animation-delay:-9s"></div>
+    <div class="silh" style="left:58%;animation-delay:-15s"></div>
+    <div class="silh" style="left:78%;animation-delay:-20s"></div>
+  </div>
+  <div class="intro-slab left"></div>
+  <div class="intro-slab right"></div>
+  <div class="intro-wedge"></div>
+  <div class="intro-corner tl"></div>
+  <div class="intro-corner tr"></div>
+  <div class="intro-corner bl"></div>
+  <div class="intro-corner br"></div>
+
+  <!-- Top-left: live loading progress -->
+  <div class="intro-loading">
+    <div class="il-label">Loading Assets · <span id="ilPct">0</span>%</div>
+    <div class="il-bar"><div class="il-fill"></div></div>
+  </div>
+
+  <!-- Top-right: operator ready + audio EQ -->
+  <div class="intro-status">
+    <div class="is-label"><!-- GEN:INTRO_READOUT -->LV.1 · 0 AGENTS · 1 SKINS · STAND BY<!-- /GEN:INTRO_READOUT --></div>
+    <div class="intro-eq">
+      <span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span>
+    </div>
+  </div>
+
+  <!-- Side scrolling text strips -->
+  <div class="intro-strip left"><span>// NEXTTGAMER · VAL OPS · CLASSIFIED · LIVE FEED · AGENT ROSTER · INVENTORY LOCKED · NEXTTGAMER · VAL OPS · CLASSIFIED · LIVE FEED · AGENT ROSTER · INVENTORY LOCKED</span></div>
+  <div class="intro-strip right"><span>// PRESS TO ENGAGE · MATCH READY · SPIKE PLANTED · AGENT SELECT · ARSENAL ARMED · PRESS TO ENGAGE · MATCH READY · SPIKE PLANTED · AGENT SELECT · ARSENAL ARMED</span></div>
+
+  <!-- Giant ghost V mark behind title -->
+  <div class="intro-bigv">
+    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+      <polygon points="100,10 190,160 156,160 100,60 44,160 10,160" fill="none" stroke="#FF4655" stroke-width="3"/>
+      <polygon points="100,10 190,160 156,160 100,60 44,160 10,160" fill="#FF4655" opacity="0.18"/>
+    </svg>
+  </div>
+
+  <div class="intro-content">
+    <div class="intro-tag">// Agent Locked In</div>
+    <h1 class="intro-title glitch" data-text="NEXTT GAMER"><span class="word w1">NEXTT</span> <span class="word w2">GAMER</span></h1>
+    <div class="intro-sub"><!-- GEN:INTRO_SUB -->VALORANT · LA · UNRATED<!-- /GEN:INTRO_SUB --></div>
+    <div class="intro-cta">
+      <div class="shot-tutorial" id="shotTutorial">
+        <span class="st-mouse" aria-hidden="true"></span>
+        <span class="st-text">Shoot To Enter</span>
+        <span class="st-arrow" aria-hidden="true">▼</span>
+      </div>
+      <div class="target-area" id="targetArea">
+        <div class="lock-indicator" id="lockIndicator">Target Locked</div>
+        <button class="target" id="introEnter" type="button" aria-label="Click target to fire and enter">
+          <span class="target-ring r1"></span>
+          <span class="target-ring r2"></span>
+          <span class="target-ring r3"></span>
+          <span class="target-bracket tl"></span>
+          <span class="target-bracket tr"></span>
+          <span class="target-bracket bl"></span>
+          <span class="target-bracket br"></span>
+          <span class="target-center"></span>
+          <span class="target-label"><strong>Welcome</strong><small>Fire to enter</small></span>
+        </button>
+        <div class="target-dist" id="targetDist">RANGE · 100PX</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ═════ MAIN PAGE ═════ -->
+<div class="page" id="page">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-stripe"></div>
+    <div class="hero-frame-tl"></div>
+    <div class="hero-frame-tr"></div>
+    <div class="hero-frame-bl"></div>
+    <div class="hero-frame-br"></div>
+    <div class="hero-grid">
+      <div class="hero-left">
+        <div class="hero-eyebrow"><!-- GEN:HERO_EYEBROW -->RIOT VALORANT · LA/UNRATED · LV.1<!-- /GEN:HERO_EYEBROW --></div>
+        <h1 class="hero-title">
+          <!-- GEN:HERO_TITLE --><span class="val-red">VAL</span>ORANT<br>ARSENAL<!-- /GEN:HERO_TITLE -->
+        </h1>
+        <div class="hero-rank">
+          <!-- GEN:HERO_RANK -->UNRATED · LA · LV.1<!-- /GEN:HERO_RANK -->
+        </div>
+        <div class="hero-chips">
+          <!-- GEN:HERO_CHIPS -->
+          <div class="chip"><span class="chip-dot"></span><span class="chip-num">0</span> AGENTS</div>
+          <div class="chip"><span class="chip-dot"></span><span class="chip-num">1</span> SKINS</div>
+          <!-- /GEN:HERO_CHIPS -->
+        </div>
+        <div class="hero-cta-row">
+          <a class="cta cta-primary" href="https://www.eldorado.gg/u/nexttgamer" target="_blank" rel="noopener">BUY ON ELDORADO <span class="arrow">▶</span></a>
+          <a class="cta cta-secondary" href="#inventory">VIEW INVENTORY</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="hero-agent-wrap" id="heroAgentWrap">
+          <div class="hero-side">// AGENT FILE <span class="accent">[CLASSIFIED]</span> · NEXTT GAMER OPS</div>
+          <img class="hero-agent-img" src="" alt="Featured Agent" referrerpolicy="no-referrer" crossorigin="anonymous"
+            onerror="this.style.display='none'">
+          <div class="hero-scan"></div>
+          <div class="hero-badge">
+            <div><!-- GEN:HERO_BADGE_REGION -->LA<!-- /GEN:HERO_BADGE_REGION --></div>
+            <div class="num"><!-- GEN:HERO_BADGE_VALUE -->LV.1<!-- /GEN:HERO_BADGE_VALUE --></div>
+          </div>
+          <div class="hero-overlay-grid"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INVENTORY READOUT -->
+  <section class="section reveal" id="inventory">
+    <div class="section-head">
+      <div class="section-title">INVENTORY READOUT</div>
+      <div class="section-sub"><!-- GEN:INVENTORY_SUB -->LIVE DATA · LA · UNRATED<!-- /GEN:INVENTORY_SUB --></div>
+    </div>
+    <!-- GEN:INVENTORY_MOSAIC -->
+    <div class="inventory-mosaic">
+      <div class="hero-stat reveal" style="--p:2%">
+        <div class="hs-bloom"></div>
+        <div class="hs-label">
+          <span>Arsenal Value</span>
+          <span class="hs-tag">Lv.1 · USD</span>
+        </div>
+        <div class="hs-value">
+          <span class="hs-currency">$</span><span data-count="0" data-format="comma">0</span>
+        </div>
+        <div class="hs-progress">
+          <div class="hs-progress-bar"><div class="hs-progress-fill"></div></div>
+          <div class="hs-progress-foot">
+            <span>Tier · <span class="hs-tier">Entry</span></span>
+            <span>2% Of Elite</span>
+          </div>
+        </div>
+        <div class="hs-badges">
+          <div class="hs-badge" style="--bc:#768079"><span>Tactical</span></div>
+        </div>
+      </div>
+      <div class="stat-cluster">
+        <div class="stat-card" style="--c:#FFB940">
+          <div class="stat-info">
+            <div class="stat-lbl">Knives</div>
+            <div class="stat-val" data-count="0">0</div>
+          </div>
+          <div class="stat-icon">▲</div>
+        </div>
+        <div class="stat-card" style="--c:#5BA897">
+          <div class="stat-info">
+            <div class="stat-lbl">Agents</div>
+            <div class="stat-val" data-count="0">0</div>
+          </div>
+          <div class="stat-icon">◢</div>
+        </div>
+        <div class="stat-card" style="--c:#FF4655">
+          <div class="stat-info">
+            <div class="stat-lbl">Weapon Skins</div>
+            <div class="stat-val" data-count="1">0</div>
+          </div>
+          <div class="stat-icon">▣</div>
+        </div>
+      </div>
+    </div><!-- /GEN:INVENTORY_MOSAIC -->
+    <div class="wallet">
+      <!-- GEN:WALLET -->
+      <div class="wallet-card">
+        <div class="w-icon">⬡</div>
+        <div class="w-info"><div class="w-num" data-count="0" data-format="comma">0</div><div class="w-lbl">VALORANT POINTS</div></div>
+        <div class="w-bar"></div>
+      </div>
+    <!-- /GEN:WALLET -->
+    </div>
+  </section>
+
+  <!-- AGENTS -->
+  <section class="section reveal" id="agents-section">
+    <div class="section-head">
+      <div class="section-title">AGENT ROSTER <span class="count">// <!-- GEN:AGENTS_COUNT_TEXT -->0 OWNED<!-- /GEN:AGENTS_COUNT_TEXT --></span></div>
+      <div class="section-sub">FULL UNLOCK · NO LOCKED CONTRACTS</div>
+    </div>
+    <div class="agent-grid stagger" id="agentGrid">
+      <!-- GEN:AGENTS_GRID -->
+      <div style="grid-column:1/-1;text-align:center;padding:60px;font-family:'JetBrains Mono',monospace;color:#768079;letter-spacing:3px;text-transform:uppercase;font-size:0.8rem">// no agent data on file<br>// inventory pending detail fetch</div>
+      <!-- /GEN:AGENTS_GRID -->
+    </div>
+  </section>
+
+  <!-- WEAPON SKINS -->
+  <section class="section reveal" id="skins-section">
+    <div class="section-head">
+      <div class="section-title">WEAPON ARSENAL <span class="count">// <!-- GEN:SKINS_COUNT_TEXT -->1 SKINS<!-- /GEN:SKINS_COUNT_TEXT --></span></div>
+      <div class="section-sub">KNIVES PINNED · TIER-CODED</div>
+    </div>
+    <div class="rarity-row" id="rarityRow">
+      <!-- GEN:RARITY_PILLS -->
+      <div class="rarity-pill" style="--rc:#5BA897"><span class="dot"></span>DELUXE <span class="num">1</span></div>
+      <!-- /GEN:RARITY_PILLS -->
+    </div>
+    <div class="skin-toolbar">
+      <div class="search-wrap">
+        <input type="text" id="skinSearch" placeholder="SEARCH WEAPON...">
+      </div>
+      <div class="tabs" id="skinTabs">
+        <button class="tab active" data-filter="all">ALL</button>
+        <button class="tab" data-filter="knife">KNIVES</button>
+        <button class="tab" data-filter="rifle">RIFLES</button>
+        <button class="tab" data-filter="sniper">SNIPERS</button>
+      </div>
+    </div>
+    <div class="skin-grid stagger" id="skinGrid">
+      <!-- GEN:SKINS_GRID -->
+      <div class="skin-card" style="--tier-c:#5BA897" data-weapontype="pistol">
+        <div class="skin-img-wrap"><img src="https://media.valorant-api.com/weaponskins/e917273f-42d1-3a8d-7c9e-54afd6e5e68d/displayicon.png" alt="Wayfinder Shorty" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.opacity=0"></div>
+        <div class="skin-name">WAYFINDER SHORTY</div>
+        <div class="skin-tier">DELUXE</div>
+      </div>
+      <!-- /GEN:SKINS_GRID -->
+    </div>
+  </section>
+
+  <!-- AUX (BUDDIES / SPRAYS / CARDS / TITLES) -->
+  <!-- GEN:AUX_SECTIONS --><!-- /GEN:AUX_SECTIONS -->
+
+  <!-- FINAL CTA -->
+  <section class="final-cta">
+    <div class="final-cta-tag">SPIKE PLANTED</div>
+    <h2 class="final-cta-title">CLAIM THIS<br><span class="accent">ARSENAL</span></h2>
+    <a class="cta cta-primary" href="https://www.eldorado.gg/u/nexttgamer" target="_blank" rel="noopener">BUY ON ELDORADO <span class="arrow">▶</span></a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-mark">NEXTT<span class="red">·</span>GAMER</div>
+    <div class="footer-disclaimer">
+      Independent reseller · Not affiliated with Riot Games or Valorant ·<br>
+      All trademarks property of their respective owners
+    </div>
+  </footer>
+
+</div>
+
+<!-- ═════ LIGHTBOX ═════ -->
+<div class="lb" id="lightbox">
+  <div class="lb-corner tl"></div>
+  <div class="lb-corner tr"></div>
+  <div class="lb-corner bl"></div>
+  <div class="lb-corner br"></div>
+  <button class="lb-close" id="lbClose">✕</button>
+  <div class="lb-frame">
+    <img id="lbImg" src="" alt="">
+    <div class="lb-meta">
+      <div id="lbName">—</div>
+      <span class="lb-tier" id="lbTier"></span>
+    </div>
+  </div>
+</div>
+
+<!-- ═════ MUSIC + LABEL ═════ -->
+<button class="music-fab" id="musicBtn" title="Toggle Music" type="button">▶</button>
+<div class="music-label" id="musicLabel">// TAP TO ARM AUDIO</div>
+<div class="yt-host" id="ytHost"></div>
+
+<!-- ═════ TOAST + ACE BANNER ═════ -->
+<div class="toast" id="toast">
+  <span class="toast-dot"></span>
+  <span><span class="toast-lbl" id="toastLbl">INCOMING:</span> <span id="toastMsg">awaiting transmission</span></span>
+</div>
+<div class="ace-banner" id="aceBanner">
+  <div class="ace-banner-text">ACE!</div>
+</div>
+
+<script>
+// ═══════════════════════════════════════════════════════════════════
+// DATA — replaced per-account by the generator
+// ═══════════════════════════════════════════════════════════════════
+/* GEN:JS_DATA_START */
+window.__MUSIC_URL = "https://nexttgamer.github.io/lol-gallery/music/valorant-track.mp3";
+const ACC = {
+  agents: [],
+  skins: [{"name":"Wayfinder Shorty","img":"https://media.valorant-api.com/weaponskins/e917273f-42d1-3a8d-7c9e-54afd6e5e68d/displayicon.png","tier":"deluxe","tierLabel":"DELUXE","tierColor":"#5BA897","weaponType":"pistol"}],
+  buddies: [], sprays: [], cards: [], titles: [],
+  meta: {
+    region: "LA",
+    level: 1,
+    rank: "UNRATED",
+    eldoradoUrl: "https://www.eldorado.gg/u/nexttgamer",
+  },
+};
+/* GEN:JS_DATA_END */
+
+// ═══════════════════════════════════════════════════════════════════
+// EMBERS — sparks rising from the bottom
+// ═══════════════════════════════════════════════════════════════════
+(()=>{
+  const host = document.getElementById('embers');
+  if(!host) return;
+  const N = 24;
+  for(let i=0;i<N;i++){
+    const e = document.createElement('div');
+    e.className = 'ember' + (i%5===0 ? ' gold' : i%9===0 ? ' cream' : '');
+    e.style.left = (Math.random()*100) + '%';
+    e.style.setProperty('--dur', (7 + Math.random()*8) + 's');
+    e.style.setProperty('--delay', (Math.random()*12) + 's');
+    e.style.setProperty('--drift', ((Math.random()-0.5)*80) + 'px');
+    host.appendChild(e);
+  }
+})();
+
+// ═══════════════════════════════════════════════════════════════════
+// INTRO — 4-stage choreography w/ 3-2-1 countdown
+// ═══════════════════════════════════════════════════════════════════
+const intro = document.getElementById('intro');
+const page = document.getElementById('page');
+
+// Transition variant selector — ?t=hole | breach | scope (default: hole)
+const transitionVariant = (new URLSearchParams(location.search).get('t') || 'hole').toLowerCase();
+document.body.dataset.transition = ['breach','hole','scope'].includes(transitionVariant) ? transitionVariant : 'hole';
+// Shot-aftermath whoosh variant — ?sfx=wormhole | warp | void | riser
+window.__sfxVariant = (new URLSearchParams(location.search).get('sfx') || 'wormhole').toLowerCase();
+
+let introSkipped = false;
+
+// Animate "LOADING ASSETS 0%→99%" alongside the CSS .il-fill bar
+(()=>{
+  const pct = document.getElementById('ilPct');
+  if(!pct) return;
+  const start = performance.now();
+  const dur = 4200, delay = 1000, target = 99;
+  function step(now){
+    const t = Math.max(0, now - start - delay);
+    if(t >= dur || introSkipped){ pct.textContent = target; return; }
+    const p = t / dur;
+    const eased = 1 - Math.pow(1 - p, 3);
+    pct.textContent = Math.round(target * eased);
+    requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+})();
+
+// Tactical beeps timed with the visible "loading" stages
+[1100, 1500, 1900, 2300, 2700, 3100].forEach((d, i)=>{
+  setTimeout(()=>{ if(!introSkipped) sfx.beep(280 + i*60, 0.05); }, d);
+});
+
+function enterPage(){
+  if(introSkipped) return;
+  introSkipped = true;
+  // FIRST user gesture — arm audio NOW while browsers will allow it.
+  try { armAudio(); } catch {}
+  sfx.thump();
+  document.body.classList.remove('intro-open');
+
+  // Variant-aware transition.
+  const v = document.body.dataset.transition || 'breach';
+
+  if(v === 'hole'){
+    // Screen is already (or about to be) fully black via .black-curtain.
+    // Drop the page in behind the curtain; intro can vanish under it.
+    intro.classList.add('zoom');
+    page.classList.add('live');
+    intro.style.display = 'none';
+    // The zoom-hole already finished its animation by now — strip it so it
+    // doesn't sit at scale 120 blocking the page underneath the curtain.
+    document.querySelectorAll('.zoom-hole').forEach(z=>z.remove());
+    // After a tiny hold on black, fade the curtain out and start the stagger.
+    setTimeout(()=>{
+      const c = document.querySelector('.black-curtain');
+      if(c) c.classList.add('done');
+      document.body.classList.add('stagger-in');
+    }, 420);
+    // HUD slides in once the curtain is fading + first sections begin.
+    setTimeout(()=>{
+      document.getElementById('hudTop').classList.add('live');
+      document.getElementById('hudTimer').classList.add('live');
+      document.getElementById('hudRec').classList.add('live');
+    }, 1100);
+    setTimeout(()=>{
+      const c = document.querySelector('.black-curtain');
+      if(c) c.remove();
+    }, 1500);
+    setTimeout(()=>showToast('CHANNEL OPEN', 'agent feed live · stand by'), 2400);
+    return;
+  }
+
+  let pageLiveDelay, cleanupDelay, hudDelay;
+  if(v === 'scope'){
+    intro.classList.add('scope');
+    pageLiveDelay = 120;
+    cleanupDelay = 900;
+    hudDelay = 950;
+  } else {
+    intro.classList.add('breach');
+    pageLiveDelay = 280;
+    cleanupDelay = 1000;
+    hudDelay = 500;
+  }
+
+  setTimeout(()=>{ page.classList.add('live'); }, pageLiveDelay);
+  setTimeout(()=>{
+    document.getElementById('hudTop').classList.add('live');
+    document.getElementById('hudTimer').classList.add('live');
+    document.getElementById('hudRec').classList.add('live');
+  }, hudDelay);
+  setTimeout(()=>showToast('CHANNEL OPEN', 'agent feed live · stand by'), hudDelay + 700);
+  setTimeout(()=>{ intro.style.display = 'none'; }, cleanupDelay);
+}
+// ENTER = aim-trainer target. Mouse moves toward it → "TARGET LOCKED"
+// indicator appears + brackets snap inward. Click → shot animation
+// (muzzle flash + impact rings + flying shards + +100 score + ELIMINATED)
+// → 1.2s later page enters.
+const targetBtn = document.getElementById('introEnter');
+const targetArea = document.getElementById('targetArea');
+const lockIndicator = document.getElementById('lockIndicator');
+const targetDist = document.getElementById('targetDist');
+
+// Mouse tracking — lock when cursor enters ~120px radius of target center
+let lockTimer = null;
+function updateLock(e){
+  if(introSkipped || targetBtn.classList.contains('hit')) return;
+  const r = targetBtn.getBoundingClientRect();
+  const cx = r.left + r.width/2;
+  const cy = r.top + r.height/2;
+  const dx = e.clientX - cx;
+  const dy = e.clientY - cy;
+  const dist = Math.sqrt(dx*dx + dy*dy);
+  const locked = dist < 130;
+  if(targetDist) targetDist.textContent = `RANGE · ${Math.round(dist)}PX`;
+  targetBtn.classList.toggle('locked', locked);
+  lockIndicator.classList.toggle('show', locked);
+  // play subtle lock-on beep once on first lock
+  if(locked && !targetBtn.dataset.beeped){
+    targetBtn.dataset.beeped = '1';
+    sfx.beep(1400, 0.04);
+  } else if(!locked) {
+    delete targetBtn.dataset.beeped;
+  }
+}
+document.addEventListener('mousemove', updateLock, {passive:true});
+
+// SHOT — animates bullet from cursor to target center, then full hit fx.
+// Calls onImpact(impactX, impactY) with the screen coords where the bullet
+// landed so downstream effects (bullet-hole zoom) can originate there.
+function fireBullet(originX, originY, onImpact){
+  const r = targetBtn.getBoundingClientRect();
+  const cx = r.left + r.width/2;
+  const cy = r.top + r.height/2;
+  const dx = cx - originX;
+  const dy = cy - originY;
+  const dist = Math.sqrt(dx*dx + dy*dy);
+  if(dist < 10){ onImpact(cx, cy); return; }
+  const angleRad = Math.atan2(dy, dx);
+  const angleDeg = angleRad * 180 / Math.PI;
+
+  const trail = document.createElement('div');
+  trail.className = 'bullet-trail';
+  trail.style.left = originX + 'px';
+  trail.style.top = originY + 'px';
+  trail.style.width = dist + 'px';
+  trail.style.transform = `translateY(-50%) rotate(${angleDeg}deg)`;
+  document.body.appendChild(trail);
+
+  const bullet = document.createElement('div');
+  bullet.className = 'bullet-head';
+  bullet.style.transform = `translate(-50%,-50%) rotate(${angleDeg}deg)`;
+  document.body.appendChild(bullet);
+
+  const dur = 380;  // slower, more dramatic — operator wants the shot to land deliberately
+  const start = performance.now();
+  function step(now){
+    const t = Math.min(1, (now - start) / dur);
+    bullet.style.left = (originX + dx * t) + 'px';
+    bullet.style.top = (originY + dy * t) + 'px';
+    if(t >= 1){
+      bullet.remove();
+      setTimeout(()=>trail.remove(), 320);
+      onImpact(cx, cy);
+    } else {
+      requestAnimationFrame(step);
+    }
+  }
+  requestAnimationFrame(step);
+}
+
+function impactFx(impactX, impactY){
+  // Audio: snappy shot crack + impact thud
+  setTimeout(()=>sfx.thump(), 30);
+
+  // Red screen flash
+  const flash = document.createElement('div');
+  flash.className = 'hit-flash';
+  document.body.appendChild(flash);
+  setTimeout(()=>flash.remove(), 500);
+
+  // FX layer
+  const fx = document.createElement('div');
+  fx.className = 'target-fx';
+
+  // Bullet hole sticker on the target (persists during transition)
+  const hole = document.createElement('div');
+  hole.className = 'bullet-hole';
+  fx.appendChild(hole);
+
+  // For the hole-zoom transition: HOLD on HEADSHOT for ~1s, THEN drop a
+  // body-level fixed hole at the exact impact coordinates with a synced
+  // black curtain. By the time the hole reaches edge, screen is solid black.
+  const variant = document.body.dataset.transition;
+  const isHole = variant === 'hole' && typeof impactX === 'number';
+  if(isHole){
+    setTimeout(()=>{
+      const zoomHole = document.createElement('div');
+      zoomHole.className = 'zoom-hole';
+      zoomHole.style.left = impactX + 'px';
+      zoomHole.style.top = impactY + 'px';
+      document.body.appendChild(zoomHole);
+
+      const curtain = document.createElement('div');
+      curtain.className = 'black-curtain';
+      document.body.appendChild(curtain);
+
+      // Force layout/paint of the base state BEFORE adding the animation
+      // classes. Without this, on a warm cache (refresh) the RAF can fire
+      // before the element has painted at scale 1 — the browser then
+      // animates from "no prior frame" which reads as a missing animation.
+      // Double-RAF + reflow read guarantees a paint of the base styles.
+      void zoomHole.offsetHeight;
+      void curtain.offsetHeight;
+      requestAnimationFrame(()=>{
+        requestAnimationFrame(()=>{
+          zoomHole.classList.add('fire');
+          curtain.classList.add('cover');
+          sfx.whoosh(window.__sfxVariant);  // bass whoosh synced to the hole expansion
+        });
+      });
+    }, 1100);  // 1s after the HEADSHOT pops at +180ms (settles ~+1280ms)
+  }
+
+  // Muzzle flash burst
+  const mf = document.createElement('div');
+  mf.className = 'muzzle-flash';
+  fx.appendChild(mf);
+
+  // Triple impact ring waves
+  ['','r2','r3'].forEach(extra=>{
+    const ring = document.createElement('div');
+    ring.className = 'impact-ring ' + extra;
+    fx.appendChild(ring);
+  });
+
+  // 18 shards exploding outward
+  for(let i=0;i<18;i++){
+    const a = (i / 18) * Math.PI * 2 + Math.random() * 0.25;
+    const px = 110 + Math.random() * 80;
+    const dx = Math.cos(a) * px;
+    const dy = Math.sin(a) * px;
+    const rot = (a * 180/Math.PI);
+    const variant = i % 3 === 0 ? ' gold' : i % 5 === 0 ? ' cream' : '';
+    const shard = document.createElement('span');
+    shard.className = 'target-shard' + variant;
+    shard.style.setProperty('--dx', dx + 'px');
+    shard.style.setProperty('--dy', dy + 'px');
+    shard.style.setProperty('--rot', rot + 'deg');
+    shard.style.animationDelay = (Math.random() * 0.14) + 's';
+    fx.appendChild(shard);
+  }
+
+  // +100 score popup
+  const score = document.createElement('div');
+  score.className = 'score-pop';
+  score.textContent = '+100';
+  fx.appendChild(score);
+
+  targetArea.appendChild(fx);
+
+  // HEADSHOT! popup ~180ms after impact
+  setTimeout(()=>{
+    const hs = document.createElement('div');
+    hs.className = 'headshot';
+    hs.innerHTML = '<span class="hs-text">HEADSHOT!</span><span class="hs-sub">Direct Hit</span>';
+    document.body.appendChild(hs);
+    setTimeout(()=>hs.remove(), 1100);
+  }, 180);
+
+  // For non-hole variants, follow HEADSHOT with TARGET ELIMINATED.
+  // The hole variant skips this — the cinematic flow there is HEADSHOT
+  // → 1s pause → hole zoom → black → page reveal.
+  if(!isHole){
+    setTimeout(()=>{
+      const el = document.createElement('div');
+      el.className = 'eliminated';
+      el.textContent = 'Target Eliminated';
+      document.body.appendChild(el);
+      setTimeout(()=>el.remove(), 1300);
+    }, 900);
+  }
+
+  // After the show, enter the page. Hole variant waits longer so the
+  // 1s pause + 1.5s zoom + 350ms black-pause all complete first.
+  setTimeout(enterPage, isHole ? 2950 : 1750);
+}
+
+function fireShot(originX, originY){
+  if(introSkipped || targetBtn.classList.contains('hit')) return;
+  targetBtn.classList.add('hit');
+  // Hide tutorial + lock indicator the instant the shot fires
+  document.getElementById('shotTutorial')?.classList.add('fade');
+  lockIndicator.classList.remove('show');
+  // Pistol shot
+  sfx.shot();
+  // Bullet travels from cursor to target center, then impact fires
+  fireBullet(originX, originY, impactFx);
+}
+
+targetBtn.addEventListener('click', (e)=>{
+  e.preventDefault();
+  fireShot(e.clientX, e.clientY);
+});
+
+// ═══════════════════════════════════════════════════════════════════
+// COUNT-UP NUMBERS — runs when .reveal becomes .in
+// ═══════════════════════════════════════════════════════════════════
+function formatN(n, fmt){
+  if(fmt === 'comma') return n.toLocaleString('en-US');
+  return String(n);
+}
+function countUp(el){
+  // Guard: nested .reveal elements (e.g. .hero-stat inside #inventory) can
+  // trigger this twice on the same element from two IO callbacks, restarting
+  // the animation mid-flight. Mark once and skip the rest.
+  if(el.dataset.counted) return;
+  el.dataset.counted = '1';
+  const target = parseFloat(el.dataset.count || '0');
+  const fmt = el.dataset.format || '';
+  if(!target){ el.textContent = formatN(0, fmt); return; }
+  const dur = 900 + Math.min(800, target * 0.6);
+  let done = false;
+  const finalize = ()=>{ if(!done){ done = true; el.textContent = formatN(target, fmt); }};
+  // Hard backstop — guarantees the final value lands even if RAF is paused
+  // (e.g. hidden tab, embedded iframe out of view, throttling).
+  setTimeout(finalize, dur + 50);
+  if(document.hidden){ finalize(); return; }
+  const start = performance.now();
+  const ease = t => 1 - Math.pow(1 - t, 3);
+  function step(now){
+    if(done) return;
+    const p = Math.min(1, (now - start) / dur);
+    el.textContent = formatN(Math.round(target * ease(p)), fmt);
+    if(p < 1) requestAnimationFrame(step); else finalize();
+  }
+  requestAnimationFrame(step);
+}
+
+// ═══════════════════════════════════════════════════════════════════
+// REVEAL OBSERVER — fades + count-ups + stagger
+// ═══════════════════════════════════════════════════════════════════
+const io = new IntersectionObserver((entries)=>{
+  for(const e of entries){
+    if(!e.isIntersecting) continue;
+    e.target.classList.add('in');
+    // count-up children
+    e.target.querySelectorAll('[data-count]').forEach((el, i)=>{
+      setTimeout(()=>countUp(el), 80 + i * 50);
+    });
+    // wallet bars
+    e.target.querySelectorAll('.wallet-card').forEach((c, i)=>{
+      setTimeout(()=>c.classList.add('in'), 200 + i * 100);
+    });
+    // stagger
+    if(e.target.classList.contains('stagger')){
+      const kids = e.target.children;
+      const PER = 22; // ms between cards
+      for(let i=0;i<kids.length;i++){
+        kids[i].style.animationDelay = (i * PER) + 'ms';
+      }
+    }
+    io.unobserve(e.target);
+  }
+},{rootMargin:'-60px 0px', threshold:0.05});
+document.querySelectorAll('.reveal, .stagger').forEach(el=>io.observe(el));
+
+// ═══════════════════════════════════════════════════════════════════
+// CARD TILT — 3D parallax on hero-stat + stat-card hover
+// ═══════════════════════════════════════════════════════════════════
+function setupCardTilt(){
+  const cards = document.querySelectorAll('.hero-stat, .stat-card');
+  cards.forEach(card=>{
+    card.addEventListener('mousemove', (e)=>{
+      const r = card.getBoundingClientRect();
+      const x = (e.clientX - r.left) / r.width - 0.5;
+      const y = (e.clientY - r.top) / r.height - 0.5;
+      const rx = -y * 6;
+      const ry = x * 8;
+      card.style.transform = `perspective(900px) rotateX(${rx}deg) rotateY(${ry}deg) translateY(-3px)`;
+    });
+    card.addEventListener('mouseleave', ()=>{
+      card.style.transform = '';
+    });
+  });
+}
+setupCardTilt();
+
+// ═══════════════════════════════════════════════════════════════════
+// SPOTLIGHT — red glow follows cursor across the inventory section
+// ═══════════════════════════════════════════════════════════════════
+(()=>{
+  const inv = document.getElementById('inventory');
+  if(!inv) return;
+  inv.addEventListener('mousemove', (e)=>{
+    const r = inv.getBoundingClientRect();
+    const mx = ((e.clientX - r.left) / r.width) * 100;
+    const my = ((e.clientY - r.top) / r.height) * 100;
+    inv.style.setProperty('--mx', mx + '%');
+    inv.style.setProperty('--my', my + '%');
+  });
+})();
+
+// ═══════════════════════════════════════════════════════════════════
+// HERO PARALLAX — agent splash tilts to mouse
+// ═══════════════════════════════════════════════════════════════════
+(()=>{
+  const wrap = document.getElementById('heroAgentWrap');
+  if(!wrap) return;
+  const img = wrap.querySelector('.hero-agent-img');
+  wrap.addEventListener('mousemove', (e)=>{
+    const r = wrap.getBoundingClientRect();
+    const x = (e.clientX - r.left) / r.width - 0.5;
+    const y = (e.clientY - r.top) / r.height - 0.5;
+    wrap.style.transform = `perspective(1000px) rotateY(${x * 6}deg) rotateX(${-y * 6}deg)`;
+    if(img) img.style.transform = `translate(${x * -12}px, ${y * -8}px) scale(1.02)`;
+  });
+  wrap.addEventListener('mouseleave', ()=>{
+    wrap.style.transform = '';
+    if(img) img.style.transform = '';
+  });
+})();
+
+// ═══════════════════════════════════════════════════════════════════
+// SCROLL ROUND-TIMER (top of HUD)
+// ═══════════════════════════════════════════════════════════════════
+const hudTimer = document.getElementById('hudTimer');
+function onScroll(){
+  const max = (document.documentElement.scrollHeight - innerHeight);
+  const p = max > 0 ? (scrollY / max) * 100 : 0;
+  hudTimer.style.setProperty('--p', p.toFixed(1) + '%');
+}
+window.addEventListener('scroll', onScroll, {passive:true});
+
+// ═══════════════════════════════════════════════════════════════════
+// HUD TIME + SERIAL
+// ═══════════════════════════════════════════════════════════════════
+(()=>{
+  const time = document.getElementById('hudTime');
+  const serial = document.getElementById('hudSerial');
+  function tick(){
+    const d = new Date();
+    const h = String(d.getHours()).padStart(2,'0');
+    const m = String(d.getMinutes()).padStart(2,'0');
+    const s = String(d.getSeconds()).padStart(2,'0');
+    time.textContent = `${h}:${m}:${s}`;
+  }
+  tick(); setInterval(tick, 1000);
+  // Build a serial from the URL — last segment of the page filename
+  const slug = (location.pathname.split('/').pop() || '').replace('.html','').slice(-8) || '00000000';
+  serial.textContent = `SERIAL #${slug.toUpperCase()}`;
+})();
+
+// ═══════════════════════════════════════════════════════════════════
+// SKIN FILTER + SEARCH
+// ═══════════════════════════════════════════════════════════════════
+const skinSearch = document.getElementById('skinSearch');
+const skinTabs = document.querySelectorAll('#skinTabs .tab');
+let activeFilter = 'all';
+function applySkinFilter(){
+  const q = (skinSearch?.value || '').toLowerCase().trim();
+  document.querySelectorAll('#skinGrid .skin-card').forEach(card=>{
+    const name = (card.querySelector('.skin-name')?.textContent || '').toLowerCase();
+    const wt = (card.dataset.weapontype || '').toLowerCase();
+    const matchQ = !q || name.includes(q);
+    const matchF = activeFilter === 'all' || wt === activeFilter
+      || (activeFilter === 'rifle' && wt !== 'knife' && wt !== 'sniper' && wt !== 'pistol' && wt !== 'shotgun' && wt !== 'smg' && wt !== 'heavy');
+    card.style.display = (matchQ && matchF) ? '' : 'none';
+  });
+}
+skinSearch?.addEventListener('input', applySkinFilter);
+skinTabs.forEach(tab=>{
+  tab.addEventListener('click', ()=>{
+    skinTabs.forEach(t=>t.classList.remove('active'));
+    tab.classList.add('active');
+    activeFilter = tab.dataset.filter;
+    applySkinFilter();
+    sfx.click();
+  });
+});
+
+// ═══════════════════════════════════════════════════════════════════
+// LIGHTBOX (skin + agent cinematic view)
+// ═══════════════════════════════════════════════════════════════════
+const lb = document.getElementById('lightbox');
+const lbImg = document.getElementById('lbImg');
+const lbName = document.getElementById('lbName');
+const lbTier = document.getElementById('lbTier');
+document.getElementById('lbClose').addEventListener('click', closeLb);
+lb.addEventListener('click', (e)=>{ if(e.target === lb) closeLb(); });
+function closeLb(){ lb.classList.remove('open'); sfx.click(); }
+document.addEventListener('click', (e)=>{
+  const card = e.target.closest('.skin-card, .agent-card');
+  if(!card) return;
+  const img = card.querySelector('img');
+  if(!img?.src) return;
+  lbImg.src = img.src;
+  lbName.textContent = (card.querySelector('.skin-name')?.textContent || card.querySelector('.agent-name')?.textContent || '').trim();
+  lbTier.textContent = (card.querySelector('.skin-tier')?.textContent || card.querySelector('.agent-tag')?.textContent || '').trim();
+  lb.classList.add('open');
+  sfx.beep(620, 0.06);
+});
+document.addEventListener('keydown', (e)=>{ if(e.key === 'Escape') closeLb(); });
+
+// ═══════════════════════════════════════════════════════════════════
+// MUSIC — YouTube IFrame preloaded MUTED on page load, then UNMUTED
+// the moment user clicks intro "ENTER" (the required user gesture).
+// Optional MP3 override via window.__MUSIC_URL — if it loads, prefer it.
+// ═══════════════════════════════════════════════════════════════════
+const MUSIC_URL = '/music/valorant-track.mp3';   // generator may override via window.__MUSIC_URL
+const YT_VIDEO_ID = 'CdZN8PI3MqM';
+const YT_START_SEC = 37;
+const YT_VOLUME = 35;
+const MP3_VOLUME = 0.35;
+const musicBtn = document.getElementById('musicBtn');
+const musicLabel = document.getElementById('musicLabel');
+
+let audio = null;          // HTMLAudioElement (preferred if MP3 available)
+let ytPlayer = null;       // YT.Player instance (always pre-loaded muted)
+let ytReady = false;
+let usingYT = false;       // true once we've committed to YouTube
+let mp3Tried = false;
+let mp3OK = false;
+let unmuted = false;       // becomes true after intro enter
+let fadeTimer = null;
+
+function fade(target, ms){
+  if(!audio) return;
+  if(fadeTimer) clearInterval(fadeTimer);
+  const startV = audio.volume, steps = 24, step = (target - startV) / steps, dt = ms / steps;
+  let i = 0;
+  fadeTimer = setInterval(()=>{
+    i++;
+    audio.volume = Math.min(1, Math.max(0, startV + step * i));
+    if(i >= steps){ clearInterval(fadeTimer); fadeTimer = null; audio.volume = Math.min(1, Math.max(0, target)); }
+  }, dt);
+}
+
+// Load the YouTube IFrame API (callback-based, idempotent)
+function loadYT(){
+  return new Promise((resolve)=>{
+    if(window.YT && window.YT.Player) return resolve();
+    const tag = document.createElement('script');
+    tag.src = 'https://www.youtube.com/iframe_api';
+    document.head.appendChild(tag);
+    window.onYouTubeIframeAPIReady = ()=>resolve();
+  });
+}
+
+// Spin up the YouTube player MUTED + AUTOPLAY at 37s on page load.
+// Browsers allow muted autoplay; unmute happens on the intro click later.
+async function preloadYT(){
+  await loadYT();
+  return new Promise((resolve)=>{
+    const div = document.createElement('div');
+    div.id = 'ytEmbed';
+    document.getElementById('ytHost').appendChild(div);
+    ytPlayer = new YT.Player('ytEmbed', {
+      height: '1', width: '1',
+      videoId: YT_VIDEO_ID,
+      playerVars: {
+        autoplay: 1, mute: 1, controls: 0, start: YT_START_SEC,
+        playsinline: 1, loop: 1, playlist: YT_VIDEO_ID, modestbranding: 1, rel: 0,
+      },
+      events: {
+        onReady: (ev)=>{
+          ytReady = true;
+          ev.target.mute();
+          ev.target.setVolume(YT_VOLUME);
+          ev.target.seekTo(YT_START_SEC, true);
+          ev.target.playVideo();
+          resolve(true);
+        },
+        onStateChange: (ev)=>{
+          // ENDED (0) — loop back manually so we hit 37s, not 0s
+          if(ev.data === 0 && ytPlayer){
+            ytPlayer.seekTo(YT_START_SEC, true);
+            ytPlayer.playVideo();
+          }
+        },
+      },
+    });
+  });
+}
+
+// Kick off YouTube preload immediately so audio is "armed" by the time
+// the user clicks ENTER. The embed is muted+autoplay so it streams in
+// the background; armAudio() (called from enterPage) flips mute=false.
+preloadYT().catch(()=>{ /* network down or YT blocked — button stays a no-op */ });
+
+// Try MP3 in parallel — if it loads, we'll prefer it on intro enter.
+fetch(window.__MUSIC_URL || MUSIC_URL, { method:'HEAD' })
+  .then(r=>{ mp3Tried = true; mp3OK = !!r.ok; })
+  .catch(()=>{ mp3Tried = true; mp3OK = false; });
+
+// Called once from enterPage() — converts muted preload into audible
+// playback. This is the FIRST user gesture, so browsers allow sound now.
+async function armAudio(){
+  if(unmuted) return;
+  unmuted = true;
+  // Prefer MP3 if HEAD probe said OK
+  if(mp3OK){
+    try{
+      audio = new Audio(window.__MUSIC_URL || MUSIC_URL);
+      audio.loop = true;
+      audio.volume = 0;
+      audio.currentTime = YT_START_SEC;
+      await audio.play();
+      // MP3 wins — tear down YouTube
+      if(ytPlayer && ytPlayer.stopVideo) try{ ytPlayer.stopVideo(); }catch{}
+      musicBtn.classList.add('playing');
+      musicBtn.textContent = '⏸';
+      fade(MP3_VOLUME, 1600);
+      return;
+    } catch{
+      audio = null;
+    }
+  }
+  // YouTube path
+  usingYT = true;
+  try{
+    if(!ytReady) await preloadYT();
+    ytPlayer.unMute();
+    ytPlayer.setVolume(YT_VOLUME);
+    ytPlayer.seekTo(YT_START_SEC, true);
+    ytPlayer.playVideo();
+    musicBtn.classList.add('playing');
+    musicBtn.textContent = '⏸';
+  } catch{
+    musicLabel.textContent = '// AUDIO UNAVAILABLE';
+    musicLabel.classList.add('show');
+    setTimeout(()=>musicLabel.classList.remove('show'), 2400);
+  }
+}
+
+function toggleMusic(){
+  sfx.click();
+  // First click before intro-enter still arms audio
+  if(!unmuted){ armAudio(); return; }
+  if(audio){
+    if(audio.paused){
+      audio.play();
+      musicBtn.classList.add('playing');
+      musicBtn.textContent = '⏸';
+      fade(MP3_VOLUME, 500);
+    } else {
+      fade(0, 400);
+      setTimeout(()=>{ audio.pause(); musicBtn.classList.remove('playing'); musicBtn.textContent = '▶'; }, 450);
+    }
+    return;
+  }
+  if(usingYT && ytPlayer){
+    const st = ytPlayer.getPlayerState();
+    if(st === 1){ ytPlayer.pauseVideo(); musicBtn.classList.remove('playing'); musicBtn.textContent = '▶'; }
+    else { ytPlayer.playVideo(); musicBtn.classList.add('playing'); musicBtn.textContent = '⏸'; }
+  }
+}
+musicBtn.addEventListener('click', toggleMusic);
+
+// Show label briefly during intro to hint the user the audio is armed
+setTimeout(()=>{
+  if(!unmuted){
+    musicLabel.textContent = '// AUDIO ARMED · ENTER TO PLAY';
+    musicLabel.classList.add('show');
+    setTimeout(()=>musicLabel.classList.remove('show'), 3200);
+  }
+}, 2400);
+
+// ═══════════════════════════════════════════════════════════════════
+// WEB AUDIO SFX — synthesized tactical beeps
+// ═══════════════════════════════════════════════════════════════════
+const sfx = (()=>{
+  let ctx = null;
+  function ensure(){
+    if(!ctx) ctx = new (window.AudioContext || window.webkitAudioContext)();
+    if(ctx.state === 'suspended') ctx.resume();
+    return ctx;
+  }
+  function beep(freq, dur){
+    try{
+      const c = ensure();
+      const osc = c.createOscillator();
+      const gain = c.createGain();
+      osc.type = 'square';
+      osc.frequency.value = freq;
+      gain.gain.value = 0.0001;
+      gain.gain.exponentialRampToValueAtTime(0.04, c.currentTime + 0.01);
+      gain.gain.exponentialRampToValueAtTime(0.0001, c.currentTime + dur);
+      osc.connect(gain).connect(c.destination);
+      osc.start();
+      osc.stop(c.currentTime + dur + 0.02);
+    } catch{}
+  }
+  return {
+    beep,
+    click(){ beep(880, 0.04); },
+    thump(){
+      try{
+        const c = ensure();
+        const osc = c.createOscillator();
+        const gain = c.createGain();
+        osc.type = 'sine';
+        osc.frequency.value = 90;
+        osc.frequency.exponentialRampToValueAtTime(30, c.currentTime + 0.18);
+        gain.gain.value = 0.0001;
+        gain.gain.exponentialRampToValueAtTime(0.5, c.currentTime + 0.02);
+        gain.gain.exponentialRampToValueAtTime(0.0001, c.currentTime + 0.25);
+        osc.connect(gain).connect(c.destination);
+        osc.start();
+        osc.stop(c.currentTime + 0.3);
+      } catch{}
+    },
+    // Shot-aftermath whoosh — 4 alternatives selectable via ?sfx=...
+    // Synced to the bullet-hole expanding to fullscreen. Each variant has
+    // a distinct character so the operator can pick by feel.
+    whoosh(variant){
+      try{
+        const c = ensure();
+        const t0 = c.currentTime;
+        const v = String(variant || 'wormhole').toLowerCase();
+
+        // ─── A · WORMHOOLE — descending bass + brown-noise sweep ───
+        if(v === 'wormhole' || !v || v === 'a'){
+          const dur = 1.55;
+          const osc = c.createOscillator();
+          const oscGain = c.createGain();
+          osc.type = 'sine';
+          osc.frequency.setValueAtTime(220, t0);
+          osc.frequency.exponentialRampToValueAtTime(55, t0 + dur);
+          oscGain.gain.setValueAtTime(0.0001, t0);
+          oscGain.gain.exponentialRampToValueAtTime(0.32, t0 + 0.10);
+          oscGain.gain.exponentialRampToValueAtTime(0.18, t0 + 0.80);
+          oscGain.gain.exponentialRampToValueAtTime(0.0001, t0 + dur);
+          osc.connect(oscGain).connect(c.destination);
+          osc.start(t0); osc.stop(t0 + dur + 0.05);
+
+          const sampleRate = c.sampleRate;
+          const buf = c.createBuffer(1, Math.floor(sampleRate * dur), sampleRate);
+          const data = buf.getChannelData(0);
+          for(let i=0;i<data.length;i++) data[i] = (Math.random()*2-1) * 0.6;
+          const noise = c.createBufferSource(); noise.buffer = buf;
+          const filt = c.createBiquadFilter();
+          filt.type = 'lowpass'; filt.Q.value = 0.7;
+          filt.frequency.setValueAtTime(400, t0);
+          filt.frequency.exponentialRampToValueAtTime(2400, t0 + dur);
+          const nGain = c.createGain();
+          nGain.gain.setValueAtTime(0.0001, t0);
+          nGain.gain.exponentialRampToValueAtTime(0.18, t0 + 0.25);
+          nGain.gain.exponentialRampToValueAtTime(0.10, t0 + 1.0);
+          nGain.gain.exponentialRampToValueAtTime(0.0001, t0 + dur);
+          noise.connect(filt).connect(nGain).connect(c.destination);
+          noise.start(t0);
+          return;
+        }
+
+        // ─── B · WARP — rising sawtooth + tightening bandpass ───
+        if(v === 'warp' || v === 'b'){
+          const dur = 1.5;
+          const osc = c.createOscillator();
+          const filt = c.createBiquadFilter();
+          const oscGain = c.createGain();
+          osc.type = 'sawtooth';
+          osc.frequency.setValueAtTime(80, t0);
+          osc.frequency.exponentialRampToValueAtTime(1200, t0 + dur);
+          filt.type = 'bandpass';
+          filt.frequency.setValueAtTime(400, t0);
+          filt.frequency.exponentialRampToValueAtTime(2000, t0 + dur);
+          filt.Q.setValueAtTime(2, t0);
+          filt.Q.exponentialRampToValueAtTime(8, t0 + dur);
+          oscGain.gain.setValueAtTime(0.0001, t0);
+          oscGain.gain.exponentialRampToValueAtTime(0.20, t0 + 0.15);
+          oscGain.gain.exponentialRampToValueAtTime(0.30, t0 + 1.2);
+          oscGain.gain.exponentialRampToValueAtTime(0.0001, t0 + dur);
+          osc.connect(filt).connect(oscGain).connect(c.destination);
+          osc.start(t0); osc.stop(t0 + dur + 0.05);
+          return;
+        }
+
+        // ─── C · VOID — sub-bass thud + sustained low rumble ───
+        if(v === 'void' || v === 'c'){
+          const dur = 1.5;
+          // Sub thud (front-loaded impact)
+          const sub = c.createOscillator();
+          const subGain = c.createGain();
+          sub.type = 'sine';
+          sub.frequency.setValueAtTime(100, t0);
+          sub.frequency.exponentialRampToValueAtTime(38, t0 + 0.4);
+          subGain.gain.setValueAtTime(0.0001, t0);
+          subGain.gain.exponentialRampToValueAtTime(0.55, t0 + 0.02);
+          subGain.gain.exponentialRampToValueAtTime(0.0001, t0 + 0.55);
+          sub.connect(subGain).connect(c.destination);
+          sub.start(t0); sub.stop(t0 + 0.6);
+
+          // Sustained low rumble — brown-noise lowpass
+          const sampleRate = c.sampleRate;
+          const buf = c.createBuffer(1, Math.floor(sampleRate * dur), sampleRate);
+          const data = buf.getChannelData(0);
+          let last = 0;
+          for(let i=0;i<data.length;i++){
+            last = (last + (Math.random()*2-1) * 0.5) * 0.96;
+            data[i] = last * 0.7;
+          }
+          const noise = c.createBufferSource(); noise.buffer = buf;
+          const filt = c.createBiquadFilter();
+          filt.type = 'lowpass'; filt.frequency.value = 230; filt.Q.value = 0.6;
+          const nGain = c.createGain();
+          nGain.gain.setValueAtTime(0.0001, t0);
+          nGain.gain.exponentialRampToValueAtTime(0.30, t0 + 0.3);
+          nGain.gain.exponentialRampToValueAtTime(0.18, t0 + 1.0);
+          nGain.gain.exponentialRampToValueAtTime(0.0001, t0 + dur);
+          noise.connect(filt).connect(nGain).connect(c.destination);
+          noise.start(t0);
+          return;
+        }
+
+        // ─── D · RISER — cinematic accelerating pitch + swelling noise ───
+        if(v === 'riser' || v === 'd'){
+          const dur = 1.6;
+          const osc = c.createOscillator();
+          const oscGain = c.createGain();
+          osc.type = 'sawtooth';
+          osc.frequency.setValueAtTime(60, t0);
+          osc.frequency.exponentialRampToValueAtTime(180, t0 + 0.8);
+          osc.frequency.exponentialRampToValueAtTime(480, t0 + dur);
+          oscGain.gain.setValueAtTime(0.0001, t0);
+          oscGain.gain.linearRampToValueAtTime(0.15, t0 + 0.5);
+          oscGain.gain.linearRampToValueAtTime(0.35, t0 + 1.3);
+          oscGain.gain.exponentialRampToValueAtTime(0.0001, t0 + dur);
+          osc.connect(oscGain).connect(c.destination);
+          osc.start(t0); osc.stop(t0 + dur + 0.05);
+
+          const sampleRate = c.sampleRate;
+          const buf = c.createBuffer(1, Math.floor(sampleRate * dur), sampleRate);
+          const data = buf.getChannelData(0);
+          let last = 0;
+          for(let i=0;i<data.length;i++){
+            last = (last + (Math.random()*2-1) * 0.45) * 0.95;
+            data[i] = last * 0.6;
+          }
+          const noise = c.createBufferSource(); noise.buffer = buf;
+          const filt = c.createBiquadFilter();
+          filt.type = 'lowpass';
+          filt.frequency.setValueAtTime(300, t0);
+          filt.frequency.exponentialRampToValueAtTime(1800, t0 + dur);
+          const nGain = c.createGain();
+          nGain.gain.setValueAtTime(0.0001, t0);
+          nGain.gain.linearRampToValueAtTime(0.08, t0 + 0.4);
+          nGain.gain.linearRampToValueAtTime(0.25, t0 + 1.3);
+          nGain.gain.exponentialRampToValueAtTime(0.0001, t0 + dur);
+          noise.connect(filt).connect(nGain).connect(c.destination);
+          noise.start(t0);
+          return;
+        }
+      } catch{}
+    },
+    // Pistol shot — sharp sawtooth pitch dive + brief noise burst.
+    shot(){
+      try{
+        const c = ensure();
+        const t0 = c.currentTime;
+        const osc = c.createOscillator();
+        const gain = c.createGain();
+        osc.type = 'sawtooth';
+        osc.frequency.setValueAtTime(2200, t0);
+        osc.frequency.exponentialRampToValueAtTime(110, t0 + 0.18);
+        gain.gain.value = 0.0001;
+        gain.gain.exponentialRampToValueAtTime(0.45, t0 + 0.005);
+        gain.gain.exponentialRampToValueAtTime(0.0001, t0 + 0.22);
+        osc.connect(gain).connect(c.destination);
+        osc.start(t0); osc.stop(t0 + 0.26);
+        const buf = c.createBuffer(1, Math.floor(c.sampleRate * 0.12), c.sampleRate);
+        const data = buf.getChannelData(0);
+        for(let i=0;i<data.length;i++) data[i] = (Math.random()*2-1) * Math.pow(1 - i/data.length, 2.5);
+        const src = c.createBufferSource(); src.buffer = buf;
+        const ng = c.createGain(); ng.gain.value = 0.35;
+        src.connect(ng).connect(c.destination); src.start(t0);
+      } catch{}
+    },
+  };
+})();
+// Hover SFX on interactive — subtle, throttled
+let lastHover = 0;
+document.addEventListener('mouseover', (e)=>{
+  const el = e.target.closest('.cta, .chip, .tab, .agent-card, .skin-card, .rarity-pill');
+  if(!el) return;
+  const now = performance.now();
+  if(now - lastHover < 90) return;
+  lastHover = now;
+  sfx.beep(1200, 0.018);
+});
+
+// ═══════════════════════════════════════════════════════════════════
+// TOAST
+// ═══════════════════════════════════════════════════════════════════
+const toast = document.getElementById('toast');
+const toastLbl = document.getElementById('toastLbl');
+const toastMsg = document.getElementById('toastMsg');
+function showToast(lbl, msg, dur=3600){
+  toastLbl.textContent = lbl + ':';
+  toastMsg.textContent = msg;
+  toast.classList.add('show');
+  setTimeout(()=>toast.classList.remove('show'), dur);
+}
+
+// ═══════════════════════════════════════════════════════════════════
+// EASTER EGG — type "ACE" or "GG" to trigger an ACE banner
+// ═══════════════════════════════════════════════════════════════════
+(()=>{
+  let buf = '';
+  document.addEventListener('keydown', (e)=>{
+    if(e.key.length === 1) buf = (buf + e.key.toUpperCase()).slice(-4);
+    if(buf.includes('ACE') || buf.includes('GG')){
+      buf = '';
+      const banner = document.getElementById('aceBanner');
+      banner.classList.remove('show');
+      void banner.offsetWidth;
+      banner.classList.add('show');
+      sfx.beep(900, 0.18); setTimeout(()=>sfx.beep(1400, 0.18), 120); setTimeout(()=>sfx.thump(), 240);
+      setTimeout(()=>banner.classList.remove('show'), 2200);
+    }
+  });
+})();
+
+// ═══════════════════════════════════════════════════════════════════
+// HERO AGENT IMAGE FALLBACK
+// ═══════════════════════════════════════════════════════════════════
+const heroImg = document.querySelector('.hero-agent-img');
+if(heroImg && (!heroImg.src || heroImg.src === window.location.href || heroImg.src.endsWith('/'))){
+  heroImg.style.display = 'none';
+}
+</script>
+</body>
+</html>
