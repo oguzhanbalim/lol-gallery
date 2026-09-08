@@ -1,0 +1,1568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- Disable HTML caching: live preview, every visit must hit the server -->
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>LV.780 · 53 SKINS — NEXTTGAMER FORTNITE LOCKER</title>
+<meta name="description" content="OG Fortnite Locker — Level 780, 53 Outfits">
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect x='15' y='15' width='70' height='70' fill='%23FFE500' transform='rotate(45 50 50)'/></svg>">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One&family=Bungee&family=Outfit:wght@300;400;500;600;700;800;900&display=swap');
+
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:#040714;
+  color:#FFFFFF;
+  font-family:'Outfit',sans-serif;
+  min-height:100vh;
+  overflow-x:hidden;
+  position:relative;
+  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 28 28'><polygon points='14,2 26,14 14,26 2,14' fill='none' stroke='%2300F0FF' stroke-width='1.5'/><polygon points='14,7 21,14 14,21 7,14' fill='%2300F0FF' opacity='0.4'/></svg>") 14 14,auto;
+}
+a,button,.skin-card,.tool-card,.emote-card,.chip,.cta-primary,.cta-secondary,.lb-close,.intro-cta button,.search-clear,.music-fab{
+  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'><polygon points='16,2 30,16 16,30 2,16' fill='%23FFE500' stroke='%23FF6B00' stroke-width='2'/><polygon points='16,9 23,16 16,23 9,16' fill='%23FF6B00'/></svg>") 16 16,pointer;
+}
+
+::-webkit-scrollbar{width:12px}
+::-webkit-scrollbar-track{background:#040714}
+::-webkit-scrollbar-thumb{background:linear-gradient(180deg,#9D4DBB,#00C2FF);border-radius:0}
+::-webkit-scrollbar-thumb:hover{background:linear-gradient(180deg,#FFE500,#FF6B00)}
+
+:root{
+  --void:#040714;
+  --deep:#0A0E2C;
+  --lobby:#101842;
+  --lobby-2:#1A2363;
+  --bp-gold:#FFE500;
+  --bp-orange:#FF8500;
+  --fn-cyan:#00F0FF;
+  --fn-magenta:#FF2A8E;
+  --fn-purple:#9D4DBB;
+  --fn-purple-bright:#B847FF;
+  --r-common:#B5BCC9;
+  --r-uncommon:#5DDA42;
+  --r-rare:#41A3FF;
+  --r-epic:#B847FF;
+  --r-legendary:#FF8500;
+  --r-mythic:#FFD700;
+  --r-marvel:#ED1E2C;
+  --r-dc:#0476F2;
+  --r-icon:#1FCFCB;
+  --r-gaming:#FFB800;
+  --text:#FFFFFF;
+  --text-dim:#A8AED8;
+  --text-muted:#5A618A;
+}
+
+/* ═══════════════════════════════════════════════════════
+   SUBTLE CAMERA NUDGE — max 2px, no rotation
+═══════════════════════════════════════════════════════ */
+.shake-host{will-change:transform}
+.shake-host.shake-sm{animation:camNudge 0.22s ease-out}
+.shake-host.shake-md{animation:camNudge 0.28s ease-out}
+.shake-host.shake-lg{animation:camNudgeLg 0.36s ease-out}
+@keyframes camNudge{0%{transform:translate(0,0)}30%{transform:translate(-1px,1px)}60%{transform:translate(1px,-1px)}100%{transform:translate(0,0)}}
+@keyframes camNudgeLg{0%{transform:translate(0,0)}20%{transform:translate(-2px,1px)}45%{transform:translate(2px,-1px)}70%{transform:translate(-1px,1px)}100%{transform:translate(0,0)}}
+@media (prefers-reduced-motion:reduce){.shake-host{animation:none!important}}
+
+/* ═══════════════════════════════════════════════════════
+   DEEP SPACE — perf-tuned (static gradients, single starfield)
+═══════════════════════════════════════════════════════ */
+.cosmos{position:fixed;inset:0;z-index:0;pointer-events:none;
+  background:
+    radial-gradient(ellipse 50% 30% at 18% 28%,rgba(157,77,187,0.32) 0%,transparent 70%),
+    radial-gradient(ellipse 45% 40% at 78% 18%,rgba(0,194,255,0.22) 0%,transparent 70%),
+    radial-gradient(ellipse 50% 35% at 65% 78%,rgba(255,42,142,0.20) 0%,transparent 70%),
+    radial-gradient(ellipse 40% 50% at 25% 88%,rgba(184,71,255,0.16) 0%,transparent 70%),
+    radial-gradient(ellipse 60% 25% at 50% 50%,rgba(255,133,0,0.10) 0%,transparent 70%),
+    radial-gradient(ellipse at center,#0A0E2C 0%,#04051A 55%,#000208 100%);
+}
+
+.stars{position:fixed;inset:0;z-index:1;pointer-events:none;
+  background-image:
+    radial-gradient(1.5px 1.5px at 23% 33%,rgba(255,255,255,1),transparent),
+    radial-gradient(1px 1px at 58% 67%,rgba(0,240,255,0.85),transparent),
+    radial-gradient(1.5px 1.5px at 76% 24%,rgba(255,229,0,0.85),transparent),
+    radial-gradient(1px 1px at 41% 84%,rgba(255,42,142,0.8),transparent),
+    radial-gradient(1px 1px at 11% 21%,rgba(255,255,255,0.8),transparent),
+    radial-gradient(1px 1px at 33% 76%,rgba(0,240,255,0.65),transparent),
+    radial-gradient(1px 1px at 67% 41%,rgba(255,255,255,0.75),transparent),
+    radial-gradient(1px 1px at 92% 14%,rgba(255,255,255,0.8),transparent),
+    radial-gradient(1px 1px at 19% 88%,rgba(184,71,255,0.65),transparent),
+    radial-gradient(0.5px 0.5px at 45% 33%,rgba(255,255,255,0.5),transparent),
+    radial-gradient(0.5px 0.5px at 78% 47%,rgba(255,255,255,0.45),transparent),
+    radial-gradient(0.5px 0.5px at 35% 92%,rgba(255,255,255,0.5),transparent);
+  background-size:520px 520px;
+  animation:starsDrift 320s linear infinite;
+  will-change:transform;
+}
+@keyframes starsDrift{from{transform:translate3d(0,0,0)}to{transform:translate3d(-520px,-520px,0)}}
+
+.stars-bright{position:fixed;inset:0;z-index:1;pointer-events:none}
+.stars-bright .bs{position:absolute;width:3px;height:3px;border-radius:50%;background:#fff;
+  box-shadow:0 0 8px rgba(255,255,255,0.9),0 0 18px rgba(0,240,255,0.6);
+  animation:brightTwinkle 3s ease-in-out infinite;will-change:opacity}
+@keyframes brightTwinkle{0%,100%{opacity:0.45}50%{opacity:1}}
+
+.planet{position:fixed;top:8%;right:-6%;width:340px;height:340px;z-index:1;pointer-events:none;
+  border-radius:50%;
+  background:
+    radial-gradient(circle at 32% 32%,rgba(255,229,0,0.15) 0%,transparent 35%),
+    radial-gradient(circle at 70% 70%,rgba(157,77,187,0.6) 0%,rgba(70,30,120,0.85) 40%,#0A0518 80%);
+  box-shadow:inset -24px -30px 70px rgba(0,0,0,0.7),inset 12px 16px 50px rgba(255,42,142,0.22)}
+.planet::after{content:'';position:absolute;left:-12%;right:-12%;top:46%;height:18%;
+  background:linear-gradient(90deg,transparent 8%,rgba(255,229,0,0.4) 30%,rgba(255,133,0,0.5) 50%,rgba(255,229,0,0.35) 70%,transparent 92%);
+  border-radius:50%;transform:rotate(-18deg);opacity:0.55;mix-blend-mode:screen}
+@media (max-width:1100px){.planet{width:220px;height:220px;top:4%;right:-12%;opacity:0.6}}
+
+.shooting{position:fixed;inset:0;z-index:2;pointer-events:none;overflow:hidden}
+.shooting::before{content:'';position:absolute;top:22%;left:-220px;width:180px;height:1.5px;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,0.85),transparent);
+  box-shadow:0 0 4px rgba(255,255,255,0.5);opacity:0;
+  animation:shootStreak 16s linear infinite;animation-delay:4s;will-change:transform,opacity}
+@keyframes shootStreak{0%{transform:translate3d(0,0,0) rotate(-15deg);opacity:0}4%{opacity:1}10%{opacity:0}100%{transform:translate3d(110vw,-25vh,0) rotate(-15deg);opacity:0}}
+
+.particles{position:fixed;inset:0;z-index:2;pointer-events:none}
+.particle{position:absolute;animation:floatUp linear infinite}
+.particle.hex{width:14px;height:14px;
+  background:linear-gradient(135deg,var(--p-color,var(--fn-cyan)),transparent);
+  clip-path:polygon(25% 5%,75% 5%,100% 50%,75% 95%,25% 95%,0 50%);
+  box-shadow:0 0 20px var(--p-color,var(--fn-cyan))}
+.particle.star{width:6px;height:6px;background:radial-gradient(circle,var(--p-color,#fff) 0%,transparent 70%);
+  box-shadow:0 0 14px var(--p-color,#fff);border-radius:50%}
+.particle.spark{width:3px;height:18px;background:linear-gradient(180deg,transparent,var(--p-color,var(--bp-gold)),transparent);
+  box-shadow:0 0 8px var(--p-color,var(--bp-gold))}
+@keyframes floatUp{0%{transform:translateY(105vh) rotate(0deg) scale(0.3);opacity:0}10%{opacity:1}85%{opacity:0.85}100%{transform:translateY(-15vh) rotate(540deg) scale(1);opacity:0}}
+
+/* Speed lines — only animate when .live (rapid scroll) */
+.speed-lines{position:fixed;inset:0;z-index:3;pointer-events:none;opacity:0;transition:opacity 0.3s}
+.speed-lines.live{opacity:1}
+.speed-lines::before,.speed-lines::after{content:'';position:absolute;top:0;bottom:0;width:30%;
+  background-image:repeating-linear-gradient(to right,transparent 0,transparent 8px,rgba(255,255,255,0.03) 8px,rgba(255,255,255,0.03) 9px,transparent 9px,transparent 24px,rgba(0,240,255,0.04) 24px,rgba(0,240,255,0.04) 25px);
+  animation:speedSlide 0.4s linear infinite;animation-play-state:paused}
+.speed-lines.live::before,.speed-lines.live::after{animation-play-state:running}
+.speed-lines::before{left:0;mask-image:linear-gradient(90deg,#000,transparent)}
+.speed-lines::after{right:0;mask-image:linear-gradient(-90deg,#000,transparent)}
+@keyframes speedSlide{from{transform:translateX(0)}to{transform:translateX(40px)}}
+
+.vignette{position:fixed;inset:0;z-index:4;pointer-events:none;box-shadow:inset 0 0 200px 80px rgba(4,7,20,0.85)}
+
+/* Callouts hidden — operatör isteği */
+.callout-stack{display:none}
+
+/* Combo counter (bottom-left, rapid scroll) */
+.combo{position:fixed;bottom:30px;left:30px;z-index:8000;
+  font-family:'Bowlby One',cursive;font-size:2.4rem;letter-spacing:2px;text-transform:uppercase;
+  background:linear-gradient(120deg,var(--bp-gold),var(--fn-magenta),var(--fn-purple-bright));
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+  filter:drop-shadow(0 0 20px rgba(255,229,0,0.6));
+  opacity:0;transform:translateY(30px) scale(0.8);transition:all 0.3s cubic-bezier(0.16,1,0.3,1);
+  pointer-events:none;text-shadow:0 0 40px rgba(255,42,142,0.5)}
+.combo.live{opacity:1;transform:translateY(0) scale(1)}
+.combo .multi{display:block;font-size:0.55em;letter-spacing:6px;color:var(--fn-cyan);
+  -webkit-text-fill-color:var(--fn-cyan);text-shadow:0 0 14px var(--fn-cyan);margin-bottom:-4px}
+
+/* ═══════════════════════════════════════════════════════
+   WELCOME — "CASCADING SKIN COLUMNS"
+   3 columns of skin tiles continuously flowing top→bottom in
+   the background. Centered WELCOME wordmark + DROP IN button
+   over a darkening vertical gradient for text legibility.
+   Page enters from PURE BLACK with a 1s opacity fade. Body
+   scroll is locked while welcome is visible.
+═══════════════════════════════════════════════════════ */
+.welcome{position:fixed;inset:0;z-index:99999;background:#000;
+  display:flex;align-items:center;justify-content:center;
+  overflow:hidden;
+  opacity:0;
+  perspective:1400px;perspective-origin:50% 50%;
+  animation:ws-screen-fade 1.0s ease-out 0.05s forwards;
+  transition:opacity 0.9s cubic-bezier(0.4,0,0.2,1) 0.2s,visibility 1.1s ease}
+.welcome.fade{opacity:0!important;visibility:hidden;pointer-events:none;animation:none}
+@keyframes ws-screen-fade{from{opacity:0}to{opacity:1}}
+
+/* Lock body scroll while welcome is up */
+body.welcome-open{overflow:hidden}
+
+/* Full-screen blackout for welcome→main page transition (DROP IN click).
+   Covers EVERYTHING (z-index higher than welcome). enterLobby raises this
+   first to mask the welcome teardown, then fades it out to reveal main page. */
+.page-blackout{position:fixed;inset:0;z-index:100000;background:#000;
+  opacity:0;pointer-events:none;
+  transition:opacity 0.55s cubic-bezier(0.4,0,0.2,1)}
+.page-blackout.up{opacity:1;pointer-events:auto}
+
+/* ── BACKDROP ── deep cosmic gradient behind cascading columns */
+.ws-void{position:absolute;inset:0;z-index:1;pointer-events:none;
+  background:
+    radial-gradient(ellipse 80% 50% at 50% 50%,rgba(157,77,187,0.20) 0%,transparent 65%),
+    radial-gradient(ellipse 60% 40% at 50% 30%,rgba(0,240,255,0.12) 0%,transparent 60%),
+    radial-gradient(ellipse 60% 40% at 50% 80%,rgba(255,42,142,0.14) 0%,transparent 60%),
+    linear-gradient(180deg,#0A0418 0%,#02010A 50%,#0A0418 100%)}
+
+/* ── 7 COLUMNS of cascading skin tiles ── staggered fade-in builds density.
+   3D perspective dolly: scene starts tilted + smaller, settles flat + full size.
+   Cinematic "camera approaching" feel during the cascade buildup. */
+.ws-cols{position:absolute;inset:0;z-index:2;
+  display:grid;grid-template-columns:repeat(7,1fr);gap:14px;
+  padding:0 14px;
+  pointer-events:none;
+  transform-style:preserve-3d;
+  transform:rotateX(6deg) scale(0.88);
+  animation:ws-scene-dolly 1.6s cubic-bezier(0.16,1,0.3,1) forwards;
+  will-change:transform;
+  -webkit-mask-image:linear-gradient(180deg,transparent 0%,#000 10%,#000 90%,transparent 100%);
+  mask-image:linear-gradient(180deg,transparent 0%,#000 10%,#000 90%,transparent 100%)}
+@keyframes ws-scene-dolly{
+  from{transform:rotateX(6deg) scale(0.88)}
+  to{transform:rotateX(0deg) scale(1.0)}
+}
+.ws-col{position:relative;overflow:visible;height:100vh;
+  opacity:0;
+  animation:ws-col-in 0.7s cubic-bezier(0.16,1,0.3,1) var(--col-fade,0s) forwards;
+  will-change:opacity}
+@keyframes ws-col-in{to{opacity:1}}
+.ws-track{display:flex;flex-direction:column;gap:14px;
+  position:absolute;left:0;right:0;
+  animation:ws-flow var(--dur,18s) linear infinite;
+  animation-delay:var(--flow-delay,0s);
+  will-change:transform}
+@keyframes ws-flow{
+  from{transform:translateY(-50%)}
+  to{transform:translateY(0)}
+}
+/* 7 columns — staggered fade-in 0.15s..1.05s; varied durations 12s..21s.
+   First 1-2 columns appear early (sparse feel), by 1.05s ALL 7 are visible
+   (density peaks just before WELCOME boom-in at 1.5s). Different speeds
+   give parallax depth so eye can't track a single column. */
+/* PREMIUM PACE: doubled durations (was 12–21s, now 24–34s) for cinematic
+   slow drift. Each column at a slightly different speed for subtle parallax. */
+.ws-col.c1{--col-fade:0.20s}.ws-col.c1 .ws-track{--dur:26s;--flow-delay:0s}
+.ws-col.c2{--col-fade:0.40s}.ws-col.c2 .ws-track{--dur:30s;--flow-delay:-12s}
+.ws-col.c3{--col-fade:0.60s}.ws-col.c3 .ws-track{--dur:24s;--flow-delay:-6s}
+.ws-col.c4{--col-fade:0.80s}.ws-col.c4 .ws-track{--dur:32s;--flow-delay:-18s}
+.ws-col.c5{--col-fade:1.00s}.ws-col.c5 .ws-track{--dur:28s;--flow-delay:-14s}
+.ws-col.c6{--col-fade:1.20s}.ws-col.c6 .ws-track{--dur:34s;--flow-delay:-22s}
+.ws-col.c7{--col-fade:1.40s}.ws-col.c7 .ws-track{--dur:27s;--flow-delay:-9s}
+
+/* ── TILE ── single skin card in a cascading column */
+.ws-tile{position:relative;width:100%;aspect-ratio:7/9;
+  border-radius:8px;overflow:hidden;
+  background:#0F0826;
+  border:2px solid var(--tile-color,rgba(255,255,255,0.18));
+  box-shadow:0 0 18px var(--tile-glow,rgba(0,240,255,0.35)),0 6px 16px rgba(0,0,0,0.5);
+  transform:translateZ(0)}
+.ws-tile::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;z-index:2;
+  background:linear-gradient(90deg,transparent,var(--tile-color),transparent);
+  box-shadow:0 0 8px var(--tile-color)}
+.ws-tile img{width:100%;height:100%;object-fit:cover;display:block;
+  filter:saturate(1.1)}
+.ws-tile::after{content:'';position:absolute;inset:0;
+  background:radial-gradient(circle at 50% 0%,rgba(255,255,255,0.15),transparent 55%);
+  pointer-events:none}
+
+/* ── DARKENING OVERLAY ── makes WELCOME text readable over moving tiles */
+.ws-darken{position:absolute;inset:0;z-index:3;pointer-events:none;
+  background:
+    radial-gradient(ellipse 70% 55% at 50% 50%,rgba(0,0,0,0.85) 0%,rgba(0,0,0,0.65) 30%,rgba(0,0,0,0.3) 60%,transparent 85%),
+    linear-gradient(180deg,rgba(0,0,0,0.55) 0%,rgba(0,0,0,0.15) 25%,rgba(0,0,0,0.15) 75%,rgba(0,0,0,0.55) 100%)}
+
+/* ── SPOTLIGHT ── soft warm aura behind WELCOME. Restrained — no scale pulse,
+   just a subtle breathing brightness shift. Premium ambient lighting. */
+.ws-spotlight{position:absolute;left:50%;top:50%;width:780px;height:780px;
+  margin:-390px 0 0 -390px;z-index:4;pointer-events:none;
+  background:radial-gradient(circle,rgba(255,210,74,0.18) 0%,rgba(255,138,0,0.12) 30%,rgba(184,71,255,0.08) 55%,transparent 75%);
+  border-radius:50%;mix-blend-mode:screen;
+  opacity:0;
+  animation:ws-spotlight-bloom 2.2s cubic-bezier(0.22,1,0.36,1) 1.0s forwards,
+    ws-spotlight-breathe 7s ease-in-out 3.5s infinite alternate;
+  will-change:opacity,filter}
+@keyframes ws-spotlight-bloom{
+  from{opacity:0}
+  to{opacity:1}
+}
+@keyframes ws-spotlight-breathe{
+  from{filter:brightness(1)}
+  to{filter:brightness(1.15)}
+}
+
+/* ── VIGNETTE ── dramatic dark edges */
+.welcome-vignette{position:absolute;inset:0;z-index:4;pointer-events:none;
+  box-shadow:inset 0 0 240px 80px rgba(0,0,0,0.7),inset 0 0 480px 220px rgba(0,0,0,0.35)}
+
+/* ── LOCKUP ── centered: NEXTTGAMER · WELCOME · tagline · DROP IN ── */
+.welcome-frame{position:relative;z-index:7;
+  display:flex;flex-direction:column;align-items:center;gap:14px;
+  text-align:center;pointer-events:auto;
+  transition:opacity 0.6s ease,transform 0.6s ease}
+.welcome.fade .welcome-frame{opacity:0;transform:scale(0.94)}
+
+.welcome-brand{font-family:'Bowlby One',cursive;font-size:clamp(0.85rem,1.4vw,1.15rem);
+  letter-spacing:10px;color:var(--bp-gold);
+  text-shadow:0 0 20px rgba(255,229,0,0.7),0 0 40px rgba(255,229,0,0.4);
+  opacity:0;transform:translateY(-10px);
+  animation:ws-rise 0.9s cubic-bezier(0.16,1,0.3,1) 1.3s forwards}
+@keyframes ws-rise{to{opacity:1;transform:translateY(0)}}
+.welcome-brand .gradient{background:linear-gradient(120deg,var(--fn-cyan),var(--bp-gold),var(--fn-magenta));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+
+/* WELCOME — premium elegant reveal. Single text element, restrained scale,
+   continuous subtle shimmer. NO letter-pop (that read as cheap/gimmicky).
+   Inspired by Apple keynote / luxury automotive title sequences. */
+.welcome-text{font-family:'Bowlby One',cursive;font-size:clamp(4.5rem,12vw,11rem);
+  line-height:0.85;letter-spacing:-0.02em;text-transform:uppercase;
+  background:linear-gradient(110deg,
+    #FFFFFF 0%,
+    #FFF1B0 18%,
+    #FFD24A 38%,
+    #FFA300 58%,
+    #FF5E1A 78%,
+    #FF2A8E 100%);
+  background-size:220% 100%;
+  background-position:0% 50%;
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+  filter:drop-shadow(0 0 60px rgba(255,210,74,0.42)) drop-shadow(0 6px 22px rgba(255,42,142,0.28));
+  opacity:0;transform:scale(0.97);
+  animation:
+    ws-welcome-rise 1.5s cubic-bezier(0.22,1,0.36,1) 1.4s forwards,
+    ws-welcome-shimmer 9s ease-in-out 3.0s infinite;
+  will-change:opacity,transform,background-position}
+@keyframes ws-welcome-rise{
+  0%{opacity:0;transform:scale(0.97);letter-spacing:0em}
+  100%{opacity:1;transform:scale(1);letter-spacing:-0.02em}
+}
+@keyframes ws-welcome-shimmer{
+  0%,100%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+}
+
+.welcome-tagline{font-family:'Bungee',sans-serif;color:rgba(255,255,255,0.85);
+  font-size:clamp(0.75rem,1.1vw,0.95rem);letter-spacing:8px;text-transform:uppercase;
+  opacity:0;transform:translateY(8px);
+  animation:ws-rise 0.9s cubic-bezier(0.16,1,0.3,1) 2.1s forwards;
+  text-shadow:0 0 14px rgba(0,240,255,0.4)}
+
+.welcome-cta{margin-top:22px;opacity:0;transform:translateY(28px);pointer-events:none;
+  animation:ws-cta-rise 0.9s cubic-bezier(0.16,1,0.3,1) 2.5s forwards}
+@keyframes ws-cta-rise{to{opacity:1;transform:translateY(0);pointer-events:auto}}
+.welcome-cta button{
+  font-family:'Bowlby One',cursive;font-size:1.5rem;letter-spacing:6px;
+  color:var(--void);background:linear-gradient(135deg,var(--bp-gold) 0%,var(--bp-orange) 100%);
+  border:none;padding:24px 80px;cursor:pointer;text-transform:uppercase;position:relative;
+  clip-path:polygon(20px 0,100% 0,calc(100% - 20px) 100%,0 100%);
+  box-shadow:0 0 60px rgba(255,229,0,0.6),0 14px 40px rgba(255,133,0,0.4),inset 0 -4px 0 rgba(0,0,0,0.2);
+  transition:all 0.3s cubic-bezier(0.16,1,0.3,1);
+  animation:ctaPulse 1.6s ease-in-out infinite alternate}
+@keyframes ctaPulse{0%{box-shadow:0 0 40px rgba(255,229,0,0.5),0 14px 40px rgba(255,133,0,0.4),inset 0 -4px 0 rgba(0,0,0,0.2)}100%{box-shadow:0 0 80px rgba(255,229,0,0.9),0 16px 50px rgba(255,133,0,0.6),inset 0 -4px 0 rgba(0,0,0,0.2)}}
+.welcome-cta button::before{content:'';position:absolute;inset:0;
+  background:linear-gradient(120deg,transparent 30%,rgba(255,255,255,0.6) 50%,transparent 70%);
+  transform:translateX(-100%);transition:transform 0.7s}
+.welcome-cta button:hover::before{transform:translateX(100%)}
+.welcome-cta button:hover{transform:translateY(-4px) scale(1.04);
+  box-shadow:0 0 100px rgba(255,229,0,1),0 20px 60px rgba(255,133,0,0.7),inset 0 -4px 0 rgba(0,0,0,0.2)}
+
+@media (max-width:1100px){
+  .ws-cols{grid-template-columns:repeat(5,1fr);gap:12px;padding:0 10px}
+  .ws-col.c6,.ws-col.c7{display:none}
+}
+@media (max-width:700px){
+  .ws-cols{grid-template-columns:repeat(3,1fr);gap:8px;padding:0 8px}
+  .ws-col.c4,.ws-col.c5{display:none}
+}
+@media (prefers-reduced-motion:reduce){
+  .welcome,.welcome-brand,.welcome-text,.welcome-tagline,.welcome-cta,.ws-track{
+    animation:none!important;opacity:1!important;transform:none!important
+  }
+}
+
+/* Music FAB */
+.music-fab{position:fixed;top:24px;right:24px;z-index:90;
+  width:52px;height:52px;display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(135deg,rgba(20,12,40,0.85),rgba(8,11,32,0.95));
+  border:1px solid rgba(0,240,255,0.4);
+  clip-path:polygon(12px 0,100% 0,calc(100% - 12px) 100%,0 100%);
+  color:var(--fn-cyan);transition:all 0.3s;
+  transform:translateY(-100px);opacity:0}
+body.entered .music-fab{transform:translateY(0);opacity:1;transition:all 0.6s cubic-bezier(0.16,1,0.3,1) 1s}
+.music-fab:hover{border-color:var(--fn-cyan);background:linear-gradient(135deg,rgba(0,240,255,0.2),rgba(157,77,187,0.15));
+  box-shadow:0 0 24px rgba(0,240,255,0.5)}
+.music-fab svg{width:20px;height:20px}
+.music-fab.muted .icon-on{display:none}
+.music-fab:not(.muted) .icon-off{display:none}
+
+/* ═══════════════════════════════════════════════════════
+   HERO
+═══════════════════════════════════════════════════════ */
+.hero{position:relative;min-height:100vh;overflow:hidden;z-index:5;display:flex;align-items:center;
+  padding:60px 24px 60px}
+.hero-grid{position:absolute;inset:0;z-index:1;pointer-events:none;opacity:0.18;
+  background-image:linear-gradient(rgba(0,240,255,0.4) 1px,transparent 1px),linear-gradient(90deg,rgba(0,240,255,0.4) 1px,transparent 1px);
+  background-size:80px 80px;
+  mask-image:radial-gradient(ellipse at center,black 30%,transparent 70%)}
+
+.hero-impact{position:absolute;top:50%;right:-5%;transform:translateY(-50%);width:900px;height:900px;z-index:1;
+  background:radial-gradient(circle,rgba(0,240,255,0.05) 30%,rgba(157,77,187,0.08) 50%,transparent 75%);
+  mask-image:radial-gradient(circle,transparent 35%,black 60%,transparent 90%);
+  pointer-events:none;opacity:0;transition:opacity 1.2s ease 0.8s}
+body.entered .hero-impact{opacity:1}
+
+.hero-char-wrap{position:absolute;top:50%;right:-4%;transform:translateY(-50%);z-index:2;width:62%;max-width:880px;
+  pointer-events:none}
+/* "Yaşıyor" — Astro Jack hafif uçuyor (3.6s breathe, GPU-only transform).
+   prefers-reduced-motion'da otomatik durur. */
+.hero-char{width:100%;height:auto;
+  filter:drop-shadow(0 24px 40px rgba(0,0,0,0.55));
+  animation:hero-char-breathe 3.6s ease-in-out infinite alternate;
+  will-change:transform}
+@keyframes hero-char-breathe{
+  0%{transform:translateY(0) rotate(-1deg)}
+  100%{transform:translateY(-12px) rotate(1deg)}
+}
+@media (prefers-reduced-motion:reduce){.hero-char{animation:none}}
+.hero-aura{position:absolute;top:50%;right:5%;transform:translate(20%,-50%);width:540px;height:540px;
+  background:radial-gradient(circle,rgba(157,77,187,0.42) 0%,rgba(0,194,255,0.16) 50%,transparent 75%);
+  border-radius:50%;z-index:1;opacity:0.85}
+
+.hero-content{position:relative;z-index:3;max-width:1500px;margin:0 auto;width:100%;padding:0 40px}
+
+.hero-ribbon{display:inline-flex;align-items:center;gap:14px;
+  padding:10px 20px 10px 46px;
+  background:linear-gradient(135deg,var(--bp-gold) 0%,var(--bp-orange) 60%,var(--fn-magenta) 100%);
+  color:var(--void);font-family:'Bowlby One',cursive;font-size:0.95rem;letter-spacing:4px;text-transform:uppercase;
+  clip-path:polygon(28px 0,100% 0,calc(100% - 14px) 100%,0 100%);
+  box-shadow:0 0 40px rgba(255,229,0,0.55);
+  margin-bottom:22px;position:relative;
+  animation:ribbonSlam 0.7s cubic-bezier(0.16,1,0.3,1) 0.3s both}
+.hero-ribbon::before{content:'';position:absolute;left:14px;width:18px;height:18px;
+  background:var(--void);clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%)}
+@keyframes ribbonSlam{0%{opacity:0;transform:translateX(-60px) skewX(-12deg)}100%{opacity:1;transform:translateX(0) skewX(0)}}
+
+.hero-platform{display:inline-block;font-family:'Bowlby One',cursive;font-size:clamp(1.5rem,3vw,2.4rem);
+  background:linear-gradient(120deg,var(--fn-cyan),var(--fn-purple-bright));
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+  letter-spacing:6px;
+  filter:drop-shadow(0 0 15px rgba(0,240,255,0.5));margin-bottom:8px;
+  animation:slideInLeft 0.8s cubic-bezier(0.16,1,0.3,1) 0.5s both}
+@keyframes slideInLeft{from{opacity:0;transform:translateX(-60px)}to{opacity:1;transform:translateX(0)}}
+
+.hero-level{font-family:'Bowlby One',cursive;font-size:clamp(5rem,15vw,12rem);
+  line-height:0.82;letter-spacing:-3px;
+  background:linear-gradient(180deg,#FFFFFF 5%,#FFE500 35%,#FF8500 70%,#FF2A8E 100%);
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+  filter:drop-shadow(0 8px 30px rgba(255,229,0,0.4));margin-bottom:6px;
+  text-transform:uppercase;text-shadow:none;position:relative;
+  animation:levelImpact 1.1s cubic-bezier(0.16,1,0.3,1) 0.7s both}
+@keyframes levelImpact{0%{opacity:0;transform:scale(2.6) translateY(-30px) rotate(-4deg);filter:blur(10px)}60%{opacity:1;transform:scale(1.04) translateY(4px) rotate(1deg);filter:blur(0)}80%{transform:scale(0.98) translateY(-1px)}100%{transform:scale(1) translateY(0) rotate(0)}}
+
+.hero-locker{font-family:'Bowlby One',cursive;font-size:clamp(2.4rem,5vw,4.5rem);
+  line-height:0.9;letter-spacing:-1px;color:#fff;text-transform:uppercase;
+  text-shadow:0 4px 30px rgba(0,0,0,0.6);margin-bottom:36px;
+  animation:slideInLeft 0.8s cubic-bezier(0.16,1,0.3,1) 1s both}
+.hero-locker .stroke{-webkit-text-stroke:2px var(--fn-cyan);color:transparent;
+  text-shadow:0 0 30px rgba(0,240,255,0.5)}
+
+.hero-meta{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:36px;
+  animation:slideInLeft 0.8s cubic-bezier(0.16,1,0.3,1) 1.3s both}
+.hero-meta-chip{display:inline-flex;align-items:center;gap:8px;
+  padding:10px 18px;
+  background:rgba(20,29,71,0.7);
+  border:1px solid rgba(0,240,255,0.2);
+  clip-path:polygon(10px 0,100% 0,calc(100% - 10px) 100%,0 100%);
+  font-family:'Bungee',sans-serif;font-size:0.78rem;letter-spacing:2px;color:#fff;transition:all 0.3s}
+.hero-meta-chip:hover{border-color:var(--fn-cyan);transform:translateY(-3px);box-shadow:0 0 20px rgba(0,240,255,0.4)}
+.hero-meta-chip .num{font-family:'Bowlby One',cursive;color:var(--bp-gold);text-shadow:0 0 10px rgba(255,229,0,0.4);font-size:1.05rem}
+.hero-meta-chip .lbl{color:var(--text-dim);font-size:0.6rem}
+
+.hero-cta-row{display:flex;gap:14px;flex-wrap:wrap;
+  animation:slideInLeft 0.8s cubic-bezier(0.16,1,0.3,1) 1.55s both}
+.cta-primary{
+  position:relative;display:inline-flex;align-items:center;gap:14px;
+  font-family:'Bowlby One',cursive;font-size:1.15rem;letter-spacing:4px;
+  color:var(--void);
+  background:linear-gradient(135deg,var(--bp-gold) 0%,var(--bp-orange) 100%);
+  padding:20px 48px;text-transform:uppercase;border:none;
+  clip-path:polygon(20px 0,100% 0,calc(100% - 20px) 100%,0 100%);
+  box-shadow:0 0 40px rgba(255,229,0,0.6),0 14px 30px rgba(255,133,0,0.5),inset 0 -4px 0 rgba(0,0,0,0.2);
+  transition:all 0.3s cubic-bezier(0.16,1,0.3,1);overflow:hidden;text-decoration:none;
+  animation:ctaBreath 2.4s ease-in-out infinite alternate}
+@keyframes ctaBreath{0%{box-shadow:0 0 30px rgba(255,229,0,0.5),0 14px 30px rgba(255,133,0,0.4),inset 0 -4px 0 rgba(0,0,0,0.2)}100%{box-shadow:0 0 70px rgba(255,229,0,0.9),0 18px 40px rgba(255,133,0,0.7),inset 0 -4px 0 rgba(0,0,0,0.2)}}
+.cta-primary::before{content:'';position:absolute;inset:0;
+  background:linear-gradient(120deg,transparent 30%,rgba(255,255,255,0.5) 50%,transparent 70%);
+  transform:translateX(-100%);transition:transform 0.7s}
+.cta-primary:hover::before{transform:translateX(100%)}
+.cta-primary:hover{transform:translateY(-4px) scale(1.05);
+  box-shadow:0 0 100px rgba(255,229,0,1),0 22px 50px rgba(255,133,0,0.8),inset 0 -4px 0 rgba(0,0,0,0.2)}
+.cta-primary svg{width:24px;height:24px}
+
+.cta-secondary{display:inline-flex;align-items:center;gap:10px;
+  font-family:'Bungee',sans-serif;font-size:0.85rem;letter-spacing:3px;color:#fff;
+  background:rgba(20,29,71,0.6);
+  padding:20px 32px;text-transform:uppercase;text-decoration:none;
+  border:1px solid rgba(0,240,255,0.4);
+  clip-path:polygon(14px 0,100% 0,calc(100% - 14px) 100%,0 100%);
+  transition:all 0.3s}
+.cta-secondary:hover{border-color:var(--fn-cyan);color:var(--fn-cyan);
+  box-shadow:0 0 30px rgba(0,240,255,0.4);transform:translateY(-2px)}
+.cta-secondary svg{width:14px;height:14px}
+
+.hero-scroll{position:absolute;bottom:30px;left:50%;transform:translateX(-50%);z-index:5;
+  font-family:'Bungee',sans-serif;color:var(--text-muted);font-size:0.7rem;letter-spacing:5px;
+  display:flex;flex-direction:column;align-items:center;gap:8px;
+  animation:scrollBounce 2s ease-in-out infinite}
+.hero-scroll .chev{width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;
+  border-top:8px solid var(--fn-cyan);
+  filter:drop-shadow(0 0 6px rgba(0,240,255,0.6))}
+@keyframes scrollBounce{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(8px)}}
+
+@media (max-width:1024px){.hero-char-wrap{opacity:0.4;width:80%;right:-20%}.hero-aura,.hero-impact{display:none}}
+
+/* ═══════════════════════════════════════════════════════
+   LOOT MANIFEST
+═══════════════════════════════════════════════════════ */
+.loot{position:relative;z-index:5;padding:80px 24px 40px}
+.loot-eyebrow{text-align:center;font-family:'Bungee',sans-serif;
+  color:var(--fn-cyan);font-size:0.78rem;letter-spacing:8px;margin-bottom:14px;
+  text-shadow:0 0 14px rgba(0,240,255,0.5)}
+.loot-title{text-align:center;font-family:'Bowlby One',cursive;
+  font-size:clamp(2rem,4.5vw,3.4rem);letter-spacing:1px;color:#fff;margin-bottom:50px;text-transform:uppercase;
+  filter:drop-shadow(0 0 20px rgba(0,240,255,0.3))}
+.loot-title span{background:linear-gradient(90deg,var(--bp-gold),var(--fn-magenta));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+
+.loot-grid{max-width:1400px;margin:0 auto;display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px}
+.loot-card{
+  position:relative;
+  background:linear-gradient(180deg,rgba(20,29,71,0.85) 0%,rgba(10,14,44,0.95) 100%);
+  border:1px solid var(--c-tone,rgba(0,240,255,0.2));
+  padding:28px 18px 22px;
+  text-align:center;
+  transition:all 0.4s cubic-bezier(0.16,1,0.3,1);
+  clip-path:polygon(14px 0,100% 0,100% calc(100% - 14px),calc(100% - 14px) 100%,0 100%,0 14px);
+  overflow:hidden;
+  opacity:0;transform:translateY(40px) scale(0.9)}
+.loot-card.in{animation:lootSlam 0.7s cubic-bezier(0.16,1,0.3,1) forwards;animation-delay:var(--d,0ms)}
+@keyframes lootSlam{
+  0%{opacity:0;transform:translateY(60px) scale(0.85);filter:blur(8px)}
+  60%{opacity:1;transform:translateY(-6px) scale(1.04);filter:blur(0)}
+  80%{opacity:1;transform:translateY(2px) scale(0.99)}
+  100%{opacity:1;transform:translateY(0) scale(1)}
+}
+.loot-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;
+  background:linear-gradient(90deg,transparent,var(--c-tone,var(--fn-cyan)),transparent);
+  box-shadow:0 0 14px var(--c-glow,rgba(0,240,255,0.6))}
+.loot-card::after{content:'';position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(circle at center bottom,var(--c-glow,rgba(0,240,255,0.2)) 0%,transparent 60%);
+  opacity:0;transition:opacity 0.4s}
+.loot-card:hover{transform:translateY(-8px) rotate(-0.5deg);
+  border-color:var(--c-tone);
+  box-shadow:0 0 40px var(--c-glow,rgba(0,240,255,0.4)),0 20px 50px rgba(0,0,0,0.5)}
+.loot-card:hover::after{opacity:1}
+
+.loot-card .icon{font-size:2rem;margin-bottom:12px;display:block;
+  filter:drop-shadow(0 0 14px var(--c-glow,rgba(0,240,255,0.6)))}
+.loot-card .val{font-family:'Bowlby One',cursive;color:#fff;font-size:2.6rem;
+  letter-spacing:-1px;line-height:1;text-shadow:0 0 20px var(--c-glow)}
+.loot-card .val.long{font-size:1.7rem}
+.loot-card .lbl{font-family:'Bungee',sans-serif;color:var(--text-dim);
+  font-size:0.62rem;letter-spacing:3px;margin-top:10px}
+
+.loot-card[data-c="cyan"]{--c-tone:var(--fn-cyan);--c-glow:rgba(0,240,255,0.5)}
+.loot-card[data-c="purple"]{--c-tone:var(--fn-purple-bright);--c-glow:rgba(184,71,255,0.5)}
+.loot-card[data-c="gold"]{--c-tone:var(--bp-gold);--c-glow:rgba(255,229,0,0.5)}
+.loot-card[data-c="orange"]{--c-tone:var(--bp-orange);--c-glow:rgba(255,133,0,0.5)}
+.loot-card[data-c="pink"]{--c-tone:var(--fn-magenta);--c-glow:rgba(255,42,142,0.5)}
+.loot-card[data-c="green"]{--c-tone:var(--r-uncommon);--c-glow:rgba(93,218,66,0.5)}
+
+.rarity-row{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;
+  max-width:1200px;margin:36px auto 0;padding:0 24px}
+.rarity-pill{display:inline-flex;align-items:center;gap:9px;padding:9px 18px;
+  background:rgba(10,14,44,0.6);
+  border:1px solid var(--rc);
+  border-radius:100px;
+  font-family:'Bungee',sans-serif;font-size:0.72rem;letter-spacing:2px;color:#fff;
+  box-shadow:0 0 14px var(--rc),inset 0 0 10px rgba(0,0,0,0.4);
+  transition:all 0.3s;
+  opacity:0;transform:translateX(40px)}
+.rarity-pill.in{animation:pillSlide 0.5s cubic-bezier(0.16,1,0.3,1) forwards;animation-delay:var(--d,0ms)}
+@keyframes pillSlide{from{opacity:0;transform:translateX(40px)}to{opacity:1;transform:translateX(0)}}
+.rarity-pill:hover{transform:translateY(-3px) scale(1.05);box-shadow:0 0 24px var(--rc),inset 0 0 14px rgba(0,0,0,0.4)}
+.rarity-pill .num{font-family:'Bowlby One',cursive;font-size:1.1rem;color:var(--rc);text-shadow:0 0 10px var(--rc)}
+.rarity-pill .dot{width:8px;height:8px;border-radius:50%;background:var(--rc);box-shadow:0 0 10px var(--rc);animation:pillPulse 1.4s ease-in-out infinite alternate}
+@keyframes pillPulse{0%{opacity:0.5}100%{opacity:1}}
+
+/* ═══════════════════════════════════════════════════════
+   SECTIONS
+═══════════════════════════════════════════════════════ */
+.section{position:relative;z-index:5;max-width:1400px;margin:0 auto;padding:80px 24px 40px}
+.section-head{text-align:center;margin-bottom:40px;position:relative}
+.section-head .eyebrow{font-family:'Bungee',sans-serif;color:var(--fn-cyan);
+  font-size:0.78rem;letter-spacing:8px;margin-bottom:14px;
+  text-shadow:0 0 14px rgba(0,240,255,0.5)}
+.section-head h2{font-family:'Bowlby One',cursive;font-size:clamp(2.4rem,5.5vw,4.5rem);
+  letter-spacing:-1px;color:#fff;line-height:0.9;text-transform:uppercase;
+  filter:drop-shadow(0 0 20px rgba(0,240,255,0.2));position:relative}
+.section-head h2 .gradient{background:linear-gradient(120deg,var(--bp-gold),var(--fn-magenta));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.section-head .ornament{display:flex;align-items:center;justify-content:center;gap:14px;margin-top:16px}
+.section-head .ornament .line{width:80px;height:2px;
+  background:linear-gradient(90deg,transparent,var(--fn-cyan),transparent);
+  box-shadow:0 0 8px rgba(0,240,255,0.5)}
+.section-head .ornament .dia{width:12px;height:12px;background:var(--bp-gold);transform:rotate(45deg);
+  box-shadow:0 0 14px var(--bp-gold);animation:diaSpin 3s ease-in-out infinite alternate}
+@keyframes diaSpin{0%{transform:rotate(45deg) scale(1)}100%{transform:rotate(225deg) scale(1.2)}}
+.section-head .count{font-family:'Bungee',sans-serif;color:var(--text-muted);
+  font-size:0.7rem;letter-spacing:4px;margin-top:14px}
+
+.section-head .drop-tag{display:inline-flex;align-items:center;gap:8px;
+  padding:6px 14px 6px 30px;
+  background:linear-gradient(135deg,var(--fn-magenta),var(--fn-purple-bright));color:#fff;
+  font-family:'Bowlby One',cursive;font-size:0.7rem;letter-spacing:4px;text-transform:uppercase;
+  clip-path:polygon(20px 0,100% 0,calc(100% - 10px) 100%,0 100%);position:relative;
+  margin-bottom:10px;
+  animation:dropTagSiren 1.6s ease-in-out infinite}
+.section-head .drop-tag::before{content:'';position:absolute;left:10px;width:10px;height:10px;background:#fff;border-radius:50%;
+  animation:pillPulse 0.6s ease-in-out infinite alternate}
+@keyframes dropTagSiren{0%,100%{box-shadow:0 0 20px rgba(255,42,142,0.6)}50%{box-shadow:0 0 40px rgba(184,71,255,0.9)}}
+
+/* Filters */
+.controls{display:flex;flex-direction:column;align-items:center;gap:18px;margin-bottom:40px}
+.search-wrap{position:relative;max-width:540px;width:100%}
+.search-input{width:100%;padding:16px 48px 16px 50px;
+  background:rgba(10,14,44,0.7);
+  border:1.5px solid rgba(0,240,255,0.25);
+  color:#fff;font-family:'Outfit',sans-serif;font-size:0.95rem;font-weight:500;
+  outline:none;transition:all 0.3s;letter-spacing:0.3px;
+  clip-path:polygon(14px 0,100% 0,calc(100% - 14px) 100%,0 100%)}
+.search-input::placeholder{color:var(--text-muted);font-family:'Bungee',sans-serif;font-size:0.78rem;letter-spacing:3px}
+.search-input:focus{border-color:var(--fn-cyan);box-shadow:0 0 28px rgba(0,240,255,0.4)}
+.search-icon{position:absolute;left:18px;top:50%;transform:translateY(-50%);width:20px;height:20px;color:var(--text-muted);pointer-events:none;transition:color 0.3s}
+.search-input:focus~.search-icon{color:var(--fn-cyan)}
+.search-clear{position:absolute;right:14px;top:50%;transform:translateY(-50%);background:none;border:none;color:var(--text-muted);font-size:1.4rem;display:none;line-height:1;padding:4px 8px}
+.search-clear:hover{color:var(--bp-orange)}
+.search-clear.show{display:block}
+
+.chips{display:flex;flex-wrap:wrap;justify-content:center;gap:8px}
+.chip{padding:9px 18px;background:rgba(10,14,44,0.6);
+  border:1px solid rgba(0,240,255,0.18);
+  font-family:'Bungee',sans-serif;font-weight:400;font-size:0.7rem;letter-spacing:2px;
+  text-transform:uppercase;color:var(--text-dim);transition:all 0.25s;user-select:none;
+  clip-path:polygon(10px 0,100% 0,calc(100% - 10px) 100%,0 100%);position:relative;overflow:hidden}
+.chip:hover{color:#fff;border-color:rgba(0,240,255,0.4);transform:translateY(-2px)}
+.chip.active{color:var(--void);border-color:transparent;animation:chipPop 0.3s cubic-bezier(0.16,1,0.3,1)}
+@keyframes chipPop{0%{transform:scale(1)}40%{transform:scale(1.18)}100%{transform:scale(1)}}
+.chip[data-rarity="all"].active{background:linear-gradient(135deg,var(--fn-cyan),var(--fn-purple-bright));color:#fff;
+  box-shadow:0 0 18px rgba(0,240,255,0.5)}
+.chip[data-rarity="marvel"].active{background:linear-gradient(135deg,#ED1E2C,#9B0018);color:#fff;box-shadow:0 0 18px rgba(237,30,44,0.5)}
+.chip[data-rarity="icon"].active{background:linear-gradient(135deg,#1FCFCB,#005DFF);color:#fff;box-shadow:0 0 18px rgba(31,207,203,0.5)}
+.chip[data-rarity="gaming"].active{background:linear-gradient(135deg,#FFB800,#FF6B00);box-shadow:0 0 18px rgba(255,184,0,0.5)}
+.chip[data-rarity="legendary"].active{background:linear-gradient(135deg,var(--bp-gold),var(--bp-orange));box-shadow:0 0 18px rgba(255,133,0,0.5)}
+.chip[data-rarity="epic"].active{background:linear-gradient(135deg,#B847FF,#5E1FBF);color:#fff;box-shadow:0 0 18px rgba(184,71,255,0.5)}
+.chip[data-rarity="rare"].active{background:linear-gradient(135deg,#41A3FF,#2257B8);color:#fff;box-shadow:0 0 18px rgba(65,163,255,0.5)}
+
+.no-results{text-align:center;padding:60px 20px;color:var(--text-muted);font-family:'Bowlby One',cursive;font-size:1.6rem;letter-spacing:4px;display:none}
+.no-results.show{display:block}
+
+/* ═══════════════════════════════════════════════════════
+   SKIN VAULT — slam-in random direction
+═══════════════════════════════════════════════════════ */
+.skin-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px;perspective:1400px}
+.skin-card{position:relative;
+  background:linear-gradient(180deg,rgba(15,21,55,0.85) 0%,rgba(8,11,32,0.95) 100%);
+  border:1px solid rgba(255,255,255,0.06);
+  cursor:pointer;
+  transition:transform 0.18s ease-out,box-shadow 0.4s ease,border-color 0.4s ease;
+  overflow:hidden;
+  clip-path:polygon(0 0,calc(100% - 18px) 0,100% 18px,100% 100%,18px 100%,0 calc(100% - 18px));
+  transform-style:preserve-3d;will-change:transform}
+.skin-card.hidden{display:none}
+.skin-card.cardin{animation:cardSlamRandom 0.6s cubic-bezier(0.16,1,0.3,1) both;animation-delay:var(--d,0ms)}
+@keyframes cardSlamRandom{
+  0%{opacity:0;transform:translate3d(var(--ix,40px),var(--iy,30px),0) scale(0.8) rotate(var(--ir,-3deg));filter:blur(8px)}
+  60%{opacity:1;transform:translate3d(0,-4px,0) scale(1.02) rotate(0);filter:blur(0)}
+  100%{opacity:1;transform:translate3d(0,0,0) scale(1) rotate(0)}
+}
+.skin-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;z-index:3;
+  background:linear-gradient(90deg,transparent 5%,var(--rarity-color) 50%,transparent 95%);
+  box-shadow:0 0 18px var(--rarity-color)}
+.skin-card::after{content:'';position:absolute;inset:0;z-index:1;pointer-events:none;
+  background:radial-gradient(ellipse at top,var(--rarity-color) 0%,transparent 60%);
+  opacity:0.18;transition:opacity 0.4s}
+.skin-card:hover{transform:translateY(-6px) scale(1.02);
+  border-color:var(--rarity-color);
+  box-shadow:0 18px 48px rgba(0,0,0,0.55),0 0 36px var(--rarity-color)}
+.skin-card:hover::after{opacity:0.45}
+
+.skin-img-wrap{position:relative;overflow:hidden;aspect-ratio:1;
+  background:linear-gradient(135deg,rgba(157,77,187,0.1),rgba(0,194,255,0.05));z-index:2}
+.skin-img-wrap::before{content:'';position:absolute;inset:0;
+  background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,0.06) 50%,transparent 70%);
+  animation:shimmer 1.8s ease-in-out infinite;z-index:1}
+.skin-img-wrap.loaded::before{display:none}
+@keyframes shimmer{0%{transform:translateX(-100%)}100%{transform:translateX(100%)}}
+.skin-img-wrap img{width:100%;height:100%;object-fit:contain;display:block;padding:18px;
+  filter:drop-shadow(0 8px 20px rgba(0,0,0,0.6));
+  transition:transform 0.6s cubic-bezier(0.16,1,0.3,1),opacity 0.4s ease;opacity:0}
+.skin-img-wrap img.shown{opacity:1}
+.skin-card:hover .skin-img-wrap img{transform:scale(1.08) rotate(-2deg)}
+
+.skin-watermark{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%) rotate(-15deg);
+  font-family:'Bowlby One',cursive;font-size:4rem;letter-spacing:1px;
+  color:var(--rarity-color);opacity:0;transition:opacity 0.5s;
+  pointer-events:none;z-index:2;text-transform:uppercase;
+  -webkit-text-stroke:2px var(--rarity-color);color:transparent;
+  text-shadow:0 0 30px var(--rarity-color)}
+.skin-card:hover .skin-watermark{opacity:0.22}
+
+.skin-info{position:relative;z-index:3;padding:14px 16px 18px;
+  background:linear-gradient(180deg,rgba(8,11,32,0) 0%,rgba(8,11,32,0.92) 35%,rgba(8,11,32,0.98) 100%)}
+.skin-name{font-family:'Bowlby One',cursive;font-size:1.15rem;letter-spacing:0.5px;
+  color:#fff;line-height:1.05;margin-bottom:6px;text-transform:uppercase;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+  text-shadow:0 2px 6px rgba(0,0,0,0.6)}
+.skin-tag{display:inline-flex;align-items:center;gap:6px;
+  font-family:'Bungee',sans-serif;font-size:0.6rem;letter-spacing:2.5px;
+  color:var(--rarity-color);text-transform:uppercase}
+.skin-tag .dot{width:6px;height:6px;border-radius:50%;background:var(--rarity-color);
+  box-shadow:0 0 8px var(--rarity-color)}
+
+/* Hover particle burst */
+.burst{position:absolute;inset:0;pointer-events:none;z-index:5;overflow:visible}
+.burst-p{position:absolute;width:8px;height:8px;border-radius:50%;
+  background:radial-gradient(circle,var(--bc,#FFE500),transparent 70%);
+  box-shadow:0 0 12px var(--bc,#FFE500);
+  animation:burstShoot 0.7s cubic-bezier(0.16,1,0.3,1) forwards;pointer-events:none}
+@keyframes burstShoot{
+  0%{opacity:1;transform:translate(-50%,-50%) scale(0.6)}
+  100%{opacity:0;transform:translate(calc(-50% + var(--bx)),calc(-50% + var(--by))) scale(0.2)}
+}
+
+/* ═══════════════════════════════════════════════════════
+   TOOLS (pickaxes)
+═══════════════════════════════════════════════════════ */
+.tool-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:14px;perspective:1200px}
+.tool-card{position:relative;aspect-ratio:1;
+  background:linear-gradient(180deg,rgba(15,21,55,0.85) 0%,rgba(8,11,32,0.95) 100%);
+  border:1px solid rgba(255,133,0,0.12);
+  cursor:pointer;transition:all 0.3s;overflow:hidden;
+  clip-path:polygon(0 0,calc(100% - 14px) 0,100% 14px,100% 100%,14px 100%,0 calc(100% - 14px));
+  display:flex;flex-direction:column;will-change:transform}
+.tool-card.cardin{animation:cardSlamRandom 0.6s cubic-bezier(0.16,1,0.3,1) both;animation-delay:var(--d,0ms)}
+.tool-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;z-index:2;
+  background:linear-gradient(90deg,transparent,var(--bp-orange),transparent);
+  box-shadow:0 0 12px var(--bp-orange)}
+.tool-card::after{content:'';position:absolute;inset:0;z-index:1;
+  background:radial-gradient(circle at center,rgba(255,133,0,0.18),transparent 60%);
+  opacity:0;transition:opacity 0.3s}
+.tool-card:hover{border-color:var(--bp-orange);transform:translateY(-4px);
+  box-shadow:0 14px 36px rgba(0,0,0,0.5),0 0 28px rgba(255,133,0,0.5)}
+.tool-card:hover::after{opacity:1}
+
+.tool-img-wrap{flex:1;display:flex;align-items:center;justify-content:center;padding:18px;position:relative;z-index:2;
+  background:radial-gradient(circle at center,rgba(255,133,0,0.06),transparent 70%)}
+.tool-img-wrap img{max-width:78%;max-height:78%;object-fit:contain;
+  filter:drop-shadow(0 8px 16px rgba(0,0,0,0.6));transition:transform 0.5s;opacity:0}
+.tool-img-wrap img.shown{opacity:1}
+.tool-card:hover .tool-img-wrap img{transform:scale(1.1) rotate(-8deg)}
+
+.tool-info{position:relative;z-index:3;padding:10px 12px;
+  background:linear-gradient(180deg,rgba(8,11,32,0),rgba(8,11,32,0.95));
+  border-top:1px solid rgba(255,133,0,0.08)}
+.tool-name{font-family:'Bowlby One',cursive;font-size:0.92rem;letter-spacing:0.5px;
+  color:var(--bp-orange);text-align:center;text-transform:uppercase;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+  text-shadow:0 0 10px rgba(255,133,0,0.4)}
+
+/* ═══════════════════════════════════════════════════════
+   EMOTES
+═══════════════════════════════════════════════════════ */
+.emote-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:14px}
+.emote-grid{padding-bottom:48px}
+.emote-card{position:relative;aspect-ratio:1;
+  background:radial-gradient(circle at center,rgba(255,42,142,0.1),rgba(8,11,32,0.95));
+  border:2px solid rgba(255,42,142,0.25);
+  border-radius:50%;
+  cursor:pointer;transition:transform 0.3s, border-color 0.3s, box-shadow 0.3s;overflow:visible}
+.emote-card.cardin{animation:emotePop 0.5s cubic-bezier(0.16,1,0.3,1) backwards;animation-delay:var(--d,0ms)}
+@keyframes emotePop{0%{opacity:0;transform:scale(0.4) rotate(-180deg)}60%{opacity:1;transform:scale(1.1) rotate(10deg)}100%{opacity:1;transform:scale(1) rotate(0)}}
+.emote-card:hover{border-color:var(--fn-magenta);transform:scale(1.1) rotate(-3deg);
+  box-shadow:0 0 32px rgba(255,42,142,0.7);
+  animation:emoteWobble 0.5s ease infinite alternate;
+  z-index:10}
+@keyframes emoteWobble{0%{transform:scale(1.1) rotate(-5deg)}100%{transform:scale(1.1) rotate(5deg)}}
+.emote-card img{width:100%;height:100%;object-fit:contain;padding:8px;
+  border-radius:50%;
+  transition:transform 0.3s;opacity:0}
+.emote-card img.shown{opacity:1}
+.emote-card:hover img{transform:scale(1.18)}
+.emote-name{position:absolute;top:calc(100% + 10px);left:50%;
+  padding:6px 12px;
+  background:rgba(8,11,32,0.96);
+  border:1px solid rgba(255,42,142,0.5);
+  border-radius:999px;
+  font-family:'Bungee',sans-serif;
+  font-size:0.6rem;color:#fff;text-align:center;letter-spacing:1.5px;
+  white-space:nowrap;
+  box-shadow:0 8px 24px rgba(0,0,0,0.6),0 0 20px rgba(255,42,142,0.35);
+  opacity:0;transform:translate(-50%,-6px);
+  transition:opacity 0.25s ease,transform 0.25s ease;
+  text-transform:uppercase;
+  pointer-events:none;z-index:11}
+.emote-name::before{content:'';position:absolute;top:-4px;left:50%;transform:translateX(-50%) rotate(45deg);
+  width:8px;height:8px;background:rgba(8,11,32,0.96);
+  border-left:1px solid rgba(255,42,142,0.5);border-top:1px solid rgba(255,42,142,0.5)}
+.emote-card:hover .emote-name{opacity:1;transform:translate(-50%,0)}
+
+/* ═══════════════════════════════════════════════════════
+   FINAL CTA + FOOTER
+═══════════════════════════════════════════════════════ */
+.final-cta{position:relative;z-index:5;padding:120px 24px 60px;text-align:center;margin-top:80px;overflow:hidden}
+.final-cta::before{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);
+  width:90%;max-width:700px;height:2px;
+  background:linear-gradient(90deg,transparent,var(--bp-gold) 30%,var(--fn-magenta) 50%,var(--fn-cyan) 70%,transparent);
+  box-shadow:0 0 30px rgba(255,229,0,0.5)}
+.final-cta::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(255,42,142,0.08),transparent 60%);pointer-events:none}
+.final-cta h2{font-family:'Bowlby One',cursive;font-size:clamp(3rem,8vw,6.5rem);
+  letter-spacing:-1px;line-height:0.85;margin-bottom:18px;text-transform:uppercase;
+  background:linear-gradient(135deg,#fff 0%,var(--bp-gold) 35%,var(--bp-orange) 70%,var(--fn-magenta) 100%);
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+  filter:drop-shadow(0 0 30px rgba(255,229,0,0.4));position:relative;z-index:2}
+.final-cta .sub{font-family:'Outfit',sans-serif;color:var(--text-dim);
+  font-size:1rem;font-weight:600;letter-spacing:2px;margin:0 auto 40px;max-width:560px;text-transform:uppercase;position:relative;z-index:2}
+.final-cta .cta-primary{position:relative;z-index:2}
+
+.footer{padding:60px 24px 40px;text-align:center;position:relative;z-index:5}
+.footer .brand{font-family:'Bowlby One',cursive;letter-spacing:8px;font-size:1.8rem;text-transform:uppercase;
+  background:linear-gradient(120deg,var(--fn-cyan),var(--fn-purple-bright),var(--fn-magenta));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+  filter:drop-shadow(0 0 16px rgba(0,240,255,0.3))}
+.footer .tagline{font-family:'Bungee',sans-serif;color:var(--text-muted);font-size:0.7rem;letter-spacing:5px;margin-top:12px;text-transform:uppercase}
+
+/* ═══════════════════════════════════════════════════════
+   LIGHTBOX
+═══════════════════════════════════════════════════════ */
+.lightbox{display:none;position:fixed;inset:0;background:rgba(4,7,20,0.97);z-index:99998;
+  justify-content:center;align-items:center;padding:40px}
+.lightbox.active{display:flex}
+.lb-img-wrap{max-width:600px;width:100%;
+  background:linear-gradient(180deg,rgba(15,21,55,0.85) 0%,rgba(8,11,32,0.95) 100%);
+  border:2px solid var(--lb-color,var(--fn-cyan));
+  clip-path:polygon(0 0,calc(100% - 22px) 0,100% 22px,100% 100%,22px 100%,0 calc(100% - 22px));
+  padding:36px 30px;animation:lbIn 0.4s cubic-bezier(0.16,1,0.3,1);
+  box-shadow:0 0 100px var(--lb-color,rgba(0,240,255,0.5));position:relative}
+.lb-img-wrap::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;
+  background:linear-gradient(90deg,transparent,var(--lb-color),transparent);
+  box-shadow:0 0 16px var(--lb-color)}
+@keyframes lbIn{from{transform:scale(0.85);opacity:0}to{transform:scale(1);opacity:1}}
+.lightbox img{max-width:100%;max-height:60vh;display:block;margin:0 auto;
+  filter:drop-shadow(0 20px 40px rgba(0,0,0,0.8))}
+.lb-info{text-align:center;margin-top:24px}
+.lb-name{font-family:'Bowlby One',cursive;font-size:2rem;letter-spacing:1px;color:#fff;text-transform:uppercase}
+.lb-rarity{font-family:'Bungee',sans-serif;font-size:0.8rem;letter-spacing:4px;color:var(--lb-color,var(--fn-cyan));margin-top:8px;text-transform:uppercase}
+.lb-close{position:fixed;top:24px;right:30px;color:#fff;font-size:1.6rem;
+  width:48px;height:48px;display:flex;align-items:center;justify-content:center;
+  background:rgba(15,21,55,0.85);border:1px solid rgba(255,42,142,0.4);
+  clip-path:polygon(8px 0,100% 0,calc(100% - 8px) 100%,0 100%);
+  transition:all 0.3s;z-index:99999}
+.lb-close:hover{background:var(--fn-magenta);transform:rotate(90deg)}
+
+@media (max-width:640px){.hero{padding:80px 16px 60px;min-height:90vh}.hero-content{padding:0 16px}.loot,.section,.final-cta{padding-left:14px;padding-right:14px}.combo{font-size:1.4rem;left:16px;bottom:18px}}
+</style>
+</head>
+<body>
+
+<!-- Cosmic backdrop layers -->
+<div class="cosmos"></div>
+<div class="stars"></div>
+<div class="stars-bright" id="starsBright"></div>
+<div class="planet"></div>
+<div class="shooting"></div>
+<div class="particles" id="particles"></div>
+<div class="speed-lines" id="speedLines"></div>
+<div class="vignette"></div>
+
+<!-- Combo counter -->
+<div class="combo" id="combo"><span class="multi">SCROLL COMBO</span><span class="big">×<span id="comboNum">0</span></span></div>
+
+<!-- ═══ WELCOME — CASCADING SKIN COLUMNS (7-col) ═══ -->
+<div class="welcome" id="welcome">
+  <div class="ws-void"></div>
+  <div class="ws-cols" id="wsCols">
+    <div class="ws-col c1"><div class="ws-track" data-col="0"></div></div>
+    <div class="ws-col c2"><div class="ws-track" data-col="1"></div></div>
+    <div class="ws-col c3"><div class="ws-track" data-col="2"></div></div>
+    <div class="ws-col c4"><div class="ws-track" data-col="3"></div></div>
+    <div class="ws-col c5"><div class="ws-track" data-col="4"></div></div>
+    <div class="ws-col c6"><div class="ws-track" data-col="5"></div></div>
+    <div class="ws-col c7"><div class="ws-track" data-col="6"></div></div>
+  </div>
+  <div class="ws-darken"></div>
+  <div class="ws-spotlight"></div>
+  <div class="welcome-vignette"></div>
+  <div class="welcome-frame">
+    <div class="welcome-brand"><span class="gradient">NEXTTGAMER</span></div>
+    <div class="welcome-text">WELCOME</div>
+    <div class="welcome-tagline">FORTNITE LOCKER · LV.780</div>
+    <div class="welcome-cta"><button id="enterBtn">DROP IN</button></div>
+  </div>
+</div>
+<!-- Page transition blackout: covers everything during welcome→main fade -->
+<div class="page-blackout" id="pageBlackout"></div>
+
+<!-- Music FAB -->
+<button class="music-fab muted" id="musicToggle" aria-label="Toggle music">
+  <svg class="icon-on" viewBox="0 0 24 24" fill="currentColor"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.74 2.5-2.27 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+  <svg class="icon-off" viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 12A4.5 4.5 0 0014 7.97v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51A8.796 8.796 0 0021 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06a8.99 8.99 0 003.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
+</button>
+
+<!-- ═══ HERO ═══ -->
+<section class="hero" id="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-impact"></div>
+  <div class="hero-aura"></div>
+  <div class="hero-char-wrap"><img class="hero-char" src="https://fortnite-api.com/images/cosmetics/br/character_medicrow/icon.png" alt="Featured" referrerpolicy="no-referrer" crossorigin="anonymous"></div>
+
+  <div class="hero-content">
+    <div class="hero-ribbon">MYTHIC LOCKER UNLOCKED</div>
+    <div class="hero-platform">PC LOCKER</div>
+    <h1 class="hero-level">LV.780</h1>
+    <h2 class="hero-locker">FORTNITE <span class="stroke">LOOT</span></h2>
+    <div class="hero-meta">
+      <div class="hero-meta-chip"><span class="num">53</span><span class="lbl">SKINS</span></div>
+      <div class="hero-meta-chip"><span class="num">69</span><span class="lbl">PICKAXES</span></div>
+      <div class="hero-meta-chip"><span class="num">54</span><span class="lbl">EMOTES</span></div>
+      <div class="hero-meta-chip"><span class="num">56</span><span class="lbl">WINS</span></div>
+    </div>
+    <div class="hero-cta-row">
+      <a class="cta-primary" href="https://www.eldorado.gg/u/nexttgamer" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+        <span>BUY ON ELDORADO</span>
+      </a>
+      <a class="cta-secondary" href="#vault">
+        <span>VIEW LOCKER</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M9 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+  <div class="hero-scroll"><span>SCROLL</span><span class="chev"></span></div>
+</section>
+
+<!-- ═══ LOOT MANIFEST — emoji icons ═══ -->
+<section class="loot" id="loot">
+  <div class="loot-eyebrow">◆ LOCKER MANIFEST ◆</div>
+  <div class="loot-title">YOUR <span>BATTLE</span> ARSENAL</div>
+  <div class="loot-grid" id="lootGrid">
+    <div class="loot-card" data-c="purple"><span class="icon">👑</span><div class="val" data-count="780">0</div><div class="lbl">ACCOUNT LV</div></div>
+    <div class="loot-card" data-c="pink"><span class="icon">🎨</span><div class="val" data-count="53">0</div><div class="lbl">SKINS</div></div>
+    <div class="loot-card" data-c="orange"><span class="icon">⛏️</span><div class="val" data-count="69">0</div><div class="lbl">PICKAXES</div></div>
+    <div class="loot-card" data-c="cyan"><span class="icon">💃</span><div class="val" data-count="54">0</div><div class="lbl">EMOTES</div></div>
+    <div class="loot-card" data-c="gold"><span class="icon">🪙</span><div class="val long" data-count="100" data-format="comma">0</div><div class="lbl">V-BUCKS</div></div>
+    <div class="loot-card" data-c="orange"><span class="icon">🏆</span><div class="val" data-count="56">0</div><div class="lbl">WINS</div></div>
+    <div class="loot-card" data-c="cyan"><span class="icon">🌪️</span><div class="val" data-count="42">0</div><div class="lbl">SEASON</div></div>
+    <div class="loot-card" data-c="gold"><span class="icon">🎫</span><div class="val" data-count="1">0</div><div class="lbl">BP TIER</div></div>
+  </div>
+  <div class="rarity-row" id="rarityRow">
+    <div class="rarity-pill" style="--rc:#FFE81F"><span class="dot"></span>STAR WARS <span class="num">2</span></div>
+    <div class="rarity-pill" style="--rc:#B847FF"><span class="dot"></span>EPIC <span class="num">51</span></div>
+  </div>
+</section>
+
+<!-- ═══ SKIN VAULT ═══ -->
+<section class="section" id="vault">
+  <div class="section-head">
+    <div class="drop-tag">INCOMING DROP</div>
+    <div class="eyebrow">◆ THE LOCKER ◆</div>
+    <h2>SKIN <span class="gradient">VAULT</span></h2>
+    <div class="ornament"><div class="line"></div><div class="dia"></div><div class="line"></div></div>
+    <div class="count">53 OUTFITS · ALL SHOWN</div>
+  </div>
+
+  <div class="controls">
+    <div class="search-wrap">
+      <input type="text" class="search-input" id="skinSearch" placeholder="SEARCH OUTFITS..." autocomplete="off">
+      <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <button class="search-clear" id="searchClear" onclick="clearSearch()">×</button>
+    </div>
+    <div class="chips" id="filterChips">
+      <span class="chip active" data-rarity="all">ALL</span>
+      <span class="chip" data-rarity="marvel">MARVEL</span>
+      <span class="chip" data-rarity="icon">ICON</span>
+      <span class="chip" data-rarity="gaming">GAMING</span>
+      <span class="chip" data-rarity="legendary">LEGENDARY</span>
+      <span class="chip" data-rarity="epic">EPIC</span>
+      <span class="chip" data-rarity="rare">RARE</span>
+    </div>
+  </div>
+
+  <div class="skin-grid" id="skinGrid"></div>
+  <div class="no-results" id="noResults">NO MATCHES FOUND</div>
+</section>
+
+<!-- ═══ HARVESTING TOOLS ═══ -->
+<section class="section" id="tools">
+  <div class="section-head">
+    <div class="drop-tag" style="--co-from:#FF8500;--co-to:#FFE500">SWING IT</div>
+    <div class="eyebrow">◆ SWING & SLAM ◆</div>
+    <h2>HARVESTING <span class="gradient">TOOLS</span></h2>
+    <div class="ornament"><div class="line"></div><div class="dia"></div><div class="line"></div></div>
+    <div class="count">69 PICKAXES · ALL SHOWN</div>
+  </div>
+  <div class="tool-grid" id="toolGrid"></div>
+</section>
+
+<!-- ═══ EMOTES ═══ -->
+<section class="section" id="emotes">
+  <div class="section-head">
+    <div class="drop-tag" style="--co-from:#B847FF;--co-to:#FF2A8E">DROP A BEAT</div>
+    <div class="eyebrow">◆ DROP A BEAT ◆</div>
+    <h2>EMOTE <span class="gradient">LIBRARY</span></h2>
+    <div class="ornament"><div class="line"></div><div class="dia"></div><div class="line"></div></div>
+    <div class="count">54 EMOTES · ALL SHOWN</div>
+  </div>
+  <div class="emote-grid" id="emoteGrid"></div>
+</section>
+
+<!-- ═══ GLIDERS ═══ -->
+<section class="section" id="gliders">
+  <div class="section-head">
+    <div class="drop-tag" style="--co-from:#1FCFCB;--co-to:#41A3FF">SOAR HIGH</div>
+    <div class="eyebrow">◆ TAKE FLIGHT ◆</div>
+    <h2>GLIDER <span class="gradient">HANGAR</span></h2>
+    <div class="ornament"><div class="line"></div><div class="dia"></div><div class="line"></div></div>
+    <div class="count">59 GLIDERS · ALL SHOWN</div>
+  </div>
+  <div class="tool-grid" id="gliderGrid"></div>
+</section>
+
+<!-- ═══ FINAL CTA ═══ -->
+<section class="final-cta" id="finalCta">
+  <h2>READY TO<br>DROP IN?</h2>
+  <p class="sub">DELIVERY IN 20 MIN · VERIFIED BEFORE LISTING</p>
+  <a class="cta-primary" href="https://www.eldorado.gg/u/nexttgamer" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+    <span>CLAIM ON ELDORADO</span>
+  </a>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="footer">
+  <div class="brand">NEXTTGAMER</div>
+  <div class="tagline">BE THE NEXTT · PLAY LIKE THE BEST</div>
+</footer>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" onclick="if(event.target===this)closeLightbox()">
+  <div class="lb-close" onclick="closeLightbox()">✕</div>
+  <div class="lb-img-wrap" id="lbWrap">
+    <img id="lbImg" src="" alt="">
+    <div class="lb-info"><div class="lb-name" id="lbName"></div><div class="lb-rarity" id="lbRarity"></div></div>
+  </div>
+</div>
+
+<!-- YouTube IFrame -->
+<div id="ytplayer" style="position:fixed;left:-9999px;top:-9999px;width:1px;height:1px"></div>
+<script src="https://www.youtube.com/iframe_api"></script>
+
+<script>
+const skins = [{"name":"Wildcat","rarity":"epic","img":"https://fortnite-api.com/images/cosmetics/br/cid_757_athena_commando_f_wildcat/icon.png"},{"name":"Nezumi","rarity":"epic","img":"https://fortnite-api.com/images/cosmetics/br/character_apprentice/icon.png"},{"name":"Mandalorian","rarity":"starwars","img":"https://fortnite-api.com/images/cosmetics/br/cid_960_athena_commando_m_cosmos/icon.png"},{"name":"Valeria","rarity":"epic","img":"https://fortnite-api.com/images/cosmetics/br/character_madamemoth_posh/icon.png"},{"name":"The Ageless","rarity":"epic","img":"https://fortnite-api.com/images/cosmetics/br/character_citadel/icon.png"},{"name":"Peter Griffin","rarity":"epic","img":"https://fortnite-api.com/images/cosmetics/br/character_zebrascramble_bacon/icon.png"},{"name":"Massai","rarity":"epic","img":"https://fortnite-api.com/images/cosmetics/br/character_venice/icon.png"},{"name":"Hope","rarity":"epic","img":"https://fortnite-api.com/images/cosmetics/br/character_voidredemption_rebel/icon.png"},{"name":"Power Punk","rarity":"epic","img":"https://fortnite-api.com/images/cosmetics/br/character_corestreet/icon.png"},{"name":"Finn the Human","rarity":"starwars","img":"https://fortnite-api.com/images/cosmetics/br/character_puzzleshed/icon.png"},{"name":"Nyangelica","rarity":"epic","img":"https://fortnite-api.com/images/cosmetics/br/character_cyberdelivery/icon.png"},{"name":"Joss","rarity":"epic","img":"https://fortnite-api.com/images/cosmetics/br/character_traffichat_boba/icon.png"},{"name":"Mecha R3X","rarity":"epic","img":"https://fortnite-api.com/images/cosmetics/br/character_inflatododo/icon.png"},{"name":"Rebel Oro","rarity":"epic","img":"https://fortnite-api.com/images/cosmetics/br/character_bronzehat/icon.png"},{"name":"Silas Hesk","rarity":"epic","img":"https://fortnite-api.com/images/cosmetics/br/character_serpentcoil/icon.png"},{"name":"Nisha","rarity":"epic","img":"https://fortnite-api.com/images/cosmetics/br/character_ceremonialguard_fencer/icon.png"},{"name":"Oscar","rarity":"epic","img":"https://fortnite-api.com/images/cosmetics/br/character_bengalbasher_suit/icon.png"},{"name":"Dusty","rarity":"epic","img":"https://fortnite-api.com/images/cosmetics/br/character_chainmail/icon.png"},{"name":"Kwame","rarity":"epic","img":"https://fortnite-api.com/images/cosmetics/br/character_mutedsheath/icon.png"},{"name":"Heartbreak Ranger","rarity":"epic","img":"https://fortnite-api.com/images/cosmetics/br/character_cupidevil/icon.png"},{"name":"Raphael","rarity":"epic","img":"https://fortnite-api.com/images/cosmetics/br/character_powerfuldozen/icon.png"},{"name":"Cassidy Quinn","rarity":"epic","img":"https://fortnite-api.com/images/cosmetics/br/character_casinoreaper_die/icon.png"},{"name":"Sir Raven","rarity":"epic","img":"https://fortnite-api.com/images/cosmetics/br/character_medicrow/icon.png"},{"name":"Helsie","rarity":"epic","img":"https://fortnite-api.com/images/cosmetics/br/character_sharpfang/icon.png"},{"name":"Selene","rarity":"epic","img":"https://fortnite-api.com/images/cosmetics/br/character_sunlit/icon.png"},{"name":"Princess Bubblegum","rarity":"epic","img":"https://fortnite-api.com/images/cosmetics/br/character_chiveflake/icon.png"},{"name":"Neko Hatsune Miku","rarity":"epic","img":"https://fortnite-api.com/images/cosmetics/br/character_jadetowelhope/icon.png"},{"name":"Jackie","rarity":"epic","img":"https://fortnite-api.com/images/cosmetics/br/character_speedbonny/icon.png"},{"name":"Outlaw Midas","rarity":"epic","img":"https://fortnite-api.com/images/cosmetics/br/character_auracop_bullet/icon.png"},{"name":"Sabrina Carpenter","rarity":"epic","img":"https://fortnite-api.com/images/cosmetics/br/character_dimeblanketknot/icon.png"},{"name":"Montague","rarity":"epic","img":"https://fortnite-api.com/images/cosmetics/br/character_diamondheart_chic/icon.png"},{"name":"Vengeance Jones","rarity":"epic","img":"https://fortnite-api.com/images/cosmetics/br/character_undergroundrebel_fashion/icon.png"},{"name":"Marceline","rarity":"epic","img":"https://fortnite-api.com/images/cosmetics/br/character_cajuntaco/icon.png"},{"name":"Captain Phasma","rarity":"epic","img":"https://fortnite-api.com/images/cosmetics/br/character_bingrass/icon.png"},{"name":"Axion Sentinel ","rarity":"epic","img":"https://fortnite-api.com/images/cosmetics/br/character_galaxyknight/icon.png"},{"name":"Polar Peely","rarity":"epic","img":"https://fortnite-api.com/images/cosmetics/br/cid_a_323_athena_commando_m_bananawinter/icon.png"},{"name":"Solid Snake","rarity":"epic","img":"https://fortnite-api.com/images/cosmetics/br/character_abstractmirror_rogue/icon.png"},{"name":"Doom Slayer","rarity":"epic","img":"https://fortnite-api.com/images/cosmetics/br/character_redpepper/icon.png"},{"name":"Geralt of Rivia","rarity":"epic","img":"https://fortnite-api.com/images/cosmetics/br/character_magicmeadow/icon.png"},{"name":"Apprentice Evie","rarity":"epic","img":"https://fortnite-api.com/images/cosmetics/br/character_platypusbranch/icon.png"},{"name":"Jake the Dog","rarity":"epic","img":"https://fortnite-api.com/images/cosmetics/br/character_twinkleloop/icon.png"},{"name":"Fletcher Kane","rarity":"epic","img":"https://fortnite-api.com/images/cosmetics/br/character_sherwolf_gnash/icon.png"},{"name":"Underworld Desdemona","rarity":"epic","img":"https://fortnite-api.com/images/cosmetics/br/character_chaosdarkice/icon.png"},{"name":"Holiday Boxy","rarity":"epic","img":"https://fortnite-api.com/images/cosmetics/br/character_cardboardcrew_holiday/icon.png"},{"name":"Combat Tech Jules","rarity":"epic","img":"https://fortnite-api.com/images/cosmetics/br/character_mechanicalengineerrev/icon.png"},{"name":"Arctic Adeline","rarity":"epic","img":"https://fortnite-api.com/images/cosmetics/br/character_sportsfashion_winter/icon.png"},{"name":"Chrome Punk","rarity":"epic","img":"https://fortnite-api.com/images/cosmetics/br/character_pumpkinpunk_glitch/icon.png"},{"name":"Winterfest Bushranger","rarity":"epic","img":"https://fortnite-api.com/images/cosmetics/br/character_weepingwoodsfestive/icon.png"},{"name":"Sled Ready Guff","rarity":"epic","img":"https://fortnite-api.com/images/cosmetics/br/character_cometdeer/icon.png"},{"name":"Krisabelle","rarity":"epic","img":"https://fortnite-api.com/images/cosmetics/br/cid_a_310_athena_commando_f_scholarfestive/icon.png"},{"name":"Skull Scout","rarity":"epic","img":"https://fortnite-api.com/images/cosmetics/br/character_skeleprobe/icon.png"},{"name":"Marius","rarity":"epic","img":"https://fortnite-api.com/images/cosmetics/br/cid_a_095_athena_commando_m_doubleagentgrey/icon.png"},{"name":"Runway Racer","rarity":"epic","img":"https://fortnite-api.com/images/cosmetics/br/character_raiderpink_sherbert/icon.png"}];
+const pickaxes = [{"name":"Synchronous Sai","img":"https://fortnite-api.com/images/cosmetics/br/pickaxe_silenttempo/icon.png"},{"name":"Ember Pick","img":"https://fortnite-api.com/images/cosmetics/br/pickaxe_madamemoth/icon.png"},{"name":"Witcher's Steel Sword","img":"https://fortnite-api.com/images/cosmetics/br/pickaxe_magicmeadow/icon.png"},{"name":"Stun Knife","img":"https://fortnite-api.com/images/cosmetics/br/pickaxe_abstractmirror/icon.png"},{"name":"The Eternal Edge","img":"https://fortnite-api.com/images/cosmetics/br/pickaxe_citadel/icon.png"},{"name":"Cybertronian Axe","img":"https://fortnite-api.com/images/cosmetics/br/pickaxe_loudphoenix/icon.png"},{"name":"Heartbreak Club","img":"https://fortnite-api.com/images/cosmetics/br/pickaxe_cupidevil/icon.png"},{"name":"Spider Snare","img":"https://fortnite-api.com/images/cosmetics/br/pickaxe_rosedust/icon.png"},{"name":"Blackstar Edge","img":"https://fortnite-api.com/images/cosmetics/br/pickaxe_galaxyknight/icon.png"},{"name":"Raph's Sai","img":"https://fortnite-api.com/images/cosmetics/br/pickaxe_powerfuldozen/icon.png"},{"name":"Big Bite","img":"https://fortnite-api.com/images/cosmetics/br/pickaxe_sharpfang/icon.png"},{"name":"Sigil of the Empire","img":"https://fortnite-api.com/images/cosmetics/br/pickaxe_id_819_realmmale/icon.png"},{"name":"The Destroyer's Destroyer","img":"https://fortnite-api.com/images/cosmetics/br/pickaxe_inferno/icon.png"},{"name":"The Ashglow Blade","img":"https://fortnite-api.com/images/cosmetics/br/pickaxe_nebula/icon.png"},{"name":"Crucible Blade","img":"https://fortnite-api.com/images/cosmetics/br/pickaxe_redpepper/icon.png"},{"name":"Blade of the Waning Moon","img":"https://fortnite-api.com/images/cosmetics/br/pickaxe_id_715_lonewolfmale/icon.png"},{"name":"Hex Cutters","img":"https://fortnite-api.com/images/cosmetics/br/pickaxe_cyberdelivery/icon.png"},{"name":"Hacksear Blades","img":"https://fortnite-api.com/images/cosmetics/br/pickaxe_mechanicalengineerrev/icon.png"},{"name":"Golden Scythe","img":"https://fortnite-api.com/images/cosmetics/br/pickaxe_scythe_gold/icon.png"},{"name":"Shamisen Electric","img":"https://fortnite-api.com/images/cosmetics/br/pickaxe_heavycrown_bass/icon.png"},{"name":"B Splat","img":"https://fortnite-api.com/images/cosmetics/br/pickaxe_paintsplash_bass/icon.png"},{"name":"Marceline's Parasol","img":"https://fortnite-api.com/images/cosmetics/br/pickaxe_cajuntaco/icon.png"},{"name":"Electro Pairing Blades","img":"https://fortnite-api.com/images/cosmetics/br/pickaxe_platypusbranch/icon.png"},{"name":"The Scratcher","img":"https://fortnite-api.com/images/cosmetics/br/pickaxe_zebrascramble_bacon/icon.png"},{"name":"Titrationator","img":"https://fortnite-api.com/images/cosmetics/br/pickaxe_traffichat/icon.png"},{"name":"Designated Hitters","img":"https://fortnite-api.com/images/cosmetics/br/pickaxe_chainmail/icon.png"},{"name":"Mercurial","img":"https://fortnite-api.com/images/cosmetics/br/pickaxe_liquidmetal_mic/icon.png"},{"name":"The Pinfeather","img":"https://fortnite-api.com/images/cosmetics/br/pickaxe_medicrow/icon.png"},{"name":"Sparkling Star","img":"https://fortnite-api.com/images/cosmetics/br/pickaxe_sparklechop/icon.png"},{"name":"Hot Pokers","img":"https://fortnite-api.com/images/cosmetics/br/pickaxe_casinoreaper/icon.png"},{"name":"Utility Claymore","img":"https://fortnite-api.com/images/cosmetics/br/pickaxe_id_814_collectablemale/icon.png"},{"name":"Kwame's Katana","img":"https://fortnite-api.com/images/cosmetics/br/pickaxe_mutedsheath/icon.png"},{"name":"Lunar Glow","img":"https://fortnite-api.com/images/cosmetics/br/pickaxe_sunlit/icon.png"},{"name":"Peppermint Axe","img":"https://fortnite-api.com/images/cosmetics/br/pickaxe_chiveflake/icon.png"},{"name":"Premiere Poms","img":"https://fortnite-api.com/images/cosmetics/br/pickaxe_raiderpinksherbert/icon.png"},{"name":"R3X Claws","img":"https://fortnite-api.com/images/cosmetics/br/pickaxe_inflatododo/icon.png"},{"name":"Crescent Shroom","img":"https://fortnite-api.com/images/cosmetics/br/pickaxe_id_313_shiitakeshaolinmale/icon.png"},{"name":"Lumpy Space Piano","img":"https://fortnite-api.com/images/cosmetics/br/pickaxe_chiveflake_keytar/icon.png"},{"name":"Scarlet","img":"https://fortnite-api.com/images/cosmetics/br/pickaxe_puzzleshed/icon.png"},{"name":"Board Breaker","img":"https://fortnite-api.com/images/cosmetics/br/pickaxe_venice/icon.png"},{"name":"Cold Furia","img":"https://fortnite-api.com/images/cosmetics/br/pickaxe_chaosdarkice/icon.png"},{"name":"Fletcher's Cane","img":"https://fortnite-api.com/images/cosmetics/br/pickaxe_sherwolf/icon.png"},{"name":"Diamondclaw Picker","img":"https://fortnite-api.com/images/cosmetics/br/pickaxe_diamondheart/icon.png"},{"name":"Fangs of Hesk","img":"https://fortnite-api.com/images/cosmetics/br/pickaxe_serpentcoil/icon.png"},{"name":"Duelist's Foil","img":"https://fortnite-api.com/images/cosmetics/br/pickaxe_ceremonialguard/icon.png"},{"name":"Elegant Crowbar","img":"https://fortnite-api.com/images/cosmetics/br/pickaxe_royalangst/icon.png"},{"name":"Fanged Foresight","img":"https://fortnite-api.com/images/cosmetics/br/pickaxe_apprentice/icon.png"},{"name":"Snowglobe Smasher","img":"https://fortnite-api.com/images/cosmetics/br/pickaxe_winterfest1/icon.png"},{"name":"Molten Max Axe","img":"https://fortnite-api.com/images/cosmetics/br/pickaxe_cindermax/icon.png"},{"name":"Rose Light Daggers","img":"https://fortnite-api.com/images/cosmetics/br/pickaxe_pinkspike/icon.png"},{"name":"Marcy's Ax Bass","img":"https://fortnite-api.com/images/cosmetics/br/pickaxe_cajuntaco_bass/icon.png"},{"name":"Gum Brawler","img":"https://fortnite-api.com/images/cosmetics/br/pickaxe_id_713_gumballmale/icon.png"},{"name":"Secret Scimitars","img":"https://fortnite-api.com/images/cosmetics/br/pickaxe_voidredemption/icon.png"},{"name":"Nanner Bashers","img":"https://fortnite-api.com/images/cosmetics/br/pickaxe_lilsplit/icon.png"},{"name":"Kittanas","img":"https://fortnite-api.com/images/cosmetics/br/pickaxe_id_615_fauxmale/icon.png"},{"name":"Hooplah Hammer","img":"https://fortnite-api.com/images/cosmetics/br/pickaxe_id_670_fnbirthdaymale_fqk1e/icon.png"},{"name":"Snowplower","img":"https://fortnite-api.com/images/cosmetics/br/pickaxe_id_732_shovelmale/icon.png"},{"name":"Neko Miku Keytar","img":"https://fortnite-api.com/images/cosmetics/br/pickaxe_jadetowel_keytar/icon.png"},{"name":"Holly Hatchets","img":"https://fortnite-api.com/images/cosmetics/br/pickaxe_id_731_scholarfestivefemale1h/icon.png"},{"name":"Backup Blades","img":"https://fortnite-api.com/images/cosmetics/br/pickaxe_musketslinger/icon.png"},{"name":"The Rebel","img":"https://fortnite-api.com/images/cosmetics/br/pickaxe_corestreet_guitar/icon.png"},{"name":"Crimson Polestar","img":"https://fortnite-api.com/images/cosmetics/br/pickaxe_cyberfureboot32/icon.png"},{"name":"Outlaw's Whipknives","img":"https://fortnite-api.com/images/cosmetics/br/pickaxe_auracop/icon.png"},{"name":"Sledgecracker","img":"https://fortnite-api.com/images/cosmetics/br/pickaxe_jollytroll/icon.png"},{"name":"Poacher's Regrets","img":"https://fortnite-api.com/images/cosmetics/br/pickaxe_bengalbasher/icon.png"},{"name":"Legendary Blade of Insight","img":"https://fortnite-api.com/images/cosmetics/br/pickaxe_photographer_holiday_female/icon.png"},{"name":"The Takedown","img":"https://fortnite-api.com/images/cosmetics/br/pickaxe_undergroundrebel/icon.png"},{"name":"Reconner's Reckoning","img":"https://fortnite-api.com/images/cosmetics/br/pickaxe_skeleprobe/icon.png"},{"name":"Default Pickaxe","img":"https://fortnite-api.com/images/cosmetics/br/defaultpickaxe/icon.png"}];
+const emotes = [{"name":"Snikt! Snikt!","img":"https://fortnite-api.com/images/cosmetics/br/eid_desertshadow/icon.png"},{"name":"Crowning Achievement","img":"https://fortnite-api.com/images/cosmetics/br/eid_coronet/icon.png"},{"name":"Imperial March","img":"https://fortnite-api.com/images/cosmetics/br/eid_realm/icon.png"},{"name":"Igni Sign","img":"https://fortnite-api.com/images/cosmetics/br/eid_magicmeadow/icon.png"},{"name":"The Rick Dance","img":"https://fortnite-api.com/images/cosmetics/br/eid_ruckus/icon.png"},{"name":"Mini Slayer Fistbump","img":"https://fortnite-api.com/images/cosmetics/br/eid_redpepper/icon.png"},{"name":"Front Page Pose","img":"https://fortnite-api.com/images/cosmetics/br/eid_mic_poseforpicture/icon.png"},{"name":"Boba Snack","img":"https://fortnite-api.com/images/cosmetics/br/eid_sharpfang/icon.png"},{"name":"!","img":"https://fortnite-api.com/images/cosmetics/br/eid_abstractmirror/icon.png"},{"name":"Boogie Down","img":"https://fortnite-api.com/images/cosmetics/br/eid_boogiedown/icon.png"},{"name":"I'm a Mystery","img":"https://fortnite-api.com/images/cosmetics/br/eid_voidredemption/icon.png"},{"name":"Crazy Feet","img":"https://fortnite-api.com/images/cosmetics/br/eid_crazyfeet/icon.png"},{"name":"Lunar Party","img":"https://fortnite-api.com/images/cosmetics/br/eid_sunlit/icon.png"},{"name":"I Need You to Concentrate","img":"https://fortnite-api.com/images/cosmetics/br/eid_apprentice/icon.png"},{"name":"Love it!","img":"https://fortnite-api.com/images/cosmetics/br/eid_doodling/icon.png"},{"name":"Billy Bounce","img":"https://fortnite-api.com/images/cosmetics/br/eid_billybounce/icon.png"},{"name":"Count It!","img":"https://fortnite-api.com/images/cosmetics/br/eid_agentsherbert/icon.png"},{"name":"Electro Swing","img":"https://fortnite-api.com/images/cosmetics/br/eid_electroswing/icon.png"},{"name":"Shout!","img":"https://fortnite-api.com/images/cosmetics/br/eid_clamor/icon.png"},{"name":"Crabby","img":"https://fortnite-api.com/images/cosmetics/br/eid_crabdance/icon.png"},{"name":"Popular Vibe","img":"https://fortnite-api.com/images/cosmetics/br/eid_speeddial/icon.png"},{"name":"Diamond Throne","img":"https://fortnite-api.com/images/cosmetics/br/eid_diamondheart/icon.png"},{"name":"It's a Vibe","img":"https://fortnite-api.com/images/cosmetics/br/eid_aloha_c82xx/icon.png"},{"name":"Foil Flex","img":"https://fortnite-api.com/images/cosmetics/br/eid_ceremonialguard/icon.png"},{"name":"Lil' Prancer","img":"https://fortnite-api.com/images/cosmetics/br/eid_dashing/icon.png"},{"name":"Knife Sharpener","img":"https://fortnite-api.com/images/cosmetics/br/eid_bengalbasher/icon.png"},{"name":"Balance Board","img":"https://fortnite-api.com/images/cosmetics/br/eid_venice/icon.png"},{"name":"Bone Breaker","img":"https://fortnite-api.com/images/cosmetics/br/eid_inflatododo/icon.png"},{"name":"Choice Knit","img":"https://fortnite-api.com/images/cosmetics/br/eid_epicyarn/icon.png"},{"name":"Take a 'bow","img":"https://fortnite-api.com/images/cosmetics/br/eid_spectrum/icon.png"},{"name":"Slow Clap","img":"https://fortnite-api.com/images/cosmetics/br/eid_slowclap/icon.png"},{"name":"It's... you?","img":"https://fortnite-api.com/images/cosmetics/br/eid_youthere/icon.png"},{"name":"Punk Show","img":"https://fortnite-api.com/images/cosmetics/br/eid_corestreet/icon.png"},{"name":"Duelist's Card Trick","img":"https://fortnite-api.com/images/cosmetics/br/eid_casinoreaper/icon.png"},{"name":"Standing Bow","img":"https://fortnite-api.com/images/cosmetics/br/eid_ebony/icon.png"},{"name":"Baron's Hoard","img":"https://fortnite-api.com/images/cosmetics/br/eid_sherwolf/icon.png"},{"name":"Outlaw's Mugshot","img":"https://fortnite-api.com/images/cosmetics/br/eid_auracop/icon.png"},{"name":"It's Chemistry!","img":"https://fortnite-api.com/images/cosmetics/br/eid_traffichat/icon.png"},{"name":"Where Ya Going?","img":"https://fortnite-api.com/images/cosmetics/br/eid_lonely/icon.png"},{"name":"It is Finished","img":"https://fortnite-api.com/images/cosmetics/br/eid_reverence/icon.png"},{"name":"Shimmy Wiggle","img":"https://fortnite-api.com/images/cosmetics/br/eid_canine/icon.png"},{"name":"Called Shot","img":"https://fortnite-api.com/images/cosmetics/br/eid_chainmail/icon.png"},{"name":"Vulcan Salute","img":"https://fortnite-api.com/images/cosmetics/br/eid_terminal/icon.png"},{"name":"Martial Arts Master","img":"https://fortnite-api.com/images/cosmetics/br/eid_blackmondaymale2/icon.png"},{"name":"Doze Dab","img":"https://fortnite-api.com/images/cosmetics/br/eid_rebelclaw/icon.png"},{"name":"Party Hips","img":"https://fortnite-api.com/images/cosmetics/br/eid_stringdance/icon.png"},{"name":"Tragedy!","img":"https://fortnite-api.com/images/cosmetics/br/eid_hamitup/icon.png"},{"name":"Heartburst","img":"https://fortnite-api.com/images/cosmetics/br/eid_swatch/icon.png"},{"name":"Hypnot-Eyes","img":"https://fortnite-api.com/images/cosmetics/br/eid_apprenticeswirl/icon.png"},{"name":"Feel the Force","img":"https://fortnite-api.com/images/cosmetics/br/eid_platypusbranch/icon.png"},{"name":"Dance Moves","img":"https://fortnite-api.com/images/cosmetics/br/eid_dancemoves/icon.png"},{"name":"The Break","img":"https://fortnite-api.com/images/cosmetics/br/eid_drum_relaxeddrummer/icon.png"},{"name":"Limber Up","img":"https://fortnite-api.com/images/cosmetics/br/eid_bass_midbreakstretch/icon.png"},{"name":"Syntheslicer","img":"https://fortnite-api.com/images/cosmetics/br/eid_keytar_ninja/icon.png"}];
+const gliders = [{"name":"Time Brella","img":"https://fortnite-api.com/images/cosmetics/br/umbrella_season_27/icon.png"},{"name":"Sentinel","img":"https://fortnite-api.com/images/cosmetics/br/glider_id_335_logarithm_40qgl/icon.png"},{"name":"Timesweeper","img":"https://fortnite-api.com/images/cosmetics/br/glider_silenttempo/icon.png"},{"name":"Frostburn","img":"https://fortnite-api.com/images/cosmetics/br/glider_hornedjudgment/icon.png"},{"name":"Commander's Descent","img":"https://fortnite-api.com/images/cosmetics/br/glider_citadel/icon.png"},{"name":"Bubbloon","img":"https://fortnite-api.com/images/cosmetics/br/glider_id_329_gumballmale/icon.png"},{"name":"Wintry Whirligig","img":"https://fortnite-api.com/images/cosmetics/br/glider_jollytroll/icon.png"},{"name":"Dealer's Deck","img":"https://fortnite-api.com/images/cosmetics/br/glider_casinoreaper/icon.png"},{"name":"Cacodemon","img":"https://fortnite-api.com/images/cosmetics/br/glider_redpepper/icon.png"},{"name":"Cuddly Cloudcruiser","img":"https://fortnite-api.com/images/cosmetics/br/umbrella_buffet_rd4dp/icon.png"},{"name":"Chemist's Cloudglider","img":"https://fortnite-api.com/images/cosmetics/br/glider_traffichat/icon.png"},{"name":"Horizon Rider","img":"https://fortnite-api.com/images/cosmetics/br/glider_inflatododo/icon.png"},{"name":"Nevermore Wings","img":"https://fortnite-api.com/images/cosmetics/br/glider_medicrow/icon.png"},{"name":"Moonglide","img":"https://fortnite-api.com/images/cosmetics/br/glider_sunlit/icon.png"},{"name":"Psionic Surfer","img":"https://fortnite-api.com/images/cosmetics/br/glider_zirconsweep/icon.png"},{"name":"Flip Flyer","img":"https://fortnite-api.com/images/cosmetics/br/glider_venice/icon.png"},{"name":"Pack Leader","img":"https://fortnite-api.com/images/cosmetics/br/glider_sherwolf/icon.png"},{"name":"Lunar Skyspan","img":"https://fortnite-api.com/images/cosmetics/br/glider_meteorwomen_alt/icon.png"},{"name":"Slider","img":"https://fortnite-api.com/images/cosmetics/br/glider_abstractmirror/icon.png"},{"name":"Whispering Wind","img":"https://fortnite-api.com/images/cosmetics/br/glider_apprentice/icon.png"},{"name":"Inflate-A-Roach","img":"https://fortnite-api.com/images/cosmetics/br/glider_magicmeadow/icon.png"},{"name":"Cazadora","img":"https://fortnite-api.com/images/cosmetics/br/glider_agentsherbert/icon.png"},{"name":"Razor Crest","img":"https://fortnite-api.com/images/cosmetics/br/glider_id_254_cosmosmale/icon.png"},{"name":"Bullet Rider","img":"https://fortnite-api.com/images/cosmetics/br/glider_auracop/icon.png"},{"name":"Stormcloud","img":"https://fortnite-api.com/images/cosmetics/br/glider_localzillanight/icon.png"},{"name":"Punk Powerglider","img":"https://fortnite-api.com/images/cosmetics/br/glider_corestreet/icon.png"},{"name":"Sunny's Lander","img":"https://fortnite-api.com/images/cosmetics/br/glider_id_294_believerfemale/icon.png"},{"name":"Infield Fly","img":"https://fortnite-api.com/images/cosmetics/br/glider_chainmail/icon.png"},{"name":"Victory Vaunter","img":"https://fortnite-api.com/images/cosmetics/br/glider_bengalbasher/icon.png"},{"name":"Needle Dropper","img":"https://fortnite-api.com/images/cosmetics/br/glider_dazzle/icon.png"},{"name":"IO Field Flyer","img":"https://fortnite-api.com/images/cosmetics/br/glider_id_313_divisionfemale/icon.png"},{"name":"Vision Board","img":"https://fortnite-api.com/images/cosmetics/br/glider_cyberfuglitch/icon.png"},{"name":"Ratacat Roamer","img":"https://fortnite-api.com/images/cosmetics/br/glider_voidredemption/icon.png"},{"name":"Scarlet Longboard","img":"https://fortnite-api.com/images/cosmetics/br/glider_bariumreboot32/icon.png"},{"name":"Comfy Cats","img":"https://fortnite-api.com/images/cosmetics/br/glider_chillcat/icon.png"},{"name":"Har-Har-Har!","img":"https://fortnite-api.com/images/cosmetics/br/glider_default_jolly/icon.png"},{"name":"Competitor's Time Brella","img":"https://fortnite-api.com/images/cosmetics/br/umbrella_rankedremixcarrot/icon.png"},{"name":"Rebel Brella","img":"https://fortnite-api.com/images/cosmetics/br/umbrella_season_28/icon.png"},{"name":"Perfect Pivot","img":"https://fortnite-api.com/images/cosmetics/br/glider_skullbrite_cotton/icon.png"},{"name":"Heist Flier","img":"https://fortnite-api.com/images/cosmetics/br/umbrella_ogvault/icon.png"},{"name":"Grand Glacier Glider","img":"https://fortnite-api.com/images/cosmetics/br/glider_diamondheart/icon.png"},{"name":"High Society Glider","img":"https://fortnite-api.com/images/cosmetics/br/glider_ceremonialguard/icon.png"},{"name":"Elite Servo","img":"https://fortnite-api.com/images/cosmetics/br/glider_modernmilitary_crisp/icon.png"},{"name":"Storm Crash","img":"https://fortnite-api.com/images/cosmetics/br/glider_id_375_darkstormyellow/icon.png"},{"name":"Chromebrella","img":"https://fortnite-api.com/images/cosmetics/br/umbrella_season_22/icon.png"},{"name":"The Peerless Parasol","img":"https://fortnite-api.com/images/cosmetics/br/umbrella_season_23/icon.png"},{"name":"Death Star 'Brella","img":"https://fortnite-api.com/images/cosmetics/br/umbrella_ch6miniseason1/icon.png"},{"name":"MEGA-brella","img":"https://fortnite-api.com/images/cosmetics/br/umbrella_season_24/icon.png"},{"name":"Umbrella of the Last Reality","img":"https://fortnite-api.com/images/cosmetics/br/umbrella_season_18/icon.png"},{"name":"Cometbrella","img":"https://fortnite-api.com/images/cosmetics/br/glider_impactevent/icon.png"},{"name":"Bounty 'Brella","img":"https://fortnite-api.com/images/cosmetics/br/umbrella_season_15/icon.png"},{"name":"Nana-brella","img":"https://fortnite-api.com/images/cosmetics/br/umbrella_season_25/icon.png"},{"name":"Invasion","img":"https://fortnite-api.com/images/cosmetics/br/umbrella_season_17/icon.png"},{"name":"Dragonhearted 'Brella","img":"https://fortnite-api.com/images/cosmetics/br/umbrella_coltfetch/icon.png"},{"name":"Glider","img":"https://fortnite-api.com/images/cosmetics/br/defaultglider/icon.png"},{"name":"The Rezzbrella","img":"https://fortnite-api.com/images/cosmetics/br/umbrella_blastberry_season_30/icon.png"},{"name":"The Umbrella","img":"https://fortnite-api.com/images/cosmetics/br/solo_umbrella/icon.png"},{"name":"Battle Bloom","img":"https://fortnite-api.com/images/cosmetics/br/umbrella_season_21/icon.png"},{"name":"Seven Signet","img":"https://fortnite-api.com/images/cosmetics/br/umbrella_season_19/icon.png"}];
+
+const RARITY = {
+  marvel:    { color:"#ED1E2C", label:"Marvel" },
+  dc:        { color:"#0476F2", label:"DC" },
+  icon:      { color:"#1FCFCB", label:"Icon Series" },
+  gaming:    { color:"#FFB800", label:"Gaming Legends" },
+  starwars:  { color:"#FFE81F", label:"Star Wars" },
+  mythic:    { color:"#FFD700", label:"Mythic" },
+  legendary: { color:"#FF8500", label:"Legendary" },
+  epic:      { color:"#B847FF", label:"Epic" },
+  rare:      { color:"#41A3FF", label:"Rare" },
+  uncommon:  { color:"#5DDA42", label:"Uncommon" },
+  common:    { color:"#B5BCC9", label:"Common" },
+};
+
+function _slamVars(i) {
+  const dirs = [
+    { ix:'-50px', iy:'30px', ir:'-4deg' },
+    { ix:'50px',  iy:'30px', ir:'4deg' },
+    { ix:'0',     iy:'60px', ir:'0' },
+    { ix:'-30px', iy:'-40px',ir:'-3deg' },
+    { ix:'40px',  iy:'-30px',ir:'3deg' },
+    { ix:'-60px', iy:'10px', ir:'-5deg' },
+  ];
+  const d = dirs[i % dirs.length];
+  return `--ix:${d.ix};--iy:${d.iy};--ir:${d.ir};--d:${(i*22)}ms`;
+}
+
+function renderSkins() {
+  document.getElementById('skinGrid').innerHTML = skins.map((s, i) => {
+    const r = RARITY[s.rarity] || RARITY.epic;
+    return `<div class="skin-card" data-rarity="${s.rarity}" data-name="${s.name.toLowerCase()}"
+      style="--rarity-color:${r.color};${_slamVars(i)}"
+      onclick="openLightbox('${s.img}','${s.name.replace(/'/g,'&#39;')}','${r.label}','${r.color}')">
+      <div class="skin-watermark">${r.label}</div>
+      <div class="skin-img-wrap"><img data-src="${s.img}" alt="${s.name}" decoding="async"></div>
+      <div class="skin-info">
+        <div class="skin-name">${s.name}</div>
+        <div class="skin-tag"><span class="dot"></span>${r.label}</div>
+      </div>
+      <div class="burst"></div>
+    </div>`;
+  }).join('');
+}
+
+function renderTools() {
+  document.getElementById('toolGrid').innerHTML = pickaxes.map((p, i) => `
+    <div class="tool-card" style="${_slamVars(i)}"
+      onclick="openLightbox('${p.img}','${p.name.replace(/'/g,'&#39;')}','PICKAXE','#FF8500')">
+      <div class="tool-img-wrap"><img data-src="${p.img}" alt="${p.name}"></div>
+      <div class="tool-info"><div class="tool-name">${p.name}</div></div>
+      <div class="burst"></div>
+    </div>`).join('');
+}
+
+function renderEmotes() {
+  document.getElementById('emoteGrid').innerHTML = emotes.map((e, i) => `
+    <div class="emote-card" style="--d:${i*40}ms"
+      onclick="openLightbox('${e.img}','${e.name.replace(/'/g,'&#39;')}','EMOTE','#FF2A8E')">
+      <img data-src="${e.img}" alt="${e.name}">
+      <div class="emote-name">${e.name}</div>
+    </div>`).join('');
+}
+
+function renderGliders() {
+  const grid = document.getElementById('gliderGrid');
+  if (!grid) return;
+  grid.innerHTML = gliders.map((g, i) => `
+    <div class="tool-card" style="${_slamVars(i)}"
+      onclick="openLightbox('${g.img}','${g.name.replace(/'/g,'&#39;')}','GLIDER','#1FCFCB')">
+      <div class="tool-img-wrap"><img data-src="${g.img}" alt="${g.name}"></div>
+      <div class="tool-info"><div class="tool-name">${g.name}</div></div>
+      <div class="burst"></div>
+    </div>`).join('');
+}
+
+function lazyLoad() {
+  const io = new IntersectionObserver((entries) => {
+    for (const e of entries) {
+      if (!e.isIntersecting) continue;
+      const img = e.target;
+      img.src = img.dataset.src;
+      img.removeAttribute('data-src');
+      img.onload = () => {
+        img.classList.add('shown');
+        const wrap = img.closest('.skin-img-wrap');
+        if (wrap) wrap.classList.add('loaded');
+      };
+      img.onerror = () => { img.style.opacity = 0.2; };
+      io.unobserve(img);
+    }
+  }, { rootMargin: '300px' });
+  document.querySelectorAll('img[data-src]').forEach(i => io.observe(i));
+}
+
+let activeFilter = 'all';
+function applyFilters() {
+  const q = document.getElementById('skinSearch').value.toLowerCase().trim();
+  let shown = 0;
+  document.querySelectorAll('.skin-card').forEach(card => {
+    const matchRarity = activeFilter === 'all' || card.dataset.rarity === activeFilter;
+    const matchSearch = !q || card.dataset.name.includes(q);
+    const visible = matchRarity && matchSearch;
+    card.classList.toggle('hidden', !visible);
+    if (visible) shown++;
+  });
+  document.getElementById('noResults').classList.toggle('show', shown === 0);
+  document.getElementById('searchClear').classList.toggle('show', q.length > 0);
+}
+document.addEventListener('click', (e) => {
+  if (!e.target.classList.contains('chip')) return;
+  document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+  e.target.classList.add('active');
+  activeFilter = e.target.dataset.rarity;
+  applyFilters();
+  shakeBody('sm');
+});
+function clearSearch() { document.getElementById('skinSearch').value = ''; applyFilters(); }
+
+function openLightbox(src, name, rarity, color) {
+  const lb = document.getElementById('lightbox');
+  document.getElementById('lbImg').src = src;
+  document.getElementById('lbName').textContent = name;
+  document.getElementById('lbRarity').textContent = rarity;
+  document.getElementById('lbWrap').style.setProperty('--lb-color', color);
+  lb.classList.add('active');
+  shakeBody('md');
+}
+function closeLightbox() { document.getElementById('lightbox').classList.remove('active'); }
+document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLightbox(); });
+
+function spawnParticles() {
+  const c = document.getElementById('particles');
+  const COUNT = 18;
+  const colors = ['#00F0FF', '#FFE500', '#FF2A8E', '#B847FF', '#FF8500'];
+  const types = ['hex', 'star', 'spark'];
+  const vw = window.innerWidth;
+  for (let i = 0; i < COUNT; i++) {
+    const p = document.createElement('div');
+    const type = types[i % types.length];
+    p.className = `particle ${type}`;
+    const color = colors[i % colors.length];
+    p.style.setProperty('--p-color', color);
+    p.style.left = (Math.random() * vw) + 'px';
+    p.style.bottom = '-30px';
+    p.style.animationDuration = (14 + Math.random() * 18) + 's';
+    p.style.animationDelay = (Math.random() * 22) + 's';
+    p.style.willChange = 'transform,opacity';
+    if (type === 'hex') {
+      const size = 8 + Math.random() * 12;
+      p.style.width = size + 'px';
+      p.style.height = size + 'px';
+    }
+    c.appendChild(p);
+  }
+}
+
+function spawnBrightStars() {
+  const host = document.getElementById('starsBright');
+  if (!host) return;
+  const COUNT = 8;
+  for (let i = 0; i < COUNT; i++) {
+    const s = document.createElement('div');
+    s.className = 'bs';
+    s.style.left = (Math.random() * 100) + '%';
+    s.style.top = (Math.random() * 100) + '%';
+    s.style.animationDelay = (Math.random() * 3) + 's';
+    s.style.animationDuration = (3 + Math.random() * 2.5) + 's';
+    host.appendChild(s);
+  }
+}
+
+// ═══════════════════════════════════════════════════════
+// CASCADING COLUMNS — 3 columns of skin tiles flowing top→bottom.
+// Each track contains a doubled tile stack so the translateY
+// loop is seamless: at the end of one cycle the second half of
+// the stack is rendered at the position the first half started,
+// so the reset jump is invisible.
+// ═══════════════════════════════════════════════════════
+function spawnCascade() {
+  const cols = document.querySelectorAll('#wsCols .ws-track');
+  if (!cols.length) return;
+  const colors = ['#FFE500','#FF8500','#FF2A8E','#B847FF','#00F0FF','#1FCFCB','#41A3FF','#5DDA42'];
+  const skinPaths = skins.map(s => s.img);
+
+  // Distribute 30 skin paths across N columns (7 desktop), then DOUBLE each
+  // column's tiles for seamless translateY loop. Per-col 10 unique tiles,
+  // doubled = 20 DOM tiles per column. With 7 cols → 140 tiles total. Modest
+  // perf cost (one transform per column track, GPU-composited).
+  const PER_COL = 10;
+  cols.forEach((track, colIdx) => {
+    const frag = document.createDocumentFragment();
+    // Build the unique stack first
+    const unique = [];
+    for (let i = 0; i < PER_COL; i++) {
+      const skinIdx = (colIdx * PER_COL + i) % skinPaths.length;
+      const colorIdx = (colIdx * PER_COL + i) % colors.length;
+      unique.push({ src: skinPaths[skinIdx], color: colors[colorIdx] });
+    }
+    // Append unique stack TWICE for seamless loop
+    for (let pass = 0; pass < 2; pass++) {
+      unique.forEach((item) => {
+        const tile = document.createElement('div');
+        tile.className = 'ws-tile';
+        tile.style.setProperty('--tile-color', item.color);
+        tile.style.setProperty('--tile-glow', item.color);
+        const img = document.createElement('img');
+        img.src = item.src;
+        img.alt = '';
+        img.loading = 'eager';
+        img.decoding = 'async';
+        tile.appendChild(img);
+        frag.appendChild(tile);
+      });
+    }
+    track.appendChild(frag);
+  });
+}
+
+// Lock body scroll while welcome is up (re-enabled in enterLobby on click)
+function lockBodyScroll(on) {
+  document.body.classList.toggle('welcome-open', !!on);
+}
+
+let _booted = false;
+function smoothBoot() {
+  if (_booted) return;
+  _booted = true;
+  spawnCascade();
+  lockBodyScroll(true);
+}
+
+function initBursts() {
+  const all = document.querySelectorAll('.skin-card, .tool-card');
+  all.forEach((card) => {
+    let lastBurstAt = 0;
+    card.addEventListener('mouseenter', () => {
+      const now = performance.now();
+      if (now - lastBurstAt < 400) return;
+      lastBurstAt = now;
+      const burst = card.querySelector('.burst');
+      if (!burst) return;
+      const color = card.style.getPropertyValue('--rarity-color') || '#FFE500';
+      const count = 10;
+      const rect = card.getBoundingClientRect();
+      const cx = rect.width / 2;
+      const cy = rect.height / 2;
+      for (let i = 0; i < count; i++) {
+        const p = document.createElement('div');
+        p.className = 'burst-p';
+        const angle = (Math.PI * 2 * i) / count + Math.random() * 0.4;
+        const dist = 60 + Math.random() * 80;
+        p.style.left = cx + 'px';
+        p.style.top = cy + 'px';
+        p.style.setProperty('--bx', Math.cos(angle) * dist + 'px');
+        p.style.setProperty('--by', Math.sin(angle) * dist + 'px');
+        p.style.setProperty('--bc', color);
+        burst.appendChild(p);
+        setTimeout(() => p.remove(), 800);
+      }
+    });
+  });
+}
+
+function animateCount(el, target, duration = 1200, format) {
+  const start = performance.now();
+  function frame(now) {
+    const t = Math.min((now - start) / duration, 1);
+    const eased = 1 - Math.pow(1 - t, 3);
+    const val = Math.round(target * eased);
+    el.textContent = format === 'comma' ? val.toLocaleString() : val.toString();
+    if (t < 1) requestAnimationFrame(frame);
+    else el.textContent = format === 'comma' ? target.toLocaleString() : target.toString();
+  }
+  requestAnimationFrame(frame);
+}
+
+function initRevealObservers() {
+  const lootCards = document.querySelectorAll('#lootGrid .loot-card');
+  lootCards.forEach((c, i) => c.style.setProperty('--d', (i * 70) + 'ms'));
+  const pills = document.querySelectorAll('#rarityRow .rarity-pill');
+  pills.forEach((p, i) => p.style.setProperty('--d', (i * 50) + 'ms'));
+  const skinCards = document.querySelectorAll('#skinGrid .skin-card');
+  const toolCards = document.querySelectorAll('#toolGrid .tool-card');
+  const emoteCards = document.querySelectorAll('#emoteGrid .emote-card');
+  const gliderCards = document.querySelectorAll('#gliderGrid .tool-card');
+
+  const lootObs = new IntersectionObserver((entries) => {
+    for (const e of entries) {
+      if (!e.isIntersecting) continue;
+      lootCards.forEach((c) => c.classList.add('in'));
+      pills.forEach((p) => p.classList.add('in'));
+      document.querySelectorAll('#lootGrid .val[data-count]').forEach((v) => {
+        animateCount(v, parseInt(v.dataset.count, 10), 1400, v.dataset.format);
+      });
+      shakeBody('md');
+      lootObs.disconnect();
+    }
+  }, { threshold: 0.25 });
+  if (lootCards.length) lootObs.observe(document.getElementById('lootGrid'));
+
+  function gridObserver(grid, cards, dur=18) {
+    if (!grid || !cards.length) return;
+    const o = new IntersectionObserver((entries) => {
+      for (const e of entries) {
+        if (!e.isIntersecting) continue;
+        cards.forEach((c, i) => {
+          c.style.setProperty('--d', (i * dur) + 'ms');
+          c.classList.add('cardin');
+        });
+        shakeBody('lg');
+        o.disconnect();
+      }
+    }, { threshold: 0.18 });
+    o.observe(grid);
+  }
+  gridObserver(document.getElementById('skinGrid'), skinCards, 22);
+  gridObserver(document.getElementById('toolGrid'), toolCards);
+  gridObserver(document.getElementById('emoteGrid'), emoteCards, 30);
+  gridObserver(document.getElementById('gliderGrid'), gliderCards);
+}
+
+function shakeBody(intensity = 'sm') {
+  const body = document.body;
+  body.classList.remove('shake-host','shake-sm','shake-md','shake-lg');
+  void body.offsetWidth;
+  body.classList.add('shake-host', 'shake-' + intensity);
+  setTimeout(() => body.classList.remove('shake-host', 'shake-' + intensity), 700);
+}
+
+// Combo counter
+function initComboTracker() {
+  let combo = 0;
+  let last = 0;
+  let resetTimer = null;
+  let speedTimer = null;
+  const comboEl = document.getElementById('combo');
+  const comboNum = document.getElementById('comboNum');
+  const speedEl = document.getElementById('speedLines');
+  window.addEventListener('scroll', () => {
+    const now = performance.now();
+    const dt = now - last;
+    last = now;
+    if (dt < 80) {
+      combo++;
+      comboNum.textContent = combo;
+      comboEl.classList.add('live');
+      speedEl.classList.add('live');
+      clearTimeout(resetTimer);
+      clearTimeout(speedTimer);
+      resetTimer = setTimeout(() => { comboEl.classList.remove('live'); combo = 0; }, 900);
+      speedTimer = setTimeout(() => speedEl.classList.remove('live'), 600);
+    }
+  }, { passive:true });
+}
+
+// YouTube music
+//
+// Browser autoplay policy: playVideo() is blocked outside a user-gesture
+// callback. Our enterLobby fires music inside a setTimeout — by then the
+// gesture context is GONE and Chrome/Safari silently block playback.
+//
+// Fix: use muted autoplay (always allowed) so the player is ALREADY
+// playing in the background when the user clicks DROP IN. The click
+// then just unmute()s — no playVideo() needed in async context.
+let ytPlayer = null, ytReady = false;
+let _wantsAudio = false;            // set when user clicks before API ready
+const TARGET_VOLUME = 65;
+
+function onYouTubeIframeAPIReady() {
+  ytPlayer = new YT.Player('ytplayer', {
+    width: '1', height: '1', videoId: 'hgYhws0AHcg',
+    playerVars: {
+      start: 16,
+      controls: 0,
+      autoplay: 1,                   // start playing immediately (muted)
+      mute: 1,                       // muted autoplay = browsers allow it
+      loop: 1,
+      playlist: 'hgYhws0AHcg',
+      playsinline: 1,
+      disablekb: 1,
+      modestbranding: 1,
+      rel: 0,
+    },
+    events: {
+      onReady: () => {
+        ytReady = true;
+        // Belt-and-suspenders: ensure the muted player is playing
+        try { ytPlayer.playVideo(); } catch {}
+        // If the user already clicked DROP IN before YT was ready, fade
+        // audio in now.
+        if (_wantsAudio) { _wantsAudio = false; fadeInMusic(); }
+      },
+      onStateChange: (e) => {
+        if (e.data === YT.PlayerState.ENDED && ytPlayer) {
+          ytPlayer.seekTo(16, true); ytPlayer.playVideo();
+        }
+      },
+    },
+  });
+}
+
+// Called SYNCHRONOUSLY from the DROP IN click handler so the user-gesture
+// context isn't lost. The player has been silently playing in the
+// background since page load, so on click we rewind to the intended
+// start point (16s) and fade volume up — user hears the song from
+// the beginning, not mid-track.
+function fadeInMusic() {
+  if (!ytReady || !ytPlayer) {
+    _wantsAudio = true;              // queue for when YT API is ready
+    return;
+  }
+  try {
+    ytPlayer.seekTo(16, true);       // rewind to intended start
+    ytPlayer.unMute();
+    ytPlayer.setVolume(0);
+    ytPlayer.playVideo();            // safety: ensure playing if autoplay blocked
+    document.getElementById('musicToggle')?.classList.remove('muted');
+    let v = 0;
+    const totalMs = 4000, stepMs = 50;
+    const inc = TARGET_VOLUME / (totalMs / stepMs);
+    const timer = setInterval(() => {
+      v += inc;
+      if (v >= TARGET_VOLUME) { v = TARGET_VOLUME; clearInterval(timer); }
+      try { ytPlayer.setVolume(Math.round(v)); } catch {}
+    }, stepMs);
+  } catch (err) { console.warn('music fade-in failed', err); }
+}
+function toggleMusic() {
+  if (!ytReady || !ytPlayer) return;
+  const btn = document.getElementById('musicToggle');
+  if (btn.classList.contains('muted')) { try { ytPlayer.unMute(); ytPlayer.setVolume(TARGET_VOLUME); ytPlayer.playVideo(); } catch {}; btn.classList.remove('muted'); }
+  else { try { ytPlayer.mute(); } catch {}; btn.classList.add('muted'); }
+}
+document.getElementById('musicToggle').addEventListener('click', toggleMusic);
+
+function enterLobby() {
+  // 3-phase transition: welcome under blackout → tear down → reveal main page
+  const w = document.getElementById('welcome');
+  const blackout = document.getElementById('pageBlackout');
+  w.style.pointerEvents = 'none';
+
+  // CRITICAL: kick off audio SYNCHRONOUSLY in click handler so the
+  // user-gesture context isn't lost (browser autoplay policy). The
+  // player is already in muted-autoplay state, so this just unmutes
+  // and fades volume up.
+  fadeInMusic();
+
+  // Phase 1 (0–550ms): Black overlay rises OVER welcome.
+  if (blackout) blackout.classList.add('up');
+
+  // Phase 2 (~550ms): Welcome is fully hidden behind blackout. Tear it down,
+  // unlock body scroll. (Music already kicked off above.)
+  setTimeout(() => {
+    w.classList.add('fade');
+    document.body.classList.add('entered');
+    lockBodyScroll(false);
+    setTimeout(() => { w.style.display = 'none'; }, 800);
+  }, 550);
+
+  // Phase 3 (1100–1650ms): Main page is now visible behind blackout —
+  // fade blackout out to reveal it.
+  setTimeout(() => {
+    if (blackout) blackout.classList.remove('up');
+    setTimeout(() => { blackout?.remove(); }, 700);
+  }, 1100);
+  return; // skip legacy timeout below
+  setTimeout(() => { w.style.display = 'none'; }, 1400);
+}
+document.getElementById('enterBtn').addEventListener('click', enterLobby);
+
+// Boot the welcome with double-rAF so the GPU has compositor layers
+// committed before any animation starts — no first-frame stutter.
+// We bind to BOTH `load` and call directly: whichever fires first wins.
+// (Some preview/iframe environments throttle the load event; the direct
+// call ensures boot still happens. The _booted guard makes it idempotent.)
+window.addEventListener('load', smoothBoot);
+
+renderSkins();
+renderTools();
+renderEmotes();
+renderGliders();
+spawnParticles();
+spawnBrightStars();
+
+// Direct boot: if window.load hasn't fired yet (DOM still parsing), this
+// is a no-op until first rAF, by which time DOM is ready.
+if (document.readyState === 'complete') smoothBoot();
+else document.addEventListener('DOMContentLoaded', smoothBoot);
+lazyLoad();
+initRevealObservers();
+initBursts();
+initComboTracker();
+document.getElementById('skinSearch').addEventListener('input', applyFilters);
+</script>
+</body>
+</html>
